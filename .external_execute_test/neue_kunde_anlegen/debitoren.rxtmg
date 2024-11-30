@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="debitoren"
+      id="726d955a-2e2c-42ab-9c02-8c3420436263"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="debitoren"
+      id="726d955a-2e2c-42ab-9c02-8c3420436263"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

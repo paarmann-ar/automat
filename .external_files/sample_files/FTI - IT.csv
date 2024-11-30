@@ -1,0 +1,2 @@
+Beleg;Debitor;Bestellnummer;Datum;Zeitraum;Kostenstelle;Beschreibung;Sachkonto;MwSt Gruppe;Artikel MwSt Gruppe;Menge;Preis;Betrag;Rechnungsdatum;Faelligkeitsdatum;Rechnungstext;Projekt
+1;D13900000049;;19.04.2024;05 2024;6936046;Description text;4830000;IT-C-EU;S-High;1;1;1;19.05.2024;;Test case;

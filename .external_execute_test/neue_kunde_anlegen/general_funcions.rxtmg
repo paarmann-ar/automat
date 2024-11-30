@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="general_funcions"
+      id="2581a747-aef4-4628-b774-cdfc56c7b7be"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="general_funcions"
+      id="2581a747-aef4-4628-b774-cdfc56c7b7be"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -1,0 +1,84 @@
+trigger:
+- main
+
+stages:
+- stage: Build
+
+  jobs:
+    - job: build_framework
+    
+      workspace:
+        clean: all
+
+      pool:
+        name: rdc_test
+
+      variables:
+        venv: $(System.DefaultWorkingDirectory)/.venv
+        python.version: "v3_12"
+
+      steps:
+        - task: UsePythonVersion@0
+          inputs:
+            versionSpec: "3.12"
+          displayName: "Use Python $(python.version)"
+
+        - script: |
+            python -m venv $(venv)
+            call $(venv)/Scripts/activate.bat
+            python -m ensurepip --upgrade
+            python -m pip install --upgrade pip
+            python -m pip install -r requirements.txt
+          workingDirectory: $(Build.SourcesDirectory)
+          displayName: 'Install dependency'
+
+        - script: |
+            set Path=$(venv)/Scripts;%Path%
+            python -m pip install pytest-azurepipelines
+          env:
+            PYTHON_HOME: ""
+            VIRTUAL_ENV: $(venv)
+          displayName: 'Install pytest-azure'
+
+        - task: ArchiveFiles@2
+          displayName: 'Archive files'
+          inputs:
+            rootFolderOrFile: $(System.DefaultWorkingDirectory)
+            includeRootFolder: false
+            archiveType: zip
+            archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)_$(python.version).zip
+            replaceExistingArchive: true
+
+        - task: PublishBuildArtifacts@1
+          displayName: 'Publish Build Artifacts'
+          inputs:
+            ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+                PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+                ArtifactName: 'production'
+                publishLocation: 'Container'
+
+            ${{ else }}:
+                PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+                ArtifactName: 'development'
+                publishLocation: 'Container'
+
+        - task: DownloadPipelineArtifact@2
+          displayName: 'Download Pipeline Production Artifact'
+          inputs:
+            ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+              artifact: production
+              
+            ${{ else }}:
+              artifact: development
+
+- stage: Release_Production
+  dependsOn: Build
+  jobs:
+    - job: release_production_framework
+
+      pool:
+        name: rdc_test
+
+      steps:
+      - download: current
+        artifact: production

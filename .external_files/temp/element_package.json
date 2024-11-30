@@ -1,0 +1,20 @@
+{
+    "Title":"All purchase orders -- Finance and Operations",
+    "URL":"https://sae-weu-uat-std.sandbox.operations.eu.dynamics.com/?cmp=121&mi=PurchTableListPage",
+    "clicked_elements_pattern":[
+        [
+            {
+                "xpath":"//button[@data-dyn-controlname=\"52\"]",
+                "xpath_":""
+            },
+            {
+                "xpath":"//button[@id=\"52\"]",
+                "xpath_":""
+            },
+            {
+                "xpath":"//button[@name=\"52\"]",
+                "xpath_":""
+            }
+        ]
+    ]
+}

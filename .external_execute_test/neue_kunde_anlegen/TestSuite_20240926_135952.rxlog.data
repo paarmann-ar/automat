@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="474ms"
+		durationms="474"
+		type="root"
+		rid="39736f79d25d6458"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="mPaarmann"
+		rxversion="11.4.1.0"
+		host="PNB1544P"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-GB"
+		dtnlanguage="de-DE"
+		screenresolution="4920x2278"
+		timestamp="26.09.2024 13:59:52"
+		timestampiso="2024-09-26T11:59:52"
+		endtime="26.09.2024 13:59:53"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.436"
+			timeRelativeToTestModuleStartTime="00:00.436"
+			timeWallClock="13:59:53"
+			time="00:00.436"
+			level="Error"
+			category="User">
+			<message>
+				Unexpected exception occurred: Ranorex.RanorexException: There are multiple test suite files in the assembly directory. Please specify the test suite by using command line parameters or rename the test suite file to the current assembly name.<br/>   at Ranorex.Core.Testing.TestSuiteRunner.GetTestSuiteXml(Type containerType, String fileName)<br/>   at Ranorex.Core.Testing.TestSuiteRunner.Run(Type containerType, String cmdLineArgs, String testSuiteXml)<br/>   at Ranorex.Core.Testing.TestSuiteRunner.Run(Type containerType, String cmdLineArgs)<br/>   at debitoren.Program.Main(String[] args)
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

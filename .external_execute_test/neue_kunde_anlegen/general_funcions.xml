@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>general_funcions</name>
+    </assembly>
+    <members>
+        <member name="T:general_funcions.Repo_mandant_module_manager">
+            <summary>
+            The class representing the Repo_mandant_module_manager element repository.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_manager.Instance">
+            <summary>
+            Gets the singleton class instance representing the Repo_mandant_module_manager element repository.
+            </summary>
+        </member>
+        <member name="M:general_funcions.Repo_mandant_module_manager.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_manager.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_manager.MicrosoftDynamicsAXEuropaApotheek">
+            <summary>
+            The MicrosoftDynamicsAXEuropaApotheek folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_manager.Ax32">
+            <summary>
+            The Ax32 folder.
+            </summary>
+        </member>
+        <member name="T:general_funcions.Repo_mandant_module_managerFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:general_funcions.Repo_mandant_module_managerFolders.MicrosoftDynamicsAXEuropaApotheekAppFolder">
+            <summary>
+            The MicrosoftDynamicsAXEuropaApotheekAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:general_funcions.Repo_mandant_module_managerFolders.MicrosoftDynamicsAXEuropaApotheekAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new MicrosoftDynamicsAXEuropaApotheek  folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MicrosoftDynamicsAXEuropaApotheekAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MicrosoftDynamicsAXEuropaApotheekAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MicrosoftDynamicsAXEuropaApotheekAppFolder.BreadcrumbBar">
+            <summary>
+            The BreadcrumbBar item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MicrosoftDynamicsAXEuropaApotheekAppFolder.BreadcrumbBarInfo">
+            <summary>
+            The BreadcrumbBar item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MicrosoftDynamicsAXEuropaApotheekAppFolder.toolbar">
+            <summary>
+            The toolbar folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MicrosoftDynamicsAXEuropaApotheekAppFolder.tab_allgemeine_formulare">
+            <summary>
+            The tab_allgemeine_formulare folder.
+            </summary>
+        </member>
+        <member name="T:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder">
+            <summary>
+            The ToolbarFolder folder.
+            </summary>
+        </member>
+        <member name="M:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new toolbar  folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.txbToolbar">
+            <summary>
+            The txbToolbar item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.txbToolbarInfo">
+            <summary>
+            The txbToolbar item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.MicrosoftDynamicsAXEuropaApotheek">
+            <summary>
+            The MicrosoftDynamicsAXEuropaApotheek item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.MicrosoftDynamicsAXEuropaApotheekInfo">
+            <summary>
+            The MicrosoftDynamicsAXEuropaApotheek item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.btn_select_mandant">
+            <summary>
+            The btn_select_mandant item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.btn_select_mandantInfo">
+            <summary>
+            The btn_select_mandant item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.btn_select_module_140">
+            <summary>
+            The btn_select_module_140 item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.btn_select_module_140Info">
+            <summary>
+            The btn_select_module_140 item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.btn_select_module_139">
+            <summary>
+            The btn_select_module_139 item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ToolbarFolder.btn_select_module_139Info">
+            <summary>
+            The btn_select_module_139 item info.
+            </summary>
+        </member>
+        <member name="T:general_funcions.Repo_mandant_module_managerFolders.Tab_allgemeine_formulareFolder">
+            <summary>
+            The Tab_allgemeine_formulareFolder folder.
+            </summary>
+        </member>
+        <member name="M:general_funcions.Repo_mandant_module_managerFolders.Tab_allgemeine_formulareFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new tab_allgemeine_formulare  folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.Tab_allgemeine_formulareFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.Tab_allgemeine_formulareFolder.txt_Debitorenubersicht">
+            <summary>
+            The txt_Debitorenubersicht item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.Tab_allgemeine_formulareFolder.txt_DebitorenubersichtInfo">
+            <summary>
+            The txt_Debitorenubersicht item info.
+            </summary>
+        </member>
+        <member name="T:general_funcions.Repo_mandant_module_managerFolders.Ax32AppFolder">
+            <summary>
+            The Ax32AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:general_funcions.Repo_mandant_module_managerFolders.Ax32AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Ax32  folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.Ax32AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.Ax32AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.Ax32AppFolder.modules">
+            <summary>
+            The modules folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.Ax32AppFolder.mandants">
+            <summary>
+            The mandants folder.
+            </summary>
+        </member>
+        <member name="T:general_funcions.Repo_mandant_module_managerFolders.ModulesFolder">
+            <summary>
+            The ModulesFolder folder.
+            </summary>
+        </member>
+        <member name="M:general_funcions.Repo_mandant_module_managerFolders.ModulesFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new modules  folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ModulesFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ModulesFolder.menu_hauptbuch">
+            <summary>
+            The menu_hauptbuch item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ModulesFolder.menu_hauptbuchInfo">
+            <summary>
+            The menu_hauptbuch item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ModulesFolder.menu_debitoren">
+            <summary>
+            The menu_debitoren item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.ModulesFolder.menu_debitorenInfo">
+            <summary>
+            The menu_debitoren item info.
+            </summary>
+        </member>
+        <member name="T:general_funcions.Repo_mandant_module_managerFolders.MandantsFolder">
+            <summary>
+            The MandantsFolder folder.
+            </summary>
+        </member>
+        <member name="M:general_funcions.Repo_mandant_module_managerFolders.MandantsFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new mandants  folder.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MandantsFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MandantsFolder.menu_mandant_140">
+            <summary>
+            The menu_mandant_140 item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MandantsFolder.menu_mandant_140Info">
+            <summary>
+            The menu_mandant_140 item info.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MandantsFolder.menu_mandant_139">
+            <summary>
+            The menu_mandant_139 item.
+            </summary>
+        </member>
+        <member name="P:general_funcions.Repo_mandant_module_managerFolders.MandantsFolder.menu_mandant_139Info">
+            <summary>
+            The menu_mandant_139 item info.
+            </summary>
+        </member>
+        <member name="T:general_funcions.mandant_manager">
+             <summary>
+            The mandant_manager recording.
+             </summary>
+        </member>
+        <member name="F:general_funcions.mandant_manager.repo">
+            <summary>
+            Holds an instance of the Repo_mandant_module_manager repository.
+            </summary>
+        </member>
+        <member name="M:general_funcions.mandant_manager.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:general_funcions.mandant_manager.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:general_funcions.mandant_manager.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:general_funcions.mandant_manager.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:general_funcions.mandant_manager.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:general_funcions.mandant_manager.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:general_funcions.run_ax">
+             <summary>
+            The run_ax recording.
+             </summary>
+        </member>
+        <member name="F:general_funcions.run_ax.repo">
+            <summary>
+            Holds an instance of the Repo_mandant_module_manager repository.
+            </summary>
+        </member>
+        <member name="M:general_funcions.run_ax.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:general_funcions.run_ax.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:general_funcions.run_ax.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:general_funcions.run_ax.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:general_funcions.run_ax.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:general_funcions.run_ax.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:general_funcions.select_mandant_module">
+             <summary>
+            The select_mandant_module recording.
+             </summary>
+        </member>
+        <member name="F:general_funcions.select_mandant_module.repo">
+            <summary>
+            Holds an instance of the Repo_mandant_module_manager repository.
+            </summary>
+        </member>
+        <member name="M:general_funcions.select_mandant_module.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:general_funcions.select_mandant_module.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:general_funcions.select_mandant_module.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:general_funcions.select_mandant_module.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:general_funcions.select_mandant_module.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:general_funcions.select_mandant_module.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:general_funcions.terminate_ax">
+             <summary>
+            The terminate_ax recording.
+             </summary>
+        </member>
+        <member name="F:general_funcions.terminate_ax.repo">
+            <summary>
+            Holds an instance of the Repo_mandant_module_manager repository.
+            </summary>
+        </member>
+        <member name="M:general_funcions.terminate_ax.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:general_funcions.terminate_ax.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:general_funcions.terminate_ax.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:general_funcions.terminate_ax.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:general_funcions.terminate_ax.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:general_funcions.terminate_ax.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>

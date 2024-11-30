@@ -1,0 +1,24 @@
+trigger:
+- main
+
+stages:
+- stage: download
+
+  jobs:
+    - job: download_framework
+    
+      workspace:
+        clean: all
+
+      pool:
+        name: rdc_test
+
+      steps:
+        - task: DownloadPipelineArtifact@2
+          displayName: 'Download Pipeline Production Artifact'
+          inputs:
+            ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+              artifact: production
+              
+            ${{ else }}:
+              artifact: development

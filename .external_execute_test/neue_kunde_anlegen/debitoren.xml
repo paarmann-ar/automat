@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>debitoren</name>
+    </assembly>
+    <members>
+        <member name="T:debitoren.neue_kunde_anlegen.kunde_model">
+            <summary>
+            Description of kunde_model.
+            </summary>
+        </member>
+        <member name="T:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegen">
+            <summary>
+            The class representing the repo_neu_kunde_anlegen element repository.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegen.Instance">
+            <summary>
+            Gets the singleton class instance representing the repo_neu_kunde_anlegen element repository.
+            </summary>
+        </member>
+        <member name="M:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegen.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegen.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegen.AxTopLevelFrame1">
+            <summary>
+            The AxTopLevelFrame1 folder.
+            </summary>
+        </member>
+        <member name="T:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder">
+            <summary>
+            The AxTopLevelFrame1AppFolder folder.
+            </summary>
+        </member>
+        <member name="M:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new AxTopLevelFrame1  folder.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.btn_neue_kunde">
+            <summary>
+            The btn_neue_kunde item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.btn_neue_kundeInfo">
+            <summary>
+            The btn_neue_kunde item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.cmb_kunde_vorlage">
+            <summary>
+            The cmb_kunde_vorlage item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.cmb_kunde_vorlageInfo">
+            <summary>
+            The cmb_kunde_vorlage item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.Damrak">
+            <summary>
+            The Damrak item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.DamrakInfo">
+            <summary>
+            The Damrak item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_geburtsdatum">
+            <summary>
+            The txb_geburtsdatum item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_geburtsdatumInfo">
+            <summary>
+            The txb_geburtsdatum item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.btn_ok">
+            <summary>
+            The btn_ok item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.btn_okInfo">
+            <summary>
+            The btn_ok item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.lbl_kundennrummer">
+            <summary>
+            The lbl_kundennrummer item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.lbl_kundennrummerInfo">
+            <summary>
+            The lbl_kundennrummer item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_nachname">
+            <summary>
+            The txb_nachname item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_nachnameInfo">
+            <summary>
+            The txb_nachname item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_vorname">
+            <summary>
+            The txb_vorname item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_vornameInfo">
+            <summary>
+            The txb_vorname item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_plz">
+            <summary>
+            The txb_plz item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_plzInfo">
+            <summary>
+            The txb_plz item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_strasse">
+            <summary>
+            The txb_strasse item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_strasseInfo">
+            <summary>
+            The txb_strasse item info.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_adress_zusatz">
+            <summary>
+            The txb_adress_zusatz item.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.repo_neu_kunde_anlegenFolders.AxTopLevelFrame1AppFolder.txb_adress_zusatzInfo">
+            <summary>
+            The txb_adress_zusatz item info.
+            </summary>
+        </member>
+        <member name="T:debitoren.neue_kunde_anlegen.neu_kunde_anlegen">
+             <summary>
+            The neu_kunde_anlegen recording.
+             </summary>
+        </member>
+        <member name="F:debitoren.neue_kunde_anlegen.neu_kunde_anlegen.repo">
+            <summary>
+            Holds an instance of the repo_neu_kunde_anlegen repository.
+            </summary>
+        </member>
+        <member name="M:debitoren.neue_kunde_anlegen.neu_kunde_anlegen.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.neu_kunde_anlegen.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:debitoren.neue_kunde_anlegen.neu_kunde_anlegen.KundenNr">
+            <summary>
+            Gets or sets the value of variable KundenNr.
+            </summary>
+        </member>
+        <member name="M:debitoren.neue_kunde_anlegen.neu_kunde_anlegen.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:debitoren.neue_kunde_anlegen.neu_kunde_anlegen.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:debitoren.neue_kunde_anlegen.neu_kunde_anlegen.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:debitoren.neue_kunde_anlegen.neu_kunde_anlegen.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>
