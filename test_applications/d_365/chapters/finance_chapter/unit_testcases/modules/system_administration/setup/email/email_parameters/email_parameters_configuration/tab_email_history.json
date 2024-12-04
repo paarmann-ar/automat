@@ -1,0 +1,8 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"Email history\"]"
+    },
+    "txb_number_of_days_to_retain_email_history": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"NumDaysToRetainHistory\") and contains(@id,\"SysEmailParameters\") and contains(@id,\"sysemailparameters\") and  1]"
+    }
+}

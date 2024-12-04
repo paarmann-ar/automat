@@ -1,0 +1,62 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabSetup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_invoice_account": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"InvoiceAccount\") and contains(@aria-describedby,\"GrpInvoice\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_Number_sequence_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"numberSequenceGroup\") and contains(@aria-describedby,\"GrpInvoice\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_vendor_price_tolerance_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"VendPriceToleranceGroupId\") and contains(@aria-describedby,\"GrpInvoice\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_vendor_exception_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"editVendExceptionGroupId\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_offset_account_account_type": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"OffsetAccountType\") and contains(@aria-controls,\"OffsetAccount\") and contains(@aria-controls,\"vendtablelistpage\") and  1]"
+    },
+    "txb_offset_account": {
+        "xpath": "//input[contains(@aria-describedby,\"describedby\") and contains(@aria-describedby,\"OffsetAccount\") and contains(@aria-describedby,\"OffsetAccount\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_UPS_zone": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"FreightZone\") and contains(@id,\"Delivery\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_delivery_terms": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"DlvTerm\") and contains(@aria-describedby,\"Delivery\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_mode_of_delivery": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"DlvMode\") and contains(@aria-describedby,\"Delivery\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_destination_code": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"DestinationCodeId\") and contains(@aria-describedby,\"Delivery\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_sales_tax_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"TaxGroup\") and contains(@aria-describedby,\"SalesTax\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "chk_prices_include_sales_tax": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"InclTax\") and contains(@id,\"SalesTax\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_tax_exempt_number": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"VATNum\") and contains(@aria-describedby,\"SalesTax\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "lbl_tax_exempt_number": {
+        "xpath": "//label[contains(@id,\"label\") and contains(@id,\"VATNum\") and contains(@id,\"SalesTax\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_fiscal_code": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"FiscalCode\") and contains(@id,\"SalesTax\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_calculate_withholding_tax": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"TaxWithholdCalculate\") and contains(@id,\"WithholdingTax\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_withholding_tax_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"TaxWithholdGroup\") and contains(@aria-describedby,\"WithholdingTax\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_evenue_typology": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"IT\") and contains(@id,\"CodeRevenueTypology\") and contains(@id,\"UniqueCertification\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_e_invoice": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IT\") and contains(@id,\"EInvoiceRegister\") and contains(@id,\"Einvoice\") and contains(@id,\"vendtablelistpage\") and  1]"
+    }
+}

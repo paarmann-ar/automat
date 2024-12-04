@@ -1,0 +1,26 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabCommunication\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_add": {
+        "xpath": "//span[contains(@for,\"NewContactInfo\") and contains(@for,\"vendtablelistpage\") and  1]"
+    },
+    "btn_remove": {
+        "xpath": "//span[contains(@for,\"DeleteContactInfo\") and contains(@for,\"vendtablelistpage\") and  1]"
+    },
+    "btn_edit": {
+        "xpath": "//span[contains(@for,\"DeleteContactInfo\") and contains(@for,\"vendtablelistpage\") and  1]"
+    },
+    "lv_add_contact_info_description": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Description\") and contains(@id,\"ContactInfo\") and  1]"
+    },
+    "lv_add_contact_info_type": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Type\") and contains(@id,\"ContactInfo\") and  1]"
+    },
+    "lv_add_contact_info_contact_number": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Locator\") and contains(@id,\"ContactInfo\") and  1]"
+    },
+    "lv_add_contact_info_extention": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Extension\") and contains(@id,\"ContactInfo\") and  1]"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "frm_setup_trading_relationship": {
+        "text_to_search": "Set up trading relationship"
+    },
+    "btn_sidebar":{
+        "xpath":"//li[contains(@id,\"InterCompanyTradingRelationSetupCustomer\") and contains(@id,\"TabTradingRelation_header\") and  1]"
+    },
+    "chk_active": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"Active\") and contains(@id,\"TradingRelation\") and contains(@id,\"InterCompanyTradingRelationSetupCustomer\") and  1]"
+    },
+    "txb_my_company": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"CustomerDataAreaId\") and contains(@aria-describedby,\"TradingPartnerSalesPartner\") and contains(@aria-describedby,\"InterCompanyTradingRelationSetupCustomer\") and  1]"
+    },
+    "txb_customer_account": {
+        "xpath": "//input[contains(@aria-labelledby,\"label\") and contains(@aria-labelledby,\"custAccount\") and contains(@aria-labelledby,\"M\") and contains(@aria-labelledby,\"TradingPartnerSalesPartner\") and contains(@aria-labelledby,\"InterCompanyTradingRelationSetupCustomer\") and  1]"
+    },
+    "txb_vendor_company": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"VendorDataAreaId\") and contains(@aria-describedby,\"TradingPartnerPurchaseRelation\") and contains(@aria-describedby,\"InterCompanyTradingRelationSetupCustomer\") and  1]"
+    },
+    "txb_my_account": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"editVendorAccount\") and contains(@id,\"InterCompanyTradingRelationSetupCustomer\") and  1]"
+    }
+}
+
+ 

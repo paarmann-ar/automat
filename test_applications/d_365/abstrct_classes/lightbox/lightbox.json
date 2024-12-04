@@ -1,0 +1,29 @@
+{
+    "lightbox_": {
+        "text_to_search": "class=\"lightbox\""
+    },
+    "lbl_message":{
+        "xpath":"//*[@id=\"titleField\"]"
+    },
+    "btn_close": {
+        "xpath": "//button[@name=\"Close\"]"
+    },
+    "btn_yes": {
+        "xpath": "//button[@name=\"Yes\"]"
+    },
+    "btn_no": {
+        "xpath": "//button[@name=\"No\"]"
+    },
+    "btn_cancel": {
+        "xpath": "//button[contains(@id,\"Cancel\")]"
+    },
+    "btn_yes_to_all": {
+        "xpath": "//button[contains(@id,\"YesToAll\")]"
+    },
+    "btn_no_to_all": {
+        "xpath": "//button[contains(@id,\"NoToAll\")]"
+    },
+    "btn_ok": {
+        "xpath": "//button[contains(@id,\"Ok\")]"
+    }
+}

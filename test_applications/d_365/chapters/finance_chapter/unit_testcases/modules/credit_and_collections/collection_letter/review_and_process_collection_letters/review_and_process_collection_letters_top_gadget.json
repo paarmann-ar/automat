@@ -1,0 +1,12 @@
+{
+    "frm_review_and_process_collection_letters_standard_view": {
+        "text_to_search": "Review and process collection letters"
+    },
+    "btn_back": {
+        "xpath":"//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_edit": {
+    },
+    "btn_options": {
+    }
+}

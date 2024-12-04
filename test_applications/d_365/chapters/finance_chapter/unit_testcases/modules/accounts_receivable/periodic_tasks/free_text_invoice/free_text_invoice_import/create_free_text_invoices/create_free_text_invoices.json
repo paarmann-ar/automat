@@ -1,0 +1,14 @@
+{
+    "frm_create_free_text_invoices": {
+        "text_to_search": "Create free text invoices"
+    },
+    "chk_post_free_text_invoices": {
+        "xpath": "//*[contains(@id, \"Fld1\") and @class=\"toggle-box\"]"
+    },
+    "chk_send_email": {
+        "xpath": "//*[contains(@id, \"Fld2\") and @class=\"toggle-box\"]"
+    },
+    "btn_ok": {
+        "xpath": "//button[contains(@id,\"Dialog\") and contains(@id,\"OkButton\") and 1]"
+    }
+}

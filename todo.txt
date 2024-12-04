@@ -1,0 +1,71 @@
+1. change StandarView
+
+    def __prepare(
+        self,
+        invoice_number=("V139100004",True),
+    ) -> bool:
+
+        try:
+
+            if super().prepare():
+                return True
+
+            self.search_item_text = "Invoice"
+            self.search_item = invoice_number
+
+            return True
+
+        except Exception as exp:
+            self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
+            return False
+
+    # --
+    # ... methods
+    # --
+
+    @BaseChapter.wait_for(
+        element_for_waiting_until_visible="frm_pending_vendor_invoices",
+        type_of_element="text_to_search",
+    )
+    @BaseChapter.log
+    def select(self, **kwargs) -> bool:
+
+        try:
+
+            return self.select_item(**kwargs)
+
+        except Exception as exp:
+            self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
+            return False
+
+
+
+2. change manger
+    call in __call__ '' with goto like 
+    test_applications\d_365\chapters\finance_chapter\unit_testcases\modules\general_ledger\ledger_setup\ledger_calendars\ledger_calendars_manager.py
+
+    
+    # --
+    # ... call
+    # --
+
+    def __call__(self, action="", **kwargs) -> Any:
+
+        try:
+
+            if super_result := super().__call__(action, **kwargs):
+                return super_result
+
+            match action:
+                case "":
+                    self.goto_start_point()
+                    self.ledger_calendars_manager(**kwargs)
+
+                case _:
+                    raise Exception(
+                        f"class {__class__.__name__} have no method {action}."
+                    )
+
+        except Exception as exp:
+            self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
+            return False

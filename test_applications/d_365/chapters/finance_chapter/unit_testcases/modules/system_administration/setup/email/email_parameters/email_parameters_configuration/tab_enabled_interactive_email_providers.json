@@ -1,0 +1,5 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"Enabled interactive email providers\"]"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabPayment\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_term_of_payment": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymTermId\") and contains(@aria-describedby,\"Payment\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_method_of_payment": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymMode\") and contains(@aria-describedby,\"Payment\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_payment_type": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"paymentType\") and contains(@id,\"M\") and contains(@id,\"Payment\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_payment_specification": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymSpec\") and contains(@aria-describedby,\"Payment\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_payment_schedule": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymSched\") and contains(@aria-describedby,\"Payment\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_cash_discount": {
+        "xpath": "//input[@name=\"Payment_CashDisc\"]"
+    },
+    "cmb_bank_account": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"BankAccount\") and contains(@aria-describedby,\"Payment\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_payment_id": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"PaymId\") and contains(@id,\"Payment\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_payment_day": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymDayId\") and contains(@aria-describedby,\"Payment\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_bank_account_number": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"bankAccountNum\") and contains(@id,\"M\") and contains(@id,\"Payment\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_use_cash_discount": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"UseCashDisc\") and contains(@aria-controls,\"Payment\") and contains(@aria-controls,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_central_bank_purpose_code": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"BankCentralBankPurposeCode\") and contains(@aria-describedby,\"NotificationToTheCentralBank\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_purpose_text": {
+        "xpath": "//textarea[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"BankCentralBankPurposeText\") and contains(@aria-describedby,\"NotificationToTheCentralBank\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_secondars_languge": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"RdcAdditionalLanguageAVIS\") and contains(@aria-describedby,\"VendTable\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_min_num_of_invoices_covering_letter": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"RdcMinNumOfInvoicesCoveringLetter\") and contains(@id,\"VendTable\") and contains(@id,\"vendtablelistpage\") and  1]"
+    }
+}

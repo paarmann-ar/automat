@@ -1,0 +1,11 @@
+{
+    "frm_intercompany": {
+        "text_to_search": "Intercompany"
+    },
+    "btn_back": {
+        "xpath": "//button[contains(@id,\"InterCompanyTradingRelationSetupCustomer\") and contains(@id,\"SystemDefinedCloseButton\") and 1]"
+    },
+    "btn_save": {
+        "xpath": "//button[contains(@id,\"InterCompanyTradingRelationSetupCustomer\") and contains(@id,\"SystemDefinedSaveButton\") and  1]"
+    }
+}

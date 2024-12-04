@@ -1,0 +1,11 @@
+{
+    "btn_tab":{
+        "xpath":"//button[contains(@id,\"caption\") and contains(@id,\"TabAddress\") and  1]"
+    },
+    "txb_address": {
+        "xpath": "//textarea[@class=\"multilineInput-textArea field displayoption viewMarker alignmentAuto\"]"
+    },
+    "btn_add": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"NewAddress\") and contains(@id,\"LogisticsPostalAddressSingleFormPart\") and  1]"
+    }
+}

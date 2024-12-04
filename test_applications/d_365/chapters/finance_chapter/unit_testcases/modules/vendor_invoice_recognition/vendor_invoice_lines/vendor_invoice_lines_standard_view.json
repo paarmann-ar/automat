@@ -1,0 +1,11 @@
+{
+    "frm_pending_invoice_lines": {
+        "text_to_search": "Pending Invoice Lines"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"saevendinvoicependinginvoicefinancialdimension\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "frm_free_text_invoice": {
+        "text_to_search": "Free text invoice"
+    },
+    "txb_search": {
+        "xpath":"//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"OverviewGridQuickFilter\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

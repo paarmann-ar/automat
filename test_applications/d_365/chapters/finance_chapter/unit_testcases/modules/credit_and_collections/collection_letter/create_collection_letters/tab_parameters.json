@@ -1,0 +1,29 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"FieldTab\") and contains(@id,\"Dialog\") and  1]"
+    },
+    "chk_invoice": {
+        "xpath": "//span[@id=\"Dialog_6_Fld3_1_toggle\"]"
+    },
+    "chk_credit_note": {
+        "xpath": "//span[@id=\"Dialog_6_Fld4_1_toggle\"]"
+    },
+    "chk_payment": {
+        "xpath": "//span[@id=\"Dialog_6_Fld5_1_toggle\"]"
+    },
+    "chk_interest": {
+        "xpath": "//span[@id=\"Dialog_6_Fld6_1_toggle\"]"
+    },
+    "txb_collectionc_letter": {
+        "xpath": "//input[@aria-controls=\"Dialog_6_Fld7_1_list\"]"
+    },
+    "dt_collection_letter_date": {
+        "xpath": "//input[@aria-controls=\"ui-datepicker-div\"]"
+    },
+    "cmb_use_posting_profile_from": {
+        "xpath": "//input[@aria-controls=\"Dialog_6_Fld9_1_list\"]"
+    },
+    "cmb_posting_profile": {
+        "xpath": "//input[@id=\"Dialog_6_Fld10_1_input\"]"
+    }
+}

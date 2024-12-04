@@ -1,0 +1,29 @@
+{
+    "frm_toolbars": {
+        "xpath": "//span[@data-dyn-controlname=\"CompanyName\"]"
+    },
+    "lbl_company_name": {
+        "xpath": "//span[contains(@id,\"CompanyName\")]"
+    },
+    "btn_home":{
+        "xpath": "//div[@id=\"home\"]"
+    },
+    "div_search_for_a_page": {
+        "xpath": "//div[@id=\"NavigationSearchBox\"]"
+    },
+    "lbx_search_for_a_page": {
+        "xpath": "//ul[@id=\"NavigationSearchBox_listbox\"]"
+    },
+    "txb_search_for_a_page": {
+        "xpath": "//input[@id=\"NavigationSearchBox_searchBoxInput_input\"]"
+    },
+    "btn_company_mandant": {
+        "xpath": "//button[@id=\"CompanyButton_button\"]"
+    },
+    "cmb_mandant_change": {
+        "xpath": "//input[@aria-label=\"Current company\"]"
+    },
+    "itm": {
+        "xpath": "//span[@title=\"?\"]"
+    }
+}

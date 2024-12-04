@@ -1,0 +1,23 @@
+{
+    "frm_free_text_invoice": {
+        "text_to_search": "Free text invoice"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_save": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedSaveButton\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "btn_new": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedNewButton\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedDeleteButton\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "btn_post": {
+        "xpath": "//button[contains(@id,\"custfreeinvoicelistpage\") and contains(@id,\"ButtonCustPostInvoiceJob\") and  1]"
+    },
+    "btn_Notes_and_attachments": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"ShowHeaderAttachments\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "frm_inbound_mq_messages": {
+        "text_to_search": "Incoming MQ-Messages"
+    },
+    "txb_search": {
+        "xpath":"//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"QuickFilterControl\") and contains(@id,\"saemqincomingdata\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

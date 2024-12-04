@@ -1,0 +1,46 @@
+{
+    "btn_tab":{
+        "xpath":"//button[contains(@id,\"VendBankAccounts\") and contains(@id,\"caption\") and contains(@id,\"TabGeneral\") and  1]"
+    },
+    "cmb_bank_groups": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"BankGroupID\") and contains(@aria-describedby,\"Identification\") and contains(@aria-describedby,\"VendBankAccounts\") and  1]"
+    },
+    "txb_vendor_account": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"VendAccount\") and contains(@aria-describedby,\"Identification\") and contains(@aria-describedby,\"VendBankAccounts\") and  1]"
+    },
+    "cmb_routing_number_type": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"BankCodeType\") and contains(@aria-controls,\"Identification\") and contains(@aria-controls,\"VendBankAccounts\") and  1]"
+    },
+    "cmb_DUNS": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"DunsNumber\") and contains(@aria-describedby,\"DirDunsNumber\") and contains(@aria-describedby,\"Identification\") and contains(@aria-describedby,\"VendBankAccounts\") and  1]"
+    },
+    "txb_DUNS_segment": {
+        "xpath": "//input[@name=\"Identification_VendDuns4Number\"]"
+    },
+    "txb_routing_number": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"RegistrationNum\") and contains(@id,\"Identification\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_bank_account_number": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"AccountNum\") and contains(@id,\"Identification\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_CIN": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"BankCIN\") and contains(@id,\"Identification\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_SWIFT_code": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SWIFTNo\") and contains(@id,\"Identification\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_IBAN": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"BankIBAN\") and contains(@id,\"Identification\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_QR_IBAN": {},
+    "txb_Bank_account_type": {},
+    "txb_Active_date": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"ActiveDate\") and contains(@id,\"Status\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_expiration_date": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"ExpiryDate\") and contains(@id,\"Status\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_status": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"currentBankAccountStatus\") and contains(@id,\"M\") and contains(@id,\"Status\") and contains(@id,\"VendBankAccounts\") and  1]"
+    }
+}

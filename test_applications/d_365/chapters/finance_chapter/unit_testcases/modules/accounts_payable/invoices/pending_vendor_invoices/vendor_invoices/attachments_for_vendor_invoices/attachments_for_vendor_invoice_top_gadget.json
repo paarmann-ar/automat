@@ -1,0 +1,20 @@
+{
+    "frm_attachments_for_vendor_invoices": {
+        "text_to_search": "Attachments for Vendor invoices"
+    },
+    "btn_back": {
+        "xpath": "//button[contains(@id,\"vendtablelistpage\") and contains(@id,\"SystemDefinedCloseButton\")]"
+    },
+    "btn_new": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"ctrlAdd\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"DeleteButton\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "btn_save": {
+        "xpath": "//button[contains(@id,\"SystemDefinedSaveButton\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "menu_note": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"Note\") and contains(@id,\"DocumentType\") and contains(@id,\"DocuView\") and  1]"
+    }
+}

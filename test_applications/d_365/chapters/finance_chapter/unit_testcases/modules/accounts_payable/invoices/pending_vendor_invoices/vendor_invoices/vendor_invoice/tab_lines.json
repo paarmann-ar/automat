@@ -1,0 +1,32 @@
+{
+    "btn_add_line": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"MenuItemButtonAdd\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "btn_remove_line": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"RemoveButton\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "cmb_procurement_category": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Name\") and contains(@id,\"ProcurementCategory\") and contains(@id,\"VendInvoiceInfoLine\") and contains(@id,\"ProcurementCategory\") and contains(@id,\"VendInvoiceInfoLine\") and  1]"
+    },
+    "txb_deferred": {
+        "xpath": "//input[@aria-label=\"Deferred\"]"
+    },
+    "txb_quantity": {
+        "xpath": "//input[@aria-label=\"Quantity\"]"
+    },
+    "cmb_unit_price": {
+        "xpath": "//input[@aria-label=\"Unit price\"]"
+    },
+    "txb_line_net_amount": {
+        "xpath": "//input[@aria-label=\"Line net amount\"]"
+    },
+    "cmb_cost_center": {
+        "xpath": "//input[@aria-label=\"Cost center\"]"
+    },
+    "cmb_cost_group": {
+        "xpath": "//input[@aria-label=\"Cost Group\"]"
+    },
+    "scr_cost_group": {
+        "xpath": "//*[@class=\"ScrollbarLayout_face ScrollbarLayout_faceHorizontal public_Scrollbar_face\"]"
+    }
+}

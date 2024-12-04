@@ -1,0 +1,8 @@
+{
+    "frm_match_found": {
+        "text_to_search": "Match found"
+    },
+    "btn_use_match": {
+        "xpath": "//button[contains(@id,\"DirPartyVerification\") and contains(@id,\"OKButton\") and  1]"
+    }
+}

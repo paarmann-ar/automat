@@ -1,0 +1,47 @@
+{
+    "frm_popup_edit_contact_information": {
+        "text_to_search": "Edit contact information"
+    },
+    "txb_description": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Description\") and contains(@id,\"Details\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "txb_type": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"Type\") and contains(@aria-controls,\"LogisticsElectronicAddress\") and contains(@aria-controls,\"LogisticsContactInfo\") and  1]"
+    },
+    "txb_international_calling_code": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"CountryRegionCode\") and contains(@id,\"LogisticsElectronicAddress\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "txb_phone": {
+        "xpath": "//input[@name=\"LogisticsElectronicAddress_Locator\"]"
+    },
+    "txb_extention": {
+        "xpath": "//input[@name=\"LogisticsElectronicAddress_LocatorExtension\"]"
+    },
+    "cmb_purpose": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Roles\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "cmb_purpose_type": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"SaePossibilityType\") and contains(@aria-controls,\"RDCParametersGroup\") and contains(@aria-controls,\"LogisticsContactInfo\") and  1]"
+    },
+    "txb_reachabilirty": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeReachability\") and contains(@id,\"RDCParametersGroup\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "chk_valid": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"SaeValid\") and contains(@id,\"RDCParametersGroup\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "chk_mobile": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IsMobilePhone\") and contains(@id,\"LogisticsElectronicAddress\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "chk_primary": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IsPrimary\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "chk_private": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IsPrivate\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "chk_marketing_opt_in": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"RetailMarketingOptIn\") and contains(@id,\"LogisticsElectronicAddress\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    },
+    "btn_ok": {
+        "xpath": "//button[contains(@id,\"OKButton\") and contains(@id,\"LogisticsContactInfo\") and  1]"
+    }
+}

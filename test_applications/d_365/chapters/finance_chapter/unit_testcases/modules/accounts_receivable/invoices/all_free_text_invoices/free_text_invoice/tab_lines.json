@@ -1,0 +1,41 @@
+{
+    "btn_add_line": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"NewInvoiceLine\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "btn_remove_line": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"DeleteInvoiceLine\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "txb_description": {
+        "xpath": "//input[@aria-label=\"Description\"]"
+    },
+    "cmb_main_account": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"segmentedEntryLookup\") and contains(@id,\"LedgerAccount\") and contains(@id,\"CustInvoiceLine\") and  1]"
+    },
+    "cmb_sales_tax_group": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"TaxGroup\") and contains(@id,\"CustInvoiceLine\") and  1]"
+    },
+    "cmb_item_sales_tax_group": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"TaxItemGroup\") and contains(@id,\"CustInvoiceLine\") and  1]"
+    },
+    "txb_deferred": {
+        "xpath": "//input[@aria-label=\"Deferred\"]"
+    },
+    "txb_quantity": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Quantity\") and contains(@id,\"CustInvoiceLine\") and  1]"
+    },
+    "txb_unit_price": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"UnitPrice\") and contains(@id,\"CustInvoiceLine\") and  1]"
+    },
+    "txb_amount": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"AmountCur\") and contains(@id,\"CustInvoiceLine\") and  1]"
+    }
+}
+
+
+
+
+
+
+ 
+
+ 

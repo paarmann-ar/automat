@@ -1,0 +1,11 @@
+{
+    "frm_invoice_journal": {
+        "text_to_search": "Invoice journal"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"QuickFilterControl\") and contains(@id,\"vendinvoiceinfolistpage\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

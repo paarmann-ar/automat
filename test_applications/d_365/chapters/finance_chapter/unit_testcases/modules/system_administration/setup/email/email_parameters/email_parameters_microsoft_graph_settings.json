@@ -1,0 +1,11 @@
+{
+    "frm_email_parameters_microsoft_graph_settings": {
+        "text_to_search": "Microsoft Graph settings"
+    },
+    "txb_application_id": {
+        "xpath": "//input[contains(@aria-labelledby,\"label\") and contains(@aria-labelledby,\"GraphAppId\") and contains(@aria-labelledby,\"sysemailparameters\") and  1]"
+    },
+    "txb_application_secret": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"GraphAppKey\") and contains(@id,\"sysemailparameters\") and  1]"
+    }
+}

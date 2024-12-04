@@ -1,0 +1,8 @@
+{
+    "frm_create_collection_letters_manager": {
+        "text_to_search": "Creation of collection letter"
+    },
+    "btn_ok": {
+        "xpath": "//button[@data-dyn-controlname=\"OkButton\"]"
+    }
+}

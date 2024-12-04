@@ -1,0 +1,14 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"General\"]"
+    },
+    "cmb_batch_email_provider": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"MailerNonInteractive\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "txb_attachment_size_limit": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"MaxSize\") and contains(@id,\"Attachment\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "txb_email_expiration_in_days": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"EmailExpiration\") and contains(@id,\"sysemailparameters\") and  1]"
+    }
+}

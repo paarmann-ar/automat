@@ -1,0 +1,11 @@
+{
+    "frm_batch_email_sending_status": {
+        "text_to_search": "Batch email sending status"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"QuickFilterControl\") and contains(@id,\"SysOutgoingEmailTable\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

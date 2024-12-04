@@ -1,0 +1,47 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"Free text invoice header\"]"
+    },
+    "cmb_customer_account": {
+        "xpath": "//input[@name=\"CVHeader_OrderAccount\"]"
+    },
+    "txb_name": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"OrderAccountName\") and contains(@id,\"CVHeader\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_invoice_account": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"InvoiceAccount\") and contains(@aria-describedby,\"CVHeader\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "chk_one_time_customer": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"OneTimeCustomer\") and contains(@id,\"CVHeader\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "txb_address": {
+        "xpath": "//textarea[@autocomplete=\"off\"]"
+    },
+    "txb_invoice_date": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"InvoiceDate\") and contains(@id,\"CVHeader\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "txb_invoice_Due": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"DueDateCV\") and contains(@id,\"CustInvoiceTable\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_currency": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"CurrencyCode\") and contains(@aria-describedby,\"CVHeader\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_terms_of_payment": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymentCV\") and contains(@aria-describedby,\"GroupPayment\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_method_of_payment": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymModeCV\") and contains(@aria-describedby,\"GroupPayment\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_payment_specification": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymSpecCV\") and contains(@aria-describedby,\"GroupPayment\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_bank_account": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"CustBankAccountIdCV\") and contains(@aria-describedby,\"GroupPayment\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_payment_schedule": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PaymentSchedCV\") and contains(@aria-describedby,\"GroupPayment\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_cash_discount": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"CashDiscCodeCV\") and contains(@aria-describedby,\"GroupPayment\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    }
+}

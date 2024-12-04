@@ -1,0 +1,11 @@
+{
+    "frm_pending_vendor_invoices": {
+        "text_to_search": "Pending vendor invoices"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"QuickFilterControl\") and contains(@id,\"vendinvoiceinfolistpage\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

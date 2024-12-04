@@ -1,0 +1,17 @@
+{
+    "frm_email_parameters": {
+        "text_to_search": "Email parameters"
+    },
+    "btn_configuration": {
+        "xpath": "//li[contains(@id,\"header\") and contains(@id,\"MailerTabPage\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "btn_smtp_setting": {
+        "xpath": "//li[contains(@id,\"header\") and contains(@id,\"SMTPPage\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "btn_microsoft_graph_settings": {
+        "xpath": "//li[contains(@id,\"header\") and contains(@id,\"GraphPage\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "btn_test_email": {
+        "xpath": "//li[contains(@id,\"header\") and contains(@id,\"TestPage\") and contains(@id,\"sysemailparameters\") and  1]"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "frm_setup_account_mapping": {
+        "text_to_search": "Set up account mapping"
+    },
+    "btn_sidebar":{
+        "xpath":"//li[contains(@id,\"InterCompanyTradingRelationSetupCustomer\") and contains(@id,\"SaeTabPartnerDetails_header\") and  1]"
+    },
+    "btn_new": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaePartnerDetailsNewButton\") and contains(@id,\"InterCompanyTradingRelationSetupCustomer\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaePartnerDetailsDeleteRecord\") and contains(@id,\"InterCompanyTradingRelationSetupCustomer\") and  1]"
+    },
+    "txb_customer_company":{
+        "xpath": "//input[contains(@id,\"SaeInterCompanyTradingPartnerDetails_CustomerDataAreaId\") and contains(@id,\"input\") and  1]"
+    },
+    "txb_customer_account":{
+        "xpath": "//input[contains(@id,\"SaeInterCompanyTradingPartnerDetails_RevenueAccount\") and contains(@id,\"input\") and  1]"
+    },
+    "cmb_revenue_account":{
+        "xpath": "//input[contains(@id,\"SaeInterCompanyTradingPartnerDetails_CustomerAccount\") and contains(@id,\"input\") and  1]"
+    },
+    "cmb_vendor_company":{
+        "xpath": "//input[contains(@id,\"SaeInterCompanyTradingPartnerDetails_VendorDataAreaId\") and contains(@id,\"input\") and  1]"
+    },
+    "cmb_vendor_account":{
+        "xpath": "//input[contains(@id,\"SaeInterCompanyTradingPartnerDetails_VendorAccount\") and contains(@id,\"input\") and  1]"
+    },
+    "cmb_cost_account":{
+        "xpath": "//input[contains(@id,\"SaeInterCompanyTradingPartnerDetails_CostAccount\") and contains(@id,\"input\") and  1]"
+    }
+}

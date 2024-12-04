@@ -1,0 +1,47 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"Line details\"]"
+    },
+    "btn_setup": {
+        "xpath": "//*[contains(@id,\"VendEditInvoice\") and contains(@id, \"AdditionalLineDetails_header\")]"
+    },
+    "cmb_item_sales_tax_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"TaxItemGroup\") and contains(@aria-describedby,\"SalesTax\") and contains(@aria-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "cmb_item_number": {
+        "xpath": "//input[@name=\"PurchParmLine_ItemId1\"]"
+    },
+    "txb_item_name": {
+        "xpath": "//input[contains(@data-dyn-qtip-describedby,\"helptext\") and contains(@data-dyn-qtip-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "cmb_procurement_category": {
+        "xpath": "//input[@name=\"OrderLine_SalesCategory_Name\"]"
+    },
+    "txb_text": {
+        "xpath": "//textarea[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Name\") and contains(@aria-describedby,\"OrderLine\") and contains(@aria-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "txb_quantity": {
+        "xpath": "//input[contains(@id,\"VendEditInvoice\") and contains(@id, \"PurchParmLine_ReceiveNow\")]"
+    },
+    "cmb_unit": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PurchUnit\") and contains(@aria-describedby,\"InvoiceLineDetails\") and contains(@aria-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "txb_unit_price": {
+        "xpath": "//input[contains(@aria-labelledby,\"label\") and contains(@aria-labelledby,\"PurchPrice\") and contains(@aria-labelledby,\"PurchParmLine\") and contains(@aria-labelledby,\"VendEditInvoice\") and  1]"
+    },
+    "txb_adjusted_unit_price": {
+        "xpath": "//input[contains(@data-dyn-qtip-describedby,\"helptext\") and contains(@data-dyn-qtip-describedby,\"PDSCalculatedUnitPrice\") and contains(@data-dyn-qtip-describedby,\"PurchParmLine\") and contains(@data-dyn-qtip-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "txb_price_unit": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"PriceUnit\") and contains(@id,\"PurchParmLine\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_line_net_amount": {
+        "xpath": "//input[contains(@data-dyn-qtip-describedby,\"helptext\") and contains(@data-dyn-qtip-describedby,\"PurchParmLine\") and contains(@data-dyn-qtip-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "cmb_purchase_order": {
+        "xpath": "//input[@name=\"PurchParmLine_OrigPurchId1\"]"
+    },
+    "chk_close_for_receipt": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"PurchParmLine\") and contains(@id,\"VendEditInvoice\") and  1]"
+    }
+}

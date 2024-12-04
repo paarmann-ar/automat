@@ -1,0 +1,14 @@
+{
+    "frm_email_history": {
+        "text_to_search": "Email history"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_edit": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"rdccustvendemailrelationoverview\") and  1]"
+    },
+    "btn_email_detail": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SysOutgoingEmailTable\") and contains(@id,\"RdcCustVendEmailRelation\") and  1]"
+    }
+}

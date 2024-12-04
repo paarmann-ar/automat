@@ -1,0 +1,5 @@
+{
+    "btn_select": {
+        "xpath": "//span[contains(@for,\"OK\") and contains(@for,\"SysLookupMultiSelectGrid\") and  1]"
+    }
+}

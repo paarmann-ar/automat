@@ -1,0 +1,11 @@
+{
+    "frm_review_and_process_collection_letters_standard_view": {
+        "text_to_search": "Review and process collection letters"
+    },
+    "txb_search": {
+        "xpath": "//input[@name=\"CollectionLetterOverViewQuickFilter_Input\"]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

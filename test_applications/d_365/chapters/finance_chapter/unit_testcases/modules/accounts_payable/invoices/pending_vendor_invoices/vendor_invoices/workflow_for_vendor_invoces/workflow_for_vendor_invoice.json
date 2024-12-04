@@ -1,0 +1,21 @@
+{
+    "frm_workflow_for_vendor_invoices": {
+        "text_to_search": "Workflow"
+    },
+    "btn_startworkflow": {
+        "xpath": "//button[contains(@id,\"PrimaryButton\") and contains(@id,\"AWPWorkflowInteraction\") and  1]"
+    },
+    "btn_Cancel": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"Cancel\") and contains(@id,\"AWPWorkflowInteraction\") and  1]"
+    },
+    "txb_name": {},
+    "txb_pervious_comment": {
+        "xpath": "//textarea[contains(@id,\"AWPWorkflowInteraction\") and contains(@id,\"PreviousComment\") and contains(@id,\"textArea\") and  1]"
+    },
+    "txb_comment": {
+        "xpath": "//textarea[contains(@id,\"AWPWorkflowInteraction\") and contains(@id,\"_Comment\") and contains(@id,\"textArea\") and  1]"
+    },
+    "btn_approve": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"PrimaryButton\") and contains(@id,\"AWPWorkflowInteraction\") and  1]"
+    }
+}

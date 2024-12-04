@@ -1,0 +1,14 @@
+{
+    "frm_ledger_calendars_standard_view": {
+        "text_to_search": "Ledger calendars"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"ledgercalendars\") and contains(@id,\"Input\") and contains(@id,\"NavigationQuickfilter\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    },
+    "cmb_period_status": {
+        "xpath": "//input[contains(@id, \"edgerFiscalCalendarPeriod_Status\")]"
+    }
+}

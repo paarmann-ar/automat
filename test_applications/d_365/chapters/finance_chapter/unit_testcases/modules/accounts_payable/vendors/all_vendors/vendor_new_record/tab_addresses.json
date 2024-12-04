@@ -1,0 +1,15 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@type=\"button\" and contains(@aria-label,\"Addresses\") ]"
+    },
+    "btn_add": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"NewAddress\") and contains(@id,\"LogisticsPostalAddressGridFormPart\") and  1]"
+    },
+    "btn_map": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"MapButton\") and contains(@id,\"LogisticsPostalAddressGridFormPart\") and  1]"
+    },
+    "cmb_more_options": {
+        "xpath": "//button[contains(@id,\"button\") and contains(@id,\"MoreOptions\") and contains(@id,\"LogisticsPostalAddressGridFormPart\") and  1]"
+    }
+
+}

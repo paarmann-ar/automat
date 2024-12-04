@@ -1,0 +1,5 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"Email throttling\"]"
+    }
+}

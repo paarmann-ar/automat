@@ -1,0 +1,17 @@
+{
+    "frm_open_dialog": {
+        "title": "Open"
+    },
+    "btn_folder_address": {
+        "title": "Address band toolbar"
+    },
+    "txb_folder_address": {
+        "title": "Files of &type:Edit"
+    },
+    "txb_file_name": {
+        "title": "FileNameEdit"
+    },
+    "btn_open": {
+        "title": "Open"
+    }
+}

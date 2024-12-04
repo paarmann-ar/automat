@@ -1,0 +1,23 @@
+{
+    "frm_vendor_bank_accounts": {
+        "text_to_search": "Vendor bank accounts"
+    },
+    "btn_back": {
+        "xpath":"//button[@name=\"SystemDefinedCloseButton\"]"
+    },
+    "btn_save": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedSaveButton\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "btn_new": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedNewButton\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedDeleteButton\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_bank_account": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"AccountID\") and contains(@id,\"DetailsHeader\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_name": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Name\") and contains(@id,\"DetailsHeader\") and contains(@id,\"VendBankAccounts\") and  1]"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "frm_cmb": {
+        "xpath": "//div[@class=\"group_content fill-width layout-container layout-horizontal layout-right layout-horizontal-bottomalign\"]"
+    },
+    "txb_search_text": {
+        "xpath": "//*[contains(@id, \"DirPartyLook\") and contains(@id, \"QuickFilterControl\") and contains(@id, \"Input_input\")]"
+    },
+    "btn_select": {
+        "xpath": "//*[contains(@id,\"DirPartyLookup\") and contains(@id, \"OkButton\")]"
+    },
+    "btn_cancel": {
+        "xpath": "//*[contains(@id,\"DirPartyLookup\") and contains(@id, \"CancelButton\")]"
+    }
+}

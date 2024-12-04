@@ -1,0 +1,35 @@
+{
+    "btn_tab":{
+        "xpath":"//button[contains(@id,\"caption\") and contains(@id,\"TabCommunication\") and  1]"
+    },
+    "txb_telephone": {
+        "xpath": "//input[contains(@data-dyn-qtip-describedby,\"helptext\") and contains(@data-dyn-qtip-describedby,\"Phone\") and contains(@data-dyn-qtip-describedby,\"VendBankAccounts\") and  1]"
+    },
+    "txb_extension": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"PhoneLocal\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_mobile_phone": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"CellularPhone\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_pager": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Pager\") and contains(@id,\"ContactInfo\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_fax": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"TeleFax\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_email": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Email\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_sms": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SMS\") and contains(@id,\"ContactInfo\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_internet_address": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"URL\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_telex_number": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Telex\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_name_of_person": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"ContactPerson\") and contains(@id,\"VendBankAccounts\") and  1]"
+    }
+}

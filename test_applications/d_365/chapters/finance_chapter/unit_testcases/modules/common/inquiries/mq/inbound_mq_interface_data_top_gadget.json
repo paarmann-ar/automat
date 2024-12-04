@@ -1,0 +1,12 @@
+{
+    "frm_inbound_mq_interface_data": {
+        "text_to_search": "Incoming MQ-Data"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_edit": {
+        "xpath":"//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"saemqincomingdata\") and  1]"
+    }
+    
+}

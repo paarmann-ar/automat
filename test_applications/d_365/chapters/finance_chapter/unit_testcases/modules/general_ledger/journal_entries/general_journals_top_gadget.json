@@ -1,0 +1,32 @@
+{
+    "frm_general_journals": {
+        "text_to_search": "General journals"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_save": {
+        "xpath": "//button[contains(@id,\"SystemDefinedSaveButton\") and  1]"
+    },
+    "btn_new": {
+        "xpath": "//button[contains(@id,\"SystemDefinedNewButton\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//button[contains(@id,\"ledgerjournaltable\") and contains(@id,\"SystemDefinedDeleteButton\") and  1]"
+    },
+    "btn_import_journal": {
+        "xpath": "//span[contains(@id,\"Manual\") and contains(@id,\"SaeJournalImport\") and  1]"
+    },
+    "btn_import_excel": {
+        "xpath": "//span[@id=\"ledgerjournaltable3_1_SaeDMFRunImport_LedgerJournal_label\"]"
+    },
+    "ctm_validation":{
+        "xpath": "//*[contains(@id, \"Validation_list\") and contains(@id, \"ledgerjournaltable\") and 1 ]"
+    },
+    "btn_validate": {
+        "xpath": "//span[contains(@id,\"ledgerjournaltable\") and contains(@id, \"Validation_label\") and 1]"
+    },
+    "btn_validate_validate": {
+        "xpath": "//button[contains(@id,\"ledgerjournaltable\") and contains(@id, \"CheckJournal_label\") and 1]"
+    }
+}

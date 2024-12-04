@@ -1,0 +1,8 @@
+{
+    "frm_sae_vendor_open_transactions_report_manager": {
+        "text_to_search": "Sae Vendor open transactions report"
+    },
+    "btn_ok": {
+        "xpath": "//*[contains(@id,\"SysOperationTemplateForm\") and contains(@id,\"CommandButton_label\")]"
+    }
+}

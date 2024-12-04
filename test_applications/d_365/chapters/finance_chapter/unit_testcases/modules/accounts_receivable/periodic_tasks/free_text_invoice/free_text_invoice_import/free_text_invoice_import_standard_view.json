@@ -1,0 +1,11 @@
+{
+    "frm_free_text_invoice_import": {
+        "text_to_search": "Free text invoice import"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

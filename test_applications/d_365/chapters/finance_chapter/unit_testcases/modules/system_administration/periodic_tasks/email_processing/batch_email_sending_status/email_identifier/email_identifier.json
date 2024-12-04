@@ -1,0 +1,8 @@
+{
+    "frm_email_identifier": {
+        "text_to_search": "Email identifier :"
+    },
+    "btn_close": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"CloseButton\") and contains(@id,\"SysOutgoingEmailMessage\") and  1]"
+    }
+}

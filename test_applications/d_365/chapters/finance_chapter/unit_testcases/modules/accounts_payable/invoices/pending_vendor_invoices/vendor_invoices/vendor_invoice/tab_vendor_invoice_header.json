@@ -1,0 +1,83 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"Vendor invoice header\"]"
+    },
+    "cmb_company": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"CompanyLookup\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "cmb_invoice_account": {
+        "xpath": "//input[contains(@aria-describedby,\"InvoiceAccount\") and contains(@aria-describedby,\"PurchParmTable\") and contains(@aria-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "txb_purchese_number": {
+        "xpath": "//input[contains(@name,\"VendInvoiceInfoTable_PurchName\") and  1]"
+    },
+    "txb_number": {
+        "xpath": "//input[contains(@aria-labelledby,\"label\") and contains(@aria-labelledby,\"Num\") and  1]"
+    },
+    "txb_invoice_description": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"InvoiceDetails\") and  1]"
+    },
+    "txb_purchase_order": {
+        "xpath": "//input[contains(@aria-describedby,\"PurchId\") and  1]"
+    },
+    "txb_purchase_receipt": {
+        "xpath": "//input[contains(@data-dyn-qtip-describedby,\"helptext\") and contains(@data-dyn-qtip-describedby,\"PurchParmTable\") and contains(@data-dyn-qtip-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "cmb_purchase_agreement": {
+        "xpath": "//input[contains(@aria-describedby,\"PurchNumberSequence\") and contains(@aria-describedby,\"PurchAggHeader\") and contains(@aria-describedby,\"PurchParmTable\") and contains(@aria-describedby,\"VendEditInvoice\") and  1]"
+    },
+    "txb_invoice_received_date": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"ReceivedDate\") and contains(@id,\"VendInvoiceInfoTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_invoice_date": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"DocumentDate\") and contains(@id,\"PurchParmTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_date_of_vendor_VAT_register": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"VendorVATDate\") and contains(@id,\"VendInvoiceInfoTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_posting_date": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"TransDate\") and contains(@id,\"PurchParmTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_due_date": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"FixedDueDate\") and contains(@id,\"PurchParmTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "chk_on_hold": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"Hold\") and contains(@id,\"PurchParmTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "chk_credit_correction": {
+        "xpath": "//span[contains(@id,\"VendEditInvoice\") and contains(@id, \"CreditCorrection_toggle\")]"
+    },
+    "chk_recharge": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"SaeRecharge\") and contains(@id,\"VendInvoiceInfoTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_archiva_protokol": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"RdcSDICodeIT\") and contains(@id,\"VendInvoiceInfoTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "chk_confidential": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"SaeConfidential\") and contains(@id,\"VendInvoiceInfoTable\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_header_budget_check_results": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"BudgetCheckResult\") and contains(@aria-controls,\"VendInvoiceInfoTable\") and contains(@aria-controls,\"VendEditInvoice\") and  1]"
+    },
+    "txb_plafond_date": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"IT\") and contains(@id,\"PlafondDate\") and contains(@id,\"IT\") and contains(@id,\"Plafond\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "chk_imported": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"AVIPImported\") and contains(@id,\"AVIPImported\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_imported_gross_amount": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"AVIPImportedGrossAmount\") and contains(@id,\"AVIPImported\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_imported_net_amount": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"AVIPImportedNetAmount\") and contains(@id,\"AVIPImported\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_imported_tax_amount": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"AVIPImportedTaxAmount\") and contains(@id,\"AVIPImported\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "txb_invoice_amount": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeInvoiceAmount\") and  1]"
+    },
+    "txb_rest": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeRestInvoiceGrossAmount\") and contains(@id,\"VendEditInvoice\") and  1]"
+    }
+}

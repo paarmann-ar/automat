@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "RDC_chrome_elements_detector",
+  "description": "Extract all elements for MD_365. mohammad paarmann ara on 10-04-2024",
+  "version": "1.0",
+  "author": {
+    "email": "paarmann-ara@hotmail.com"
+  },
+  "icons": {
+    "128": "/app/assets/start.png"
+  },
+  "action": {
+    "default_title": "Click to fetching elements",
+    "default_icon": "/app/assets/start.png"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "contextMenus",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": 
+      "/app/core/service_worker/service_worker_controller.js"
+    ,
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "/app/core/content/content_controller.js",
+        "/app/core/content/content_parser.js",
+        "/app/core/content/config.js"
+
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

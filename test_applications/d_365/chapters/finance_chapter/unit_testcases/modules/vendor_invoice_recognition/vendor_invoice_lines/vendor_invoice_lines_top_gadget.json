@@ -1,0 +1,17 @@
+{
+    "frm_pending_invoice_lines": {
+        "text_to_search": "Pending Invoice Lines"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_edit": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"saevendinvoicependinginvoicefinancialdimension\") and  1]"
+    },
+    "btn_new": {},
+    "btn_delete": {},
+    "btn_save": {},
+    "btn_workflow": {
+        "xpath": "//*[contains(@id,\"saevendinvoicependinginvoicefinancialdimension\") and contains(@id,\"AWPWorkflowInteractionApprove\")]"
+    }
+}

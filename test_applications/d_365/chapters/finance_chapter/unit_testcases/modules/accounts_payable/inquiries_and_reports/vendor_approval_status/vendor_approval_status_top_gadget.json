@@ -1,0 +1,35 @@
+{
+    "frm_vendor_approval_status": {
+        "text_to_search": "Vendor Approval Status"
+    },
+    "btn_back": {
+        "xpath": "//button[contains(@id,\"vendtablelistpage\") and contains(@id,\"SystemDefinedCloseButton\")]"
+    },
+    "btn_edit": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_new": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedNewButton\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedDeleteButton\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_save": {
+        "xpath": "//span[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"SystemDefinedSaveButton\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "btn_first_approval": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeVendReleaseProcessFirst\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_second_approval": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeVendReleaseProcessSecond\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_vendor_approval_history": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeVendReleaseStatusHistory\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_options":{
+        "xpath": "//button[contains(@id,\"saevendreleasestatustable\") and contains(@id,\"SystemDefinedOptions_button\") and  1]"
+    },
+    "btn_create_a_custom_alert":{
+        "xpath": "//span[contains(@id,\"saevendreleasestatustable\") and contains(@id,\"EventAlertRuleCreate_label\") and  1]"
+    }
+}

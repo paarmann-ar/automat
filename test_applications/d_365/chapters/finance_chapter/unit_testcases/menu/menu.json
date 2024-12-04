@@ -1,0 +1,20 @@
+{
+    "mnu_side_panel_main": {
+        "id": "mainpane"
+    },
+    "mnu_side_panel_home": {
+        "id": "home"
+    },
+    "mnu_side_panel_recent": {
+        "id": "navPaneRecentsID"
+    },
+    "mnu_side_panel_favorait": {
+        "id": "navPaneFavoritesID"
+    },
+    "mnu_side_panel_workspace": {
+        "id": "navPaneWorkSpaceGroupID"
+    },
+    "mnu_side_panel_module": {
+        "id": "navPaneModuleID"
+    }
+}

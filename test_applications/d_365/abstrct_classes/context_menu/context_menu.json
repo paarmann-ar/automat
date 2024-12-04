@@ -1,0 +1,8 @@
+{
+    "ctm_popup": {
+        "xpath": "//div[@id=\"dynContextmenu\"]"
+    },
+    "ctm_popup_view_details": {
+        "xpath": "//span[contains(@id,\"ContextMenu\") and contains(text(),\"View details\")]"
+    }
+}

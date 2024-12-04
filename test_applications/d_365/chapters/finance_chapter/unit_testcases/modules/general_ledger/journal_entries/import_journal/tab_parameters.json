@@ -1,0 +1,14 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"Parameters\"]"
+    },
+    "chk_post_after_import": {
+        "xpath": "//span[@id=\"Dialog_4_Fld1_1_toggle\"]"
+    },
+    "btn_browse": {
+        "xpath": "//button[contains(@id,\"FileUploadBrowseButton\") and contains(@id,\"Dialog\") and  1]"
+    },
+    "txb_date": {
+        "xpath": "//input[@name=\"Fld1_1\"]"
+    }
+}

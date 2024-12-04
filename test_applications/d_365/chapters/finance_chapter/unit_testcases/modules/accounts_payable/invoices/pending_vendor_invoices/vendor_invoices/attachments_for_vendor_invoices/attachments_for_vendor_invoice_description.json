@@ -1,0 +1,14 @@
+{
+    "frm_attachments_for_vendor_invoices": {
+        "text_to_search": "Attachments for Vendor invoices"
+    },
+    "txb_description": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Name\") and contains(@id,\"DocuRef\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "txb_type": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Type\") and contains(@aria-describedby,\"DocuRef\") and contains(@aria-describedby,\"DocuView\") and  1]"
+    },
+    "chk_attached": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IsValueAttached\") and contains(@id,\"DocuView\") and  1]"
+    }
+}

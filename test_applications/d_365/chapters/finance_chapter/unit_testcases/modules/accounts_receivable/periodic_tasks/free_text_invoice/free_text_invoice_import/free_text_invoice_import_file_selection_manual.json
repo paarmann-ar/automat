@@ -1,0 +1,11 @@
+{
+    "frm_free_text_invoice_import_file_selection_manual": {
+        "text_to_search": "Free text invoice import file selection manual"
+    },
+    "btn_browse": {
+        "xpath":"//button[contains(@id,\"FileUploadBrowseButton\") and contains(@id,\"Dialog\") and  1]"
+    },
+    "btn_ok": {
+        "xpath": "//button[contains(@id,\"Dialog\") and contains(@id,\"OkButton\") and  1]"
+    }
+}

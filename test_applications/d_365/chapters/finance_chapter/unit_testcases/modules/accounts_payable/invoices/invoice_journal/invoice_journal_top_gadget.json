@@ -1,0 +1,11 @@
+{
+    "frm_invoice_journal": {
+        "text_to_search": "Invoice journal"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_save": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedSaveButton\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    }
+}

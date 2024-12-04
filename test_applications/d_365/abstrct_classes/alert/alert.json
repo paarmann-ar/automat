@@ -1,0 +1,5 @@
+{
+    "alert_please_wait_processing_your_request": {
+        "xpath":  "//div[@id=\"AriaAlertArea\" and contains(text(),\"Please wait.\") and contains(text(), \"re processing your request.\")]"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "tipbox_": {
+        "xpath": "//span[contains(text(),\"Got it!\")]"
+    },
+    "btn_got_it": {
+        "xpath": "//span[contains(text(),\"Got it!\")]"
+    }
+}

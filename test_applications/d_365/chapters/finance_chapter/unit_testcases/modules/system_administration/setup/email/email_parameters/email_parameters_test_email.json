@@ -1,0 +1,11 @@
+{
+    "frm_email_parameters_test_email": {
+        "text_to_search": "Test email"
+    },
+    "cmb_email_provider": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"TestMailer\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "txb_send_to": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"TestSendTo\") and contains(@id,\"sysemailparameters\") and  1]"
+    }
+}

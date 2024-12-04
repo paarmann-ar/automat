@@ -1,0 +1,26 @@
+{
+    "frm_free_text_invoice_import": {
+        "text_to_search": "Free text invoice import"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_edit": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"saefreetextinvoiceimporttable\") and  1]"
+    },
+    "btn_new": {
+        "xpath": "//button[@data-dyn-controlname=\"SystemDefinedNewButton\"]"
+    },
+    "btn_delete": {
+        "xpath": "//button[@data-dyn-controlname=\"SystemDefinedDeleteButton\"]"
+    },
+    "btn_save": {
+        "xpath": "//button[@data-dyn-controlname=\"SystemDefinedSaveButton\"]"
+    },
+    "btn_import_invoice": {
+        "xpath": "//button[@data-dyn-controlname=\"SaeFreeTextInvoiceImport\"]"
+    },
+    "btn_post_invoice": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeFreeTextInvoiceCreate\") and contains(@id,\"saefreetextinvoiceimporttable\") and  1]"
+    }
+}

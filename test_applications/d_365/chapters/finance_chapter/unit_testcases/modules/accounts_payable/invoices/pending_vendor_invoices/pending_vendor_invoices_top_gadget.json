@@ -1,0 +1,32 @@
+{
+    "frm_pending_vendor_invoices": {
+        "text_to_search": "Pending vendor invoices"
+    },
+    "btn_back": {
+        "xpath": "//button[contains(@id,\"vendtablelistpage\") and contains(@id,\"SystemDefinedCloseButton\")]"
+    },
+    "btn_edit": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_new": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"NewInvoice\") and contains(@id,\"vendinvoiceinfolistpage\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"Delete\") and contains(@id,\"vendinvoiceinfolistpage\") and  1]"
+    },
+    "btn_save": {
+        "xpath": "//button[contains(@id, \"SystemDefinedSaveButton\")]"
+    },
+    "btn_first_approval": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeVendReleaseProcessFirst\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_second_approval": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeVendReleaseProcessSecond\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_vendor_approval_history": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeVendReleaseStatusHistory\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_post": {
+        "xpath": "//button[@data-dyn-controlname=\"Post\"]"
+    }
+}

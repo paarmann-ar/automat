@@ -1,0 +1,24 @@
+{
+    "frm_vendor_invoice": {
+        "text_to_search": "Vendor invoice"
+    },
+    "btn_back": {
+        "xpath": "//button[contains(@id,\"vendtablelistpage\") and contains(@id,\"SystemDefinedCloseButton\")]"
+    },
+    "btn_new": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedNewButton\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedDeleteButton\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "btn_save": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedSaveButton\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "btn_attachments": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"HeaderAttachments\") and contains(@id,\"VendEditInvoice\") and  1]"
+    },
+    "btn_workflow": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"AVIPWorkflowInteraction\") and contains(@id,\"VendEditInvoice\") and  1]"
+
+    }
+}

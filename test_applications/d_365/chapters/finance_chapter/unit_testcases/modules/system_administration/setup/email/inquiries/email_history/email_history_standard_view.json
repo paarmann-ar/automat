@@ -1,0 +1,12 @@
+{
+    "frm_email_history": {
+        "text_to_search": "Email history"
+    },
+    "txb_search": {
+        "xpath":"//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"QuickFilter\") and contains(@id,\"rdccustvendemailrelationoverview\") and  1]"
+    
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

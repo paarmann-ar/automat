@@ -1,0 +1,23 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"Run in the background\"]"
+    },
+    "chk_batch_processing": {
+        "xpath": "//span[@id=\"Dialog_4_Fld1_1_toggle\"]"
+    },
+    "txb_task_description": {
+        "xpath": "//input[@class=\"textbox field displayoption viewMarker alignmentAuto\"]"
+    },
+    "cmb_batch_group": {
+        "xpath": "//input[@name=\"Fld3_1\"]"
+    },
+    "chk_private": {
+        "xpath": "//span[@id=\"Dialog_4_Fld4_1_toggle\"]"
+    },
+    "chk_critical_job": {
+        "xpath": "//span[@id=\"Dialog_4_Fld5_1_toggle\"]"
+    },
+    "cmb_monitoring_category": {
+        "xpath": "//input[@class=\"textbox field displayoption viewMarker\"]"
+    }
+}

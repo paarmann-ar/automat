@@ -1,0 +1,26 @@
+{
+    "frm_create_alert_rule": {
+        "text_to_search": "Create alert rule"
+    },
+    "cmb_table_name": {
+        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"alertTable\")]"
+    },
+    "cmb_event": {
+        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"X_string_input\")]"
+    },
+    "txb_subject": {
+        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"Subject\")]"
+    },
+    "txb_message": {
+        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"Message_textArea\")]"
+    },
+    "txb_email_recipients": {
+        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"EmailRecipients\")]"
+    },
+    "chk_send_email": {
+        "xpath": "//span[contains(@id,\"EventCreateRule\") and contains(@id,\"SendAlertEmail_toggle\")]"
+    },
+    "btn_ok": {
+        "xpath": "//button[contains(@id,\"EventCreateRule\") and contains(@id,\"CommandButtonOK\")]"
+    }
+}

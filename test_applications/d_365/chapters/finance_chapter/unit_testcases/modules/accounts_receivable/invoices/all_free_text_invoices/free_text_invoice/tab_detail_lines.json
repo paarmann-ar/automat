@@ -1,0 +1,35 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label= \"Line details\" ]"
+    },
+    "btn_general": {
+        "xpath": "//li[contains(@id,\"custfreeinvoicelistpage\") and contains(@id,\"CVInvoiceDetailsGeneralTabPage_header\") and  1]"
+    },
+    "txb_invoice_text": {
+        "xpath": "//textarea[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"InvoiceTxt\") and contains(@aria-describedby,\"CustInvoiceLine\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "txb_fixed_asset_number": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"AssetId\") and contains(@aria-describedby,\"FixedAssets\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_book": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"AssetBookId\") and contains(@aria-describedby,\"FixedAssets\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "txb_customer_reference": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeCustRef\") and contains(@id,\"CustInvoiceLine\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "btn_intercompany": {
+        "xpath": "//li[contains(@id,\"SaeVCInvoiceDetailsIntercompany\") and  1]"
+    },
+    "cmb_intercompany_main_account": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeICMainAccount\") and contains(@id,\"SaeIntercompany\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_intercompany_sales_tax_group": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeICTaxGroup\") and contains(@id,\"SaeIntercompany\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "cmb_intercompany_item_sales_tax_group": {
+        "xpath": "//label[contains(@id,\"label\") and contains(@id,\"SaeICTaxGroup\") and contains(@id,\"SaeIntercompany\") and contains(@id,\"custfreeinvoicelistpage\") and  1]"
+    },
+    "txb_intercompany_invoice_text": {
+        "xpath": "//textarea[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"SaeICInvoiceTxt\") and contains(@aria-describedby,\"SaeIntercompany\") and contains(@aria-describedby,\"custfreeinvoicelistpage\") and  1]"
+    }
+}

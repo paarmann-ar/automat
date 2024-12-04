@@ -1,0 +1,38 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabRetail\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_sales_price_rounding": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"salesPriceRounding\") and contains(@aria-controls,\"Rounding\") and contains(@aria-controls,\"vendtablelistpage\") and  1]"
+    },
+    "chk_Fixed_rate": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"FixedExchRate\") and contains(@id,\"ExchangeRate\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_fixed_exchange_rate": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"ExchRate\") and contains(@id,\"ExchangeRate\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_vendor_type": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"vendType\") and contains(@aria-controls,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_hierarchy": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Name\") and contains(@aria-describedby,\"VendorProductHierarchyId\") and contains(@aria-describedby,\"VendorProductHierarchy\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "chk_create_bar_code_if_needed": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"createBarcodeIfNeeded\") and contains(@id,\"Barcode\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_bar_code_number_sequence": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"barcodeNumberSeq\") and contains(@aria-describedby,\"Barcode\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_service_category": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"serviceCategory\") and contains(@aria-describedby,\"Replenishment\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_style_prefix": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"styleIdPrefix\") and contains(@id,\"Variants\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_size_prefix": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"sizeIdPrefix\") and contains(@id,\"Variants\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_color_prefix": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"colorIdPrefix\") and contains(@id,\"Variants\") and contains(@id,\"vendtablelistpage\") and  1]"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "cmb_type_1_txb_search_text": {
+        "xpath": "//*[contains(@id, \"DirPartyLook\") and contains(@id, \"QuickFilterControl\") and contains(@id, \"Input_input\")]"
+    },
+    "cmb_type_1_btn_select": {
+        "xpath": "//*[contains(@id,\"DirPartyLookup\") and contains(@id, \"OkButton\")]"
+    },
+    "cmb_type_2_btn_select":{
+        "xpath":"//span[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"OK\") and contains(@aria-describedby,\"SysLookupMultiSelectGrid\") and  1]"
+    },
+    "cmb_type_3_btn_select":{
+        "xpath":"//span[contains(@for,\"OK\") and contains(@for,\"SysLookupMultiSelectGrid\") and  1]"
+    }
+}

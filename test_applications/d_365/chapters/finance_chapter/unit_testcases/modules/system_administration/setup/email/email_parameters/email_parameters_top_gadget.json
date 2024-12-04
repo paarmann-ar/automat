@@ -1,0 +1,14 @@
+{
+    "frm_email_parameters": {
+        "text_to_search": "Email parameters"
+    },
+    "btn_options": {
+        "xpath": "//span[@class=\"appBarTab-headerLabel allowFlyoutClickPropagation\"]"
+    },
+    "btn_save": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedSaveButton\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    }
+}

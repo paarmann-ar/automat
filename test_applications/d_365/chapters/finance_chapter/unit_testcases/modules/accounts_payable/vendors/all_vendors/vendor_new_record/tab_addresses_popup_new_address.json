@@ -1,0 +1,47 @@
+{
+    "frm_popup_new_address": {
+        "text_to_search": "New address"
+    },
+    "txb_location_id": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"LocationId\") and contains(@id,\"LogisticsLocation\") and contains(@id,\"LogisticsPostalAddress\") and  1]"
+    },
+    "txb_name_or_description": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Description\") and contains(@id,\"Details\") and contains(@id,\"LogisticsPostalAddress\") and  1]"
+    },
+    "cmb_purpose": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Roles\") and contains(@id,\"LogisticsPostalAddress\") and  1]"
+    },
+    "cmb_country": {
+        "xpath": "//input[@name=\"LogisticsPostalAddress_CountryRegionId\"]"
+    },
+    "cmb_zip": {
+        "xpath": "//input[@name=\"LogisticsPostalAddress_ZipCode\"]"
+    },
+    "txb_street": {
+        "xpath": "//textarea[@name=\"LogisticsPostalAddress_Street\"]"
+    },
+    "cmb_city": {
+        "xpath": "//input[contains(@id,\"LogisticsPostalAddress_City_input\")]"
+    },
+    "txb_district": {
+        "xpath": "//input[@name=\"LogisticsPostalAddress_SaeCityDistrict\"]"
+    },
+    "txb_address_addition": {
+        "xpath": "//input[contains(@id,\"LogisticsPostalAddress_SaeAddressAdditional\") and  1]"
+    },
+    "chk_primary": {
+        "xpath": "//span[contains([@id,\"IsPrimary_toggle\")]"
+    },
+    "chk_private": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IsPrivate\") and  1]"
+    },
+    "chk_primary_for_country": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IsPrimaryTaxRegistration\")  and  1]"
+    },
+    "btn_ok": {
+        "xpath": "//button[@name=\"OKButton\"]"
+    },
+    "btn_cancel": {
+        "xpath": "//button[@name=\"CancelButton\"]"
+    }
+}

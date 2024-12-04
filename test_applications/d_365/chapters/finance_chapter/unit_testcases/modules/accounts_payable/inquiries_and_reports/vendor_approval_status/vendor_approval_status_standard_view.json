@@ -1,0 +1,11 @@
+{
+    "frm_vendor_approval_status": {
+        "text_to_search": "Vendor Approval Status"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"saevendreleasestatustable\") and contains(@id,\"QuickFilterControl_Input_input\")]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

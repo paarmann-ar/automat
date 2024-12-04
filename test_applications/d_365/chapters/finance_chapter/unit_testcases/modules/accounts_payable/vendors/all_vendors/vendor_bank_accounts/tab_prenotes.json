@@ -1,0 +1,6 @@
+{
+    "btn_tab":{
+        "xpath":"//button[contains(@id,\"caption\") and contains(@id,\"Prenote\") and  1]"
+    },
+    "rb_bank": {}
+}

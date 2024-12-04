@@ -1,0 +1,50 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@type=\"button\" and contains(@id,\"TabGeneral\") ]"
+    },
+    "txb_vendor_account": {
+        "xpath": "//input[@name=\"Identification_AccountNum\"]"
+    },
+    "txb_external_vendor": {
+        "xpath": "//input[contains(@aria-labelledby,\"vendtablelistpage\") and contains(@aria-labelledby,\"VendTable_SaeVendAccountExternal1_label\")]"
+    },
+    "txb_workday_account_number": {
+        "xpath": "//input[contains(@name,\"SaeParametersGroup_RdcWorkdayAccountNum\")]"
+    },
+    "cmb_type": {
+        "xpath": "//input[@name=\"Type\"]"
+    },
+    "txb_vendor_invoice_type": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeVendInvoiceType\") and contains(@id,\"VendTable\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_vendor_type": {
+        "xpath": "//input[@type=\"text\" and @title=\"Standard\" and contains(@id,\"SaeVendType_input\") and contains(@aria-describedby, \"SaeVendType_helptext\")]"
+    },
+    "txb_payment_priority": {
+        "xpath": "//input[@type=\"text\" and contains(@aria-describedby, \"CFMDirPartyTable_PaymentPriority_PriorityCode_helptext\")]"
+    },
+    "cmb_name": {
+        "xpath": "//input[@name=\"Org_Name\"]"
+    },
+    "txb_search_name": {
+        "xpath": "//input[@type=\"text\" and contains(@aria-describedby, \"Org_NameAlias_helptext\")]"
+    },
+    "txb_groupe": {
+        "xpath": "//*[@class=\"textbox field displayoption viewMarker alignmentLeft\" and @role=\"combobox\" and contains(@aria-labelledby,\"Posting_VendGroup_label\")]"
+    },
+    "txb_DUNS_number": {
+        "xpath": "//input[@name=\"OrgDetailGroup_DunsNumber\"]"
+    },
+    "cmb_address_books": {
+        "xpath": "//input[contains(@id, \"vendtablelistpage\") and contains(@id,\"AddressBooks_input\")]"
+    },
+    "txb_phonetic_name": {
+        "xpath": "//input[contains(@id,\"vendtablelistpage\") and contains(@id,\"OrgPhoneticGroup_PhoneticName_input\")]"
+    },
+    "cmb_languges": {
+        "xpath": "//input[contains(@id,\"vendtablelistpage\") and contains(@id,\"Org_LanguageId_input\")]"
+    },
+    "cmb_collaboration_activation": {
+        "xpath": "//input[@name=\"VendorCollaboration_VendVendorCollaborationType\"]"
+    }
+}

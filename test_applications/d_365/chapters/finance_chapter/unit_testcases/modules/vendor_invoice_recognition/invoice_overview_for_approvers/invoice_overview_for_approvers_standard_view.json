@@ -1,0 +1,11 @@
+{
+    "frm_invoice_overview_for_approvers": {
+        "text_to_search": "Vendor Invoice Finance Overview"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id, \"saevendinvoicefinanceoverview\") and contains(@id, \"QuickFilter\") and contains(@id,\"Input\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

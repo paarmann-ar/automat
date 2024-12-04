@@ -1,0 +1,56 @@
+{
+    "frm_all_vendors": {
+        "text_to_search": "All vendors"
+    },
+    "frm_vendor_new_record": {
+        "text_to_search": "New Record"
+    },
+    "btn_back": {
+        "xpath": "//button[contains(@id,\"vendtablelistpage\") and contains(@id,\"SystemDefinedCloseButton\")]"
+    },
+    "btn_edit": {
+        "xpath": "//*[@type=\"button\" and @command=\"Edit\" and @class=\"Auto button dynamicsButton\"]"
+    },
+    "btn_new": {
+        "xpath": "//*[@type=\"button\" and @command=\"New\" and @class=\"Auto button dynamicsButton\"]"
+    },
+    "btn_delete": {
+        "xpath": "//button[contains(@id,\"SystemDefinedDeleteButton\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_save": {
+        "xpath": "//span[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"SystemDefinedSaveButton\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "btn_vendor": {
+        "xpath": "//button[contains(@id,\"button\") and contains(@id,\"VendorTab_\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_vendor_on_hold": {
+        "xpath": "//button[@data-dyn-controlname=\"OnHoldDropDialogButton\"]"
+    },
+    "btn_vendor_first_approval": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeVendReleaseProcessFirst\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_vendor_second_approval": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SaeVendReleaseProcessSecond\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_vendor_bank_accounts": {
+        "xpath": "//button[@name=\"BankAccounts\"]"
+    },
+    "btn_vendor_contacts": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"GeneralContacts\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_vendor_summery_update": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SummaryUpdate\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_procurement": {
+        "xpath": "//button[contains(@id,\"button\") and contains(@id,\"Procurement_\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_invoice": {
+        "xpath": "//button[contains(@id,\"button\") and contains(@id,\"Invoice_\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "btn_general": {
+        "xpath": "//button[contains(@id,\"button\") and contains(@id,\"General_\") and contains(@id,\"vendtablelistpage\") and 1]"
+    },
+    "btn_options": {
+        "xpath": "//button[contains(@id,\"button\") and contains(@id,\"SystemDefinedOptions\") and contains(@id,\"vendtablelistpage\") and 1]"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"FileDetails\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "txb_file_name": {
+        "xpath": "//input[@aria-labelledby=\"DocuView_4_DocuValue_FileName_label\"]"
+    },
+    "txb_file_type": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"FileType\") and contains(@id,\"DocuValue\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "txb_original_file_name": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"OriginalFileName\") and contains(@id,\"DocuValue\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "txb_file_ID": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"RdcDocStoreFileId\") and contains(@aria-describedby,\"DocuValue\") and contains(@aria-describedby,\"DocuView\") and  1]"
+    },
+    "txb_file_location": {
+        "xpath": "//textarea[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Path\") and contains(@aria-describedby,\"DocuValue\") and contains(@aria-describedby,\"DocuView\") and  1]"
+    }
+}
+

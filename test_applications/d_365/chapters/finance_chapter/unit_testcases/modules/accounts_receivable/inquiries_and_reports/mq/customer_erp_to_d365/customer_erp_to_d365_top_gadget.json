@@ -1,0 +1,11 @@
+{
+    "frm_customer_erp_to_d365": {
+        "text_to_search": "External customers"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_edit": {
+        "xpath":"//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"saeextcusttable\") and  1]"
+    }
+}

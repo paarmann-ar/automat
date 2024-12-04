@@ -1,0 +1,59 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabSaeParameters\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_vendor_interface_group": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeMQCustVendInterfaceGroupId\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_secondary_language": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"RdcAdditionalLanguageAVIS\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_min_num_of_invoice_covering_letter": {
+        "xpath":"//input[@name=\"SaeParametersGroup_RdcMinNumOfInvoicesCoveringLetter\"]"
+    },
+    "txb_datev_vendor_number": {
+        "xpath": "//input[@name=\"SaeParametersGroup_RdcVendAccountDatev\"]"
+    },
+    "txb_tax_authority_interface_id": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"IT\") and contains(@id,\"RdcTaxAuthorityInterfaceId\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_deactivated": {
+        "xpath": "//span[@class=\"toggle-box\" and contains(@aria-describedby,\"SaeParametersGroup\") and contains(@aria-describedby,\"SaeVendDeleted\") and  1]"
+    },
+    "txb_lead_time": {
+        "xpath": "//input[@name=\"SaeParametersGroup_SaeTimeDelivery\"]"
+    },
+    "txb_delivery_time_external": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeDeliveryTimeExternal\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_external_processing_time": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeExternalHandlingTime\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_transit_time": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeTransitTime\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_processing_time_internal": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeInternalHandlingTime\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_senden_an_rechnungskonto": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"SaePurchSendInvoiceAccount\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_bestellpositionen_ubertragen": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"SaePurchAssign\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_note": {
+        "xpath": "//textarea[@name=\"SaeParametersGroup_SaeNotes\"]"
+    },
+    "cmb_vendor_type": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeVendType\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_invoice_type": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeVendInvoiceType\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_external_vendor": {
+        "xpath": "//input[@name=\"SaeParametersGroup_SaeVendAccountExternal\"]"
+    },
+    "txb_customer_account": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"RdcCustAccount\") and contains(@id,\"SaeParametersGroup\") and contains(@id,\"vendtablelistpage\") and  1]"
+    }
+}

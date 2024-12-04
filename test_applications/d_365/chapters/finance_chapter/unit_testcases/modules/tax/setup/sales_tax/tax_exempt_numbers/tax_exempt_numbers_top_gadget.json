@@ -1,0 +1,20 @@
+{
+    "frm_tax_exempt_numbers": {
+        "text_to_search": "Tax exempt numbers"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_back_": {
+        "xpath": "//button[contains(@id,\"vendtablelistpage\") and contains(@id,\"SystemDefinedCloseButton\")]"
+    },
+    "btn_save": {
+        "xpath": "//span[@class=\"button-commandRing Save-symbol\"]"
+    },
+    "btn_new": {
+        "xpath": "//span[@class=\"button-commandRing New-symbol\"]"
+    },
+    "btn_delete": {
+        "xpath": "//span[@class=\"button-commandRing Delete-symbol\"]"
+    }
+}

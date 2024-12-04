@@ -1,0 +1,14 @@
+{
+    "frm_batch_email_sending_status": {
+        "text_to_search": "Batch email sending status"
+    },
+    "btn_back": {
+        "xpath": "//span[@class=\"button-commandRing Back-symbol\"]"
+    },
+    "btn_new": {},
+    "btn_delete": {},
+    "btn_save": {},
+    "btn_show_message": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"ShowMessageButton\") and contains(@id,\"sysoutgoingemailtable\") and  1]"
+    }
+}

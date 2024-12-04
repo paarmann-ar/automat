@@ -1,0 +1,8 @@
+{
+    "frm_email_distributor_batch": {
+        "text_to_search": "Email distributor batch"
+    },
+    "btn_ok": {
+        "xpath": "//button[contains(@id,\"OkButton\") and contains(@id,\"Dialog\") and  1]"
+    }
+}

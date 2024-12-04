@@ -1,0 +1,26 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabSaeAdministration\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_vendor_hold": {
+        "xpath": "//input[@name=\"GroupSaeAdministration_Blocked\"]"
+    },
+    "cmb_reason_code": {
+        "xpath": "//input[@name=\"GroupSaeAdministration_editBlockedReasonCode\"]"
+    },
+    "dt_vendor_hold_realeas_date": {
+        "xpath": "//input[@name=\"GroupSaeAdministration_BlockedReleaseDate\"]"
+    },
+    "chk_deactivated": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"SaeVendDeleted\") and contains(@id,\"GroupSaeAdministration\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_buyer_group": {
+        "xpath": "//input[@name=\"GroupSaeAdministration_ItemBuyerGroupId\"]"
+    },
+    "txb_status": {
+        "xpath": "//input[@name=\"GroupSaeAdministration_VendTable_Sae_Extension_saeVendReleaseStatus\"]"
+    },
+    "cmb_vendor_interface_group": {
+        "xpath": "//input[@name=\"GroupSaeAdministration_SaeMQCustVendInterfaceGroupId\"]"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "frm_all_vendors_standard_view": {
+        "text_to_search": "All vendors"
+    },
+    "txb_search": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "itm": {
+        "xpath": "//input[@value=\"?\"]"
+    }
+}

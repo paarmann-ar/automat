@@ -1,0 +1,23 @@
+{
+    "frm_invoice_overview_for_approvers": {
+        "text_to_search": "Vendor Invoice Finance Overview"
+    },
+    "btn_back": {
+        "xpath":"//span[@class=\"button-commandRing Back-symbol\"]"
+
+    },
+    "btn_edit": {
+        "xpath":"//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"saevendinvoicependinginvoicefinancialdimension\") and  1]"
+    },
+    "btn_new": {
+
+    },
+    "btn_delete": {
+    },
+    "btn_save": {
+    },
+    "btn_view_hide_attachment":
+    {
+        "xpath":"//span[contains(@id,\"label\") and contains(@id,\"ViewHideAttachment\") and contains(@id,\"saevendinvoicefinanceoverview\") and  1]"
+    }
+}

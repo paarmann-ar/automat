@@ -1,0 +1,17 @@
+{
+    "frm_general_journals": {
+        "text_to_search": "General journals"
+    },
+    "cmb_show": {
+        "xpath": "//input[@name=\"AllOpenPostedField\"]"
+    },
+    "chk_show_user_created_only": {
+        "xpath": "//span[@class=\"checkBox\"]"
+    },
+    "txb_name": {
+        "xpath": "//input[contains(@id, \"JournalName\") and contains(@id, \"input\") and 1]"
+    },
+    "txb_description": {
+        "xpath": "//input[contains(@id, \"LedgerJournalTable_Name\") and contains(@id, \"input\") and 1]"
+    }
+}

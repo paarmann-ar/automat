@@ -1,0 +1,41 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabPurchDemographics\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_currency": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Currency\") and contains(@aria-describedby,\"Currency\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_primary_contact": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Currency\") and contains(@aria-describedby,\"Currency\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_line_of_business": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"LineOfBusinessId\") and contains(@aria-describedby,\"Contactinfo\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_birth_place": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"BirthPlace\") and contains(@id,\"Contactinfo\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_residence_foreign_country": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"ResidenceForeignCountry\") and contains(@aria-describedby,\"Contactinfo\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_birth_county": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"IT\") and contains(@aria-describedby,\"BirthCountyCode\") and contains(@aria-describedby,\"Contactinfo\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "chk_heir": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IT\") and contains(@id,\"Heir\") and contains(@id,\"Contactinfo\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_employee_responsible": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Name\") and contains(@aria-describedby,\"FK\") and contains(@aria-describedby,\"DirPerson\") and contains(@aria-describedby,\"MainContactWorker\") and contains(@aria-describedby,\"VendTable\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_segment": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"SegmentId\") and contains(@aria-describedby,\"VendTable\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_subsegment": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"SubsegmentId\") and contains(@aria-describedby,\"VendTable\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_chain": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"CompanyChainId\") and contains(@aria-describedby,\"VendTable\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "txb_notes": {
+        "xpath": "//textarea[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Memo\") and contains(@aria-describedby,\"VendTable\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    }
+}

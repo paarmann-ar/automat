@@ -1,0 +1,23 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabSetUp\") and  1]"
+    },
+    "txb_text_code": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"VendPaymentTextCode\") and contains(@id,\"Payment\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_message_to_bank": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"MsgToBank\") and contains(@id,\"Payment\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_exchange_reference": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"ExchRateRef\") and contains(@id,\"Payment\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_cross_rate": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"editExchRate\") and contains(@id,\"M\") and contains(@id,\"Payment\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "txb_payment_specification_parameter": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"CH\") and contains(@id,\"SpecParameters\") and contains(@id,\"Payment\") and contains(@id,\"VendBankAccounts\") and  1]"
+    },
+    "cmd_currency": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"CurrencyCode\") and contains(@aria-describedby,\"Currency\") and contains(@aria-describedby,\"VendBankAccounts\") and  1]"
+    }
+}

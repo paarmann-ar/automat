@@ -1,0 +1,29 @@
+{
+    "frm_email_parameters_smtp_setting": {
+        "text_to_search": "SMTP settings"
+    },
+    "txb_outgoing_mail_server": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SMTPRelayServerName\") and contains(@id,\"SMTP\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "txb_smtp_port_number": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SMTPPortNumber\") and contains(@id,\"SMTP\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "chk_ssl_tls_required": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"SSLRequired\") and contains(@id,\"SMTP\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "txb_environment_email_recipient": {
+        "xpath": "//input[contains(@data-dyn-qtip-describedby,\"helptext\") and contains(@data-dyn-qtip-describedby,\"SaeNonProdEmail\") and contains(@data-dyn-qtip-describedby,\"SysEmailParameters\") and contains(@data-dyn-qtip-describedby,\"sysemailparameters\") and  1]"
+    },
+    "txb_environment_email_subject": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeNonProdEmailSubjectPrefix\") and contains(@id,\"SysEmailParameters\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "chk_authentication_required": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"AuthenticationEnabled\") and contains(@id,\"SMTP\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "txb_username": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SMTPUserName\") and contains(@id,\"SMTP\") and contains(@id,\"sysemailparameters\") and  1]"
+    },
+    "txb_password": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Password\") and contains(@id,\"SMTP\") and contains(@id,\"sysemailparameters\") and  1]"
+    }
+}

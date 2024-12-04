@@ -1,0 +1,38 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabDetails\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_Credit_rating": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"CreditRating\") and contains(@id,\"Credit\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_creadit_limit": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"CreditMax\") and contains(@id,\"Credit\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_buyer_group": {
+        "xpath": "//input[@name=\"Administration_ItemBuyerGroupId\"]"
+    },
+    "txb_vendor_hold": {
+        "xpath": "//input[@name=\"Administration_Blocked\"]"
+    },
+    "txb_reason_code": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"ReasonCode\") and contains(@id,\"VendOnHoldHistory\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_intercompany_active": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"interCompanyTradingRelationActive\") and contains(@id,\"M\") and contains(@id,\"InterCompany\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_company": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"interCompanyTradingPartnerCompanyID\") and contains(@id,\"M\") and contains(@id,\"InterCompany\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_customer_account": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"interCompanyTradingPartnerAccount\") and contains(@id,\"M\") and contains(@id,\"InterCompany\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_vendor_rebate_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"TAMRebateGroupID\") and contains(@aria-describedby,\"TAMRebates\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "chk_public_sector": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"IT\") and contains(@id,\"IsPublicSector\") and contains(@id,\"IT\") and contains(@id,\"PublicSector\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_Procurement_category": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"Name\") and contains(@aria-describedby,\"AVIPDefaultProcurementCategoryRecId\") and contains(@aria-describedby,\"AVIPInvoiceCreation\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    }
+}

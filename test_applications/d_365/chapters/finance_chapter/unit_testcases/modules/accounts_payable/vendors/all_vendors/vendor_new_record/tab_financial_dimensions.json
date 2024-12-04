@@ -1,0 +1,11 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabFinancialDimensions\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_cost_center": {
+        "xpath": "//input[@name=\"DimensionEntryControl_DECValue_CostCenter\"]"
+    },
+    "cmb_project": {
+        "xpath": "//input[@class=\"textbox field displayoption viewMarker alignmentLeft validationFailed\"]"
+    }
+}

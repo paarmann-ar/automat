@@ -1,0 +1,20 @@
+{
+    "btn_tab": {
+        "xpath": "//button[@aria-label=\"General\"]"
+    },
+    "txb_notes": {
+        "xpath": "//textarea[contains(@aria-describedby,\"Notes\") and  1]"
+    },
+    "chk_is_default_attachment": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"DefaultAttachment\") and contains(@id,\"DocuRef\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "txb_created_by": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"createdBy\") and contains(@id,\"Create\") and contains(@id,\"DocuView\") and  1]"
+    },
+    "txb_restriction": {
+        "xpath": "//input[contains(@aria-controls,\"list\") and contains(@aria-controls,\"DocuRef\") and contains(@aria-controls,\"DocuView\") and  1]"
+    },
+    "txb_created_date_and_time": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"createdDateTime\") and contains(@id,\"Create\") and contains(@id,\"DocuView\") and  1]"
+    }
+}

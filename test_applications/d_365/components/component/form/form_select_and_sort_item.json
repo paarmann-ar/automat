@@ -1,0 +1,5 @@
+{
+    "btn_select":{
+        "xpath":"//span[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"OK\") and contains(@aria-describedby,\"SysLookupMultiSelectGrid\") and  1]"
+    }
+}

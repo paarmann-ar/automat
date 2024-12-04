@@ -1,0 +1,8 @@
+{
+    "frm_post_free_text_invoice": {
+        "text_to_search": "Post free text invoice"
+    },
+    "btn_ok": {
+        "xpath": "//button[contains(@id, \"CustPostInvoiceJob\") and contains(@id, \"OK\") and 1]"
+    }
+}

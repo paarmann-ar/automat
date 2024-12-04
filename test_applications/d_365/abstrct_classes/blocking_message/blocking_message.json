@@ -1,0 +1,8 @@
+{
+    "blocking_message_parent": {
+        "xpath":"//*[@id=\"ShellBlockingDiv\"]"
+    },
+    "blocking_message_child": {
+        "xpath": "//*[@id=\"ShellProcessingDiv\"]"
+    }
+}

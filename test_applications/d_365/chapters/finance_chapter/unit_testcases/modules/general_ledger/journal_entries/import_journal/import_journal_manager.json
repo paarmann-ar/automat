@@ -1,0 +1,8 @@
+{
+    "frm_import_journal": {
+        "text_to_search": "Import journal"
+    },
+    "btn_ok": {
+        "xpath_": "//span[contains(@id,\"label\") and contains(@id,\"OkButton\") and contains(@id,\"Dialog\") and  1]"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabSaeNotes\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_note": {
+        "xpath": "//textarea[@name=\"VendTable_SaeNotes\"]"
+    }
+}

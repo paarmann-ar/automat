@@ -1,0 +1,29 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabVendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_bid_only": {
+        "xpath": "//span[contains(@id,\"check\") and contains(@id,\"BidOnly\") and contains(@id,\"VendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_one_time_supplier": {
+        "xpath": "//span[contains(@id,\"check\") and contains(@id,\"OneTimeVendor\") and contains(@id,\"VendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_locally_owned": {
+        "xpath": "//span[contains(@id,\"check\") and contains(@id,\"LocallyOwned\") and contains(@id,\"VendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_small_business": {
+        "xpath": "//span[contains(@id,\"check\") and contains(@id,\"SmallBusiness\") and contains(@id,\"VendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_owner_is_a_service_veteran": {
+        "xpath": "//span[contains(@id,\"check\") and contains(@id,\"VeteranOwned\") and contains(@id,\"VendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_owner_is_disabled": {
+        "xpath": "//span[contains(@id,\"check\") and contains(@id,\"DisabledOwned\") and contains(@id,\"VendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_original_vendor_in_reporting": {
+        "xpath": "//span[contains(@id,\"check\") and contains(@id,\"IT\") and contains(@id,\"OriginalVendorInReporting\") and contains(@id,\"VendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_self_invoice_vendor": {
+        "xpath": "//span[contains(@id,\"check\") and contains(@id,\"IT\") and contains(@id,\"IsSelfInvoiceVendor\") and contains(@id,\"VendorProfile\") and contains(@id,\"vendtablelistpage\") and  1]"
+    }
+}

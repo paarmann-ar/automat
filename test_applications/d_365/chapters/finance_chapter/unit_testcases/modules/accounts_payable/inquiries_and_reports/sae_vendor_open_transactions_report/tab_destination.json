@@ -1,0 +1,5 @@
+{
+    "btn_tab": {
+        "xpath":"//button[contains(@id,\"caption\") and contains(@id,\"Destination\") and contains(@id,\"SysOperationTemplateForm\") and  1]"
+    }
+}

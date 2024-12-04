@@ -1,0 +1,20 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabSaeOthers\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_leadtime": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeTimeDelivery\") and contains(@id,\"VendTable\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_delivery_time_external": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeDeliveryTimeExternal\") and contains(@id,\"VendTable\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_external_processing_time": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeExternalHandlingTime\") and contains(@id,\"VendTable\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_transit_time": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeTransitTime\") and contains(@id,\"VendTable\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "txb_processing_time_internal": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"SaeInternalHandlingTime\") and contains(@id,\"VendTable\") and contains(@id,\"vendtablelistpage\") and  1]"
+    }
+}

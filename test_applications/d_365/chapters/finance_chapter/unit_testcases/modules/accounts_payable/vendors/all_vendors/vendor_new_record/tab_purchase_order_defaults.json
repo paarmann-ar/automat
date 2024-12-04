@@ -1,0 +1,65 @@
+{
+    "btn_tab": {
+        "xpath": "//button[contains(@id,\"caption\") and contains(@id,\"TabPagePurch\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_charges_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"MarkupGroup\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_site": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"InventSiteId\") and contains(@aria-describedby,\"Purch\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_warehause": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"InventLocation\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_default_inventory_status_ID": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"DefaultInventStatusId\") and contains(@aria-describedby,\"Purch\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_item_vendor_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"VendItemGroupId\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_purchasing_pool": {
+        "xpath": "//input[@name=\"PurchPoolId\"]"
+    },
+    "txb_our_account_number": {
+        "xpath": "//input[contains(@id,\"vendtablelistpage\") and contains(@id,\"YourAccountNum_input\") and  1]"
+    },
+    "txb_amount_in_transaction_currency": {
+        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"balanceAllCurrency\") and contains(@id,\"M\") and contains(@id,\"Purch\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_purchase_order_prices_amount": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"PurchAmountPurchaseOrder\") and contains(@id,\"Purch\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_purchase_calendar": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PurchCalendarId\") and contains(@aria-describedby,\"Purch\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "chk_send_purchase_order_via_cXML": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"CatCXMLOrderEnable\") and contains(@id,\"Purch\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_multiline_discount": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"MultiLineDisc\") and contains(@aria-describedby,\"Discount\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_total_discount_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"EndDisc\") and contains(@aria-describedby,\"Discount\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_price_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"PriceGroup\") and contains(@aria-describedby,\"Discount\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_line_discount_group": {
+        "xpath": "//input[@name=\"Discount_LineDisc\"]"
+    },
+    "cmb_supplementary_item_group": {
+        "xpath": "//input[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"SuppItemGroupId\") and contains(@aria-describedby,\"SupplementaryItem\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "chk_override_settings": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"ChangeRequestOverride\") and contains(@id,\"ChangeRequest\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_activate_change_management": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"ChangeRequestEnabled\") and contains(@id,\"ChangeRequest\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "chk_allow_override_of_settings_per_purchase": {
+        "xpath": "//span[contains(@id,\"toggle\") and contains(@id,\"ChangeRequestAllowOverride\") and contains(@id,\"ChangeRequest\") and contains(@id,\"vendtablelistpage\") and  1]"
+    },
+    "cmb_advanced_notes_group": {
+        "xpath": "//input[@name=\"FreeNotes_FreeNotesGroup_IT\"]"
+    }
+}

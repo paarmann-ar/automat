@@ -1,0 +1,32 @@
+{
+    "frm_all_customers": {
+        "text_to_search": "All customers"
+    },
+    "btn_back": {
+        "xpath": "//button[contains(@id,\"vendtablelistpage\") and contains(@id,\"SystemDefinedCloseButton\")]"
+    },
+    "btn_edit": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"SystemDefinedViewEditButton\") and contains(@id,\"saevendreleasestatustable\") and  1]"
+    },
+    "btn_new": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"NewInvoice\") and contains(@id,\"vendinvoiceinfolistpage\") and  1]"
+    },
+    "btn_delete": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"Delete\") and contains(@id,\"vendinvoiceinfolistpage\") and  1]"
+    },
+    "btn_save": {
+        "xpath": "//span[contains(@aria-describedby,\"helptext\") and contains(@aria-describedby,\"SystemDefinedSaveButton\") and contains(@aria-describedby,\"vendtablelistpage\") and  1]"
+    },
+    "btn_general": {
+        "xpath": "//button[contains(@id,\"custtablelistpage\") and contains(@id,\"aptabGeneral_button\")]"
+    },
+    "btn_intercompany": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"mibInterCompanyTradingRelationSetup\") and contains(@id,\"custtablelistpage\") and  1]"
+    },
+    "btn_customer": {
+        "xpath": "//button[contains(@id,\"custtablelistpage\") and contains(@id,\"aptabCustomer_button\")]"
+    },
+    "btn_email_history": {
+        "xpath": "//span[contains(@id,\"label\") and contains(@id,\"RdcCustVendEmailRelationCust\") and contains(@id,\"custtablelistpage\") and  1]"
+    }
+}

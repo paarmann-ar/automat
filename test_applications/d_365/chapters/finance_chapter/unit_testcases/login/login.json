@@ -1,0 +1,32 @@
+{
+    "frm_login": {
+        "xpath": "//*[@data-bind=\"text: title\"]"
+    },
+    "txb_username": {
+        "xpath": "//*[@name=\"loginfmt\" and @id=\"i0116\"]"
+    },
+    "txb_password": {
+        "name": "passwd"
+    },
+    "btn_submit": {
+        "id": "idSIButton9"
+    },
+    "txt_stay_signed_in": {
+        "text": "Stay signed in?"
+    },
+    "lbl_authentication_nummer": {
+        "xpath": "//*[@id=\"idRichContext_DisplaySign\"]"
+    },
+    "hl_i_canot_use_ma": {
+        "xpath": "//*[contains(text(),\"use my Microsoft Authenticator app right now\")]"
+    },
+    "lbl_use_a_verification_code": {
+        "xpath": "//*[contains(text(),\"Use a verification code\")]"
+    },
+    "txb_verification_code": {
+        "xpath": "//input[@id=\"idTxtBx_SAOTCC_OTC\"]"
+    },
+    "btn_verifi": {
+        "xpath": "//input[@id=\"idSubmit_SAOTCC_Continue\"]"
+    }
+}
