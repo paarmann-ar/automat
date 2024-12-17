@@ -7,6 +7,7 @@ from typing import Any
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import CONSTS
 
 # --
 # ...
@@ -21,7 +22,7 @@ class GetAllElements:
 
         self.driver = webdriver.Chrome(
             service=Service(
-                "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/web_drivers/chorom/123.0.6312.122/chromedriver.exe"
+                f"{CONSTS.ROOT_DIR}/.external_files/web_drivers/chorom/123.0.6312.122/chromedriver.exe"
             )
         )
         self.driver.get(current_page_addresss)

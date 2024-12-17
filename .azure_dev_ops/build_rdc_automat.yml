@@ -5,13 +5,13 @@ stages:
 - stage: Build
 
   jobs:
-    - job: build_framework
+    - job: build
     
       workspace:
         clean: all
 
       pool:
-        name: rdc_test
+        name: rdc_agents
 
       variables:
         venv: $(System.DefaultWorkingDirectory)/.venv
@@ -34,51 +34,8 @@ stages:
 
         - script: |
             set Path=$(venv)/Scripts;%Path%
-            python -m pip install pytest-azurepipelines
+            python $(System.DefaultWorkingDirectory)/build/build_module.py
           env:
             PYTHON_HOME: ""
             VIRTUAL_ENV: $(venv)
-          displayName: 'Install pytest-azure'
-
-        - task: ArchiveFiles@2
-          displayName: 'Archive files'
-          inputs:
-            rootFolderOrFile: $(System.DefaultWorkingDirectory)
-            includeRootFolder: false
-            archiveType: zip
-            archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId)_$(python.version).zip
-            replaceExistingArchive: true
-
-        - task: PublishBuildArtifacts@1
-          displayName: 'Publish Build Artifacts'
-          inputs:
-            ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
-                PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-                ArtifactName: 'production'
-                publishLocation: 'Container'
-
-            ${{ else }}:
-                PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-                ArtifactName: 'development'
-                publishLocation: 'Container'
-
-        - task: DownloadPipelineArtifact@2
-          displayName: 'Download Pipeline Production Artifact'
-          inputs:
-            ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
-              artifact: production
-              
-            ${{ else }}:
-              artifact: development
-
-- stage: Release_Production
-  dependsOn: Build
-  jobs:
-    - job: release_production_framework
-
-      pool:
-        name: rdc_test
-
-      steps:
-      - download: current
-        artifact: production
+          displayName: 'build tests'

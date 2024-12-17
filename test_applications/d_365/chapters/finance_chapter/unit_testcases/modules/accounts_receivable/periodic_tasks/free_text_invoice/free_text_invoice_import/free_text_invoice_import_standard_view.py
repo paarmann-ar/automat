@@ -83,7 +83,7 @@ class FreeTextInvoiceImportStandardView(BaseChapter, StandardView):
 
     def __prepare(
         self,
-        item_to_search=("vendor test112",True),
+        item_to_search=("",True),
     ) -> bool:
 
         try:
@@ -91,7 +91,9 @@ class FreeTextInvoiceImportStandardView(BaseChapter, StandardView):
             if super().prepare():
                 return True
 
-            self.item_to_search = self.state["vendor_name"]
+            self.search_item_text = "Import ID"
+            self.search_item = item_to_search
+
             return True
 
         except Exception as exp:
@@ -116,3 +118,24 @@ class FreeTextInvoiceImportStandardView(BaseChapter, StandardView):
         except Exception as exp:
             self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
             return False
+        
+    # --
+    # ...
+    # --
+
+    @BaseChapter.wait_for(
+        element_for_waiting_until_visible="frm_free_text_invoice_import",
+        type_of_element="text_to_search",
+    )
+    @BaseChapter.log
+    def set_import_id(self, **kwargs) -> bool:
+
+        try:
+
+            self.state["import_id"] = self.driver.find_elements(*self.elements.lst_import_ids)[-1].get_attribute('value'), True
+            return True
+
+        except Exception as exp:
+            self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
+            return False
+                

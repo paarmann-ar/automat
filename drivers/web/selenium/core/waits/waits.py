@@ -154,7 +154,7 @@ class Waits(BaseSelenium):
     # --
 
     @BaseSelenium.log
-    def wait_for_element_visibility_by_text(self, element, delay=None):
+    def wait_for_element_visibility_by_text(self, element, delay=None, time_out=10):
 
         try:
 
@@ -170,6 +170,12 @@ class Waits(BaseSelenium):
 
             while self.driver.page_source.find(text) < 0:
                 self.delay(delay)
+
+                if time_out ==0:
+                    break
+
+                time_out -=1
+                self.delay(1000)
 
             return True
 

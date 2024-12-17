@@ -176,7 +176,7 @@ class TaxExemptNumberManager(BaseChapter):
                         self.tax_exempt_numbers_top_gadget.new()
 
                     case "add_new_tax_exempt_number":
-                        self.tax_exempt_numbers_standard_view.company_name = self.state['vendor_name']
+                        self.tax_exempt_numbers_standard_view.company_name = self.state["vendor_name"]
                         self.tax_exempt_numbers_standard_view.add_new_tax_exempt_number()
 
                     case "save":

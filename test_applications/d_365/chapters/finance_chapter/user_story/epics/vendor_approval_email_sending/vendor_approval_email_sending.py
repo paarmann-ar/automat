@@ -134,6 +134,8 @@ class VendorApprovalEmailSending(BaseChapter, BaseUserStory):
 
         try:
 
+            self.state["vendor_name"] = "vendor test112", True
+
             self.toolbars.change_mandant()
 
             self.invoice_workflow_rollback()
@@ -145,7 +147,7 @@ class VendorApprovalEmailSending(BaseChapter, BaseUserStory):
                 step_40="back",
             )
 
-            self.vendor_new_record_manager.add_new_vendor_manager(
+            self.vendor_new_record_manager(
                 step_1="new_vendor",
                 step_2="tab_vendor_general",
                 step_4="tab_addresses",

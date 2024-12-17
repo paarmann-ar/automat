@@ -90,7 +90,9 @@ class AllFreeTextInvoicesStandardView(BaseChapter, StandardView):
             if super().prepare():
                 return True
 
-            self.invoice_number = self.state["vendor_name"]
+            self.search_item_text = "Customer account"
+            self.search_item = self.state["customer_account"], True
+
             return True
 
         except Exception as exp:

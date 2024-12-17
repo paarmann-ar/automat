@@ -12,6 +12,6 @@
         "title": "FileNameEdit"
     },
     "btn_open": {
-        "title": "Open"
+        "title": "&OpenButton"
     }
 }

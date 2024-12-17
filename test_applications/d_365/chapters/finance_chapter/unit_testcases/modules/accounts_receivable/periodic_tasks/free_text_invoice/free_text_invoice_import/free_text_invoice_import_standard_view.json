@@ -3,9 +3,12 @@
         "text_to_search": "Free text invoice import"
     },
     "txb_search": {
-        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"vendtablelistpage\") and  1]"
+        "xpath": "//input[contains(@id,\"Input_input\") and contains(@id,\"saefreetextinvoiceimporttable\") and contains(@id,\"QuickFilterControl\") and  1]"
     },
     "itm": {
         "xpath": "//input[@value=\"?\"]"
+    },
+    "lst_import_ids": {
+        "xpath": "//input[contains(@id,\"SaeFreeTextInvoiceImportTable_ImportId\") and 1]"
     }
 }

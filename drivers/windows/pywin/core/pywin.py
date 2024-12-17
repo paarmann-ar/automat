@@ -4,6 +4,7 @@ import pywinauto
 from pywinauto.application import Application
 from pywinauto.keyboard import send_keys
 from typing import Any
+import CONSTS
 
 """
 
@@ -91,6 +92,8 @@ class Pywin(BaseDriver):
 
             self.application_dialog.wait("ready")
 
+            self.application_dialog.print_control_identifiers( filename=f"{CONSTS.ROOT_DIR}/temp_print_control_identifiers.txt")
+
         except Exception as exp:
             self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
             return False
@@ -141,9 +144,7 @@ class Pywin(BaseDriver):
         try:
 
             _, element = element
-            self.delay(220)
-
-            self.application_dialog[element].click_input()
+            self.application_dialog[element].click()
 
         except Exception as exp:
             self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")

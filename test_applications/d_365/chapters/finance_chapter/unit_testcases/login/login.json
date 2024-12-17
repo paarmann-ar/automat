@@ -12,7 +12,7 @@
         "id": "idSIButton9"
     },
     "txt_stay_signed_in": {
-        "text": "Stay signed in?"
+        "text_to_search": "Stay signed in?"
     },
     "lbl_authentication_nummer": {
         "xpath": "//*[@id=\"idRichContext_DisplaySign\"]"

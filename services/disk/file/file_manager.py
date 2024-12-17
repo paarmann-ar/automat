@@ -12,6 +12,7 @@ class FileManager(BaseDisk):
 
         self.mode = self.instance.config_dictionary["mode"]
         self.address = self.instance.config_dictionary["address"]
+        
     # --
     # ...
     # --
@@ -38,6 +39,14 @@ class FileManager(BaseDisk):
                 case 'r':
                     with open(address, mode) as file:
                         context = file.read()
+
+                case "w":
+                    with open(address, mode) as file:
+                        file.write(context)
+
+                case "a":
+                    with open(address, mode) as file:
+                        file.write(context)
 
                 case _:
                     with open(address, mode) as file:

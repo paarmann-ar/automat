@@ -131,7 +131,7 @@ class CreateAlertRule(BaseChapter, Form):
             self.textbox(self.elements.cmb_event, self.event)
 
             self.textbox(self.elements.txb_subject, self.subject)
-            self.textbox(self.elements.txb_message, self.message)
+            self.textbox(self.elements.txa_message, self.message)
             self.textbox(self.elements.txb_email_recipients, self.email_recipients)
             self.textbox(self.elements.chk_send_email, self.is_send_email)
 

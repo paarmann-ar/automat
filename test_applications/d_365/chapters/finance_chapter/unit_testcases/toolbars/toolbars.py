@@ -300,3 +300,24 @@ class Toolbars(BaseChapter):
         except Exception as exp:
             self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
             return False
+
+    # --
+    # ...
+    # --
+
+    @BaseChapter.log
+    def logout(self) -> bool:
+
+        try:
+
+            self.click(self.elements.btn_user)
+            self.click(self.elements.lbl_signout)
+
+            self.wait_for_visibility(self.elements.frm_change_user)
+            self.click(self.elements.lbl_use_another_account)
+            return True
+
+        except Exception as exp:
+            self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
+            return False
+

@@ -24,12 +24,12 @@ from test_applications.d_365.chapters.finance_chapter.user_story.epics.collectio
 #     ReviewAndProcessCollectionLetters,
 # )
 
-from test_applications.d_365.chapters.finance_chapter.user_story.modules.accounts_receivable.customer_erp_to_d365 import CustomerErpToD365
+from test_applications.d_365.chapters.finance_chapter.user_story.epics.customer_erp_to_d365.customer_erp_to_d365 import CustomerErpToD365
 from test_applications.d_365.chapters.finance_chapter.user_story.epics.import_ledger_journal_and_validation.import_ledger_journal_and_validation import ImportLedgerJournalAndValidation
 
 
 from test_applications.d_365.chapters.finance_chapter.user_story.epics.sae_vendor_open_transactions_report.sae_vendor_open_transactions_report import SaeVendorOpenTransactionsReport
-from test_applications.d_365.chapters.finance_chapter.user_story.epics.ax_2009_intergration import Ax2009Intergration
+from test_applications.d_365.chapters.finance_chapter.user_story.epics.customer_erp_to_d365.ax_2009_intergration import Ax2009Intergration
 from test_applications.d_365.chapters.finance_chapter.user_story.epics.vendor_approval_email_sending.vendor_approval_email_sending import VendorApprovalEmailSending
 
 # --
@@ -51,11 +51,23 @@ Login().login()
 # import_ledger_journal_and_validation = ImportLedgerJournalAndValidation()
 # import_ledger_journal_and_validation.import_journal_and_validate()
 
-vendor_approval_email_sending = VendorApprovalEmailSending()
-vendor_approval_email_sending.vendor_approval_email_sending()
+# vendor_approval_email_sending = VendorApprovalEmailSending()
+# vendor_approval_email_sending.vendor_approval_email_sending()
 
 # sae_vendor_open_transactions_report = SaeVendorOpenTransactionsReport()
 # sae_vendor_open_transactions_report.sae_vendor_open_transactions_report()
+
+import_free_text_invoice = ImportAndPostFreeTextInvoice()
+import_free_text_invoice.import_and_post_free_text_invoice()
+
+# customer_erp_to_d365 = CustomerErpToD365()
+# customer_erp_to_d365.customer_erp_to_d365()
+
+
+
+
+
+
 
 
 
@@ -66,16 +78,7 @@ vendor_approval_email_sending.vendor_approval_email_sending()
 # define_email_parameters = DefineEmailParameters()
 # define_email_parameters.define_email_parameters()
 
-# import_free_text_invoice = ImportAndPostFreeTextInvoice()
-# import_free_text_invoice.import_and_post_free_text_invoice()
-
 # review_and_process_collection_letters = ReviewAndProcessCollectionLetters()
 # review_and_process_collection_letters.review_and_process_collection_letters()
 
-
-# ax_2009_intergration = Ax2009Intergration()
-# ax_2009_intergration.ax_2009_intergration()
-
-# customer_erp_to_d365 = CustomerErpToD365()
-# customer_erp_to_d365.customer_erp_to_d365()
 

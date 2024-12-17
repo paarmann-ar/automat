@@ -129,7 +129,7 @@ class CollectionLetter(BaseChapter, BaseUserStory):
         except Exception as exp:
             self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
             return False
-
+        
     def __prepare(self) -> bool:
 
         try:
@@ -195,4 +195,3 @@ class CollectionLetter(BaseChapter, BaseUserStory):
         except Exception as exp:
             self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
             return False
-        return

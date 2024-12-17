@@ -5,7 +5,19 @@
     "lbl_company_name": {
         "xpath": "//span[contains(@id,\"CompanyName\")]"
     },
-    "btn_home":{
+    "btn_user": {
+        "xpath": "//button[@id=\"UserBtn\"]"
+    },
+    "lbl_signout":{
+        "xpath": "//span[@id=\"SignOut_label\"]"
+    },
+    "lbl_use_another_account":{
+        "xpath": "//*[@id=\"otherTileText\"]"
+    },
+    "frm_change_user":{
+        "text_to_search":"Pick an account"
+    },
+    "btn_home": {
         "xpath": "//div[@id=\"home\"]"
     },
     "div_search_for_a_page": {

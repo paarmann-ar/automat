@@ -3,6 +3,7 @@ from test_applications.d_365.core.object_provider import ObjectProvider
 from test_applications.d_365.chapters.core.base_chapter import BaseChapter
 from test_applications.d_365.abstrct_classes.tab.tab import Tab
 from test_applications.windows_components.open_file_dialog import OpenFileDialog
+import CONSTS
 
 # --
 # ...
@@ -88,8 +89,7 @@ class TabParameters(BaseChapter, Tab):
 
     def __prepare(
         self,
-        file_address=(
-            f"C:/Users/mpaarmann/Projects/rdc_automat/.external_files/sample_files/import_journal_and_validate.csv",
+        file_address=(f"{CONSTS.ROOT_DIR}/.external_files/sample_files/import_journal_and_validate.csv",
             True,
         ),
     ) -> bool:
@@ -99,7 +99,8 @@ class TabParameters(BaseChapter, Tab):
             if super().prepare():
                 return True
 
-            self.file_address = file_address
+            self.file_address = file_address,
+
 
             return True
 

@@ -2,7 +2,7 @@ from typing import Any
 from abc import ABC, abstractmethod
 from drivers.web.web_driver_provider import WebDriverProvider
 from drivers.windows.pywin.win_driver_provider import WinDriverProvider
-
+import CONSTS
 from collections import namedtuple
 from services.mail.email_provider import EMailProvider
 from services.log_.log_provider import LogProvider
@@ -25,6 +25,7 @@ class Base(ABC):
         if not hasattr(cls, "instance"):
             cls.instance = super().__new__(cls)
             cls.state['base_id'] = id(cls)
+            cls.state['root_address'] = CONSTS.ROOT_DIR
 
             cls.instance_args = kwargs
 

@@ -91,6 +91,9 @@ class CustomerErpToD365StandardView(BaseChapter, StandardView):
             if super().prepare():
                 return True
 
+            self.search_item_text = "External Customer Account Id"
+            self.search_item = self.state["ax_d365_customer_id"]
+
             self.external_customer_account_id = external_customer_account_id
             return True
 

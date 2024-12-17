@@ -171,6 +171,8 @@ class DefineNewTaxExemptNumber(BaseChapter, BaseUserStory):
 
             self.delay(220)
 
+            self.blocking_message()
+
             self.tax_exempt_numbers_top_gadget.back()
 
             self.delay(220)

@@ -1,0 +1,152 @@
+{
+    "services.db.sqlserver.config.db_config": {
+        "driver": "SQL SERVER",
+        "host": "LocalHost/.",
+        "database": "master",
+        "username": "sa",
+        "password": "sa04jT14"
+    },
+    "services.db.sqlserver.config.db_commands_dictionary": {},
+    "services.mail.template.config.template_config": {
+        "template_directory": "C:/Users/mpaarmann/Projects/rdc_automat/services/mail/template",
+        "template_namespace": "services.mail.template"
+    },
+    "services.mail.email.config.mail_config": {
+        "sender_domains": {
+            "Dummy365F1": {
+                "smtp": "redcare-pharmacy.com: 587",
+                "address": "Dummy365F1@redcare-pharmacy.com",
+                "password": "TR5QWgRXqLOW"
+            },
+            "rdc_test_automat": {
+                "smtp": "redcare-pharmacy.com: 587",
+                "address": "Dummy365F2@redcare-pharmacy.com",
+                "password": "pVrg2q5z7mAx"
+            }
+        },
+        "receiver_groups": {
+            "recipient_address": [
+                "mohammad.Paarmann@redcare-pharmacy.com",
+                "mohammad.Paarmann@redcare-pharmacy.com",
+                "mohammad.Paarmann@redcare-pharmacy.com"
+            ],
+            "admin_address": [
+                "mohammad.Paarmann@redcare-pharmacy.com",
+                "mohammad.Paarmann@redcare-pharmacy.com",
+                "mohammad.Paarmann@redcare-pharmacy.com"
+            ],
+            "dev_address": [
+                "mohammad.Paarmann@redcare-pharmacy.com",
+                "mohammad.Paarmann@redcare-pharmacy.com",
+                "mohammad.Paarmann@redcare-pharmacy.com"
+            ]
+        },
+        "attachment_default": {
+            "1": {
+                "is_attach": true,
+                "is_all_directory": true,
+                "attachment_directory": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/email_attachment"
+            }
+        },
+        "template_default": {
+            "template_name": "test_report_template",
+            "body": "_"
+        }
+    },
+    "services.log_.config.log_config": {
+        "services.log_.core.stack.stack_context": {
+            "no_show_moduls": [],
+            "no_show_methods": []
+        },
+        "services.log_.core.loging.log": {
+            "Pipeline": {
+                "number_of_log_in_batch": "100",
+                "directory_address": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/logs",
+                "filename": "/Log_Pipeline.txt",
+                "encoding": "utf-8",
+                "level": "Info",
+                "show_in_consoule": true
+            },
+            "Error": {
+                "number_of_log_in_batch": "5",
+                "directory_address": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/logs",
+                "filename": "/Log_Error.txt",
+                "encoding": "utf-8",
+                "level": "Info",
+                "show_in_consoule": true
+            }
+        }
+    },
+    "services.ftp.config.ftp_config": {
+        "domain": {
+            "aqc": {
+                "server": "",
+                "user": "",
+                "password": "",
+                "defualt_db_address": "",
+                "temp_directory_address_for_download": "",
+                "file_to_download": "",
+                "directory_address_for_upload": "",
+                "file_to_upload": ""
+            }
+        }
+    },
+    "services.disk.file.config.file_config": {
+        "mode": "a",
+        "address": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/temp/temp.txt"
+    },
+    "services.disk.excel.config.excel_config": {
+        "default_mode": "w",
+        "default_address": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/temp/temp.xlsx"
+    },
+    "terminal.server.server_api.config.terminal_api_config": {
+        "element_package_file_address": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/temp/element_package.json",
+        "element_package_file_mode": "w",
+        "aqua_config_file_address": "C:/Users/mpaarmann/Projects/rdc_automat/terminal/server/server_api/config/swagger.json"
+    },
+    "continuous_integration.aqua_api.aqua_api.config.aqua_api_config": {
+        "base_url": "https://aqua.shop-apotheke.com:8462",
+        "agent_url": "/aquaWebNG/api/agent",
+        "token_url": "/aquaWebNG/api/token",
+        "project_url": "/aquaWebNG/api/project",
+        "folder_url": "/Folder",
+        "subfolder_path_url": "/SubfolderPath",
+        "navigation_url": "/aquaWebNG/api/navigation",
+        "testcase_url": "/aquaWebNG/api/TestCase",
+        "username": "mPaarmann",
+        "password": "@25340MajaPA",
+        "default_project_name": "D365 Finance"
+    },
+    "continuous_integration.aqua_api.aqua_adaptor.config.aqua_adapter_config": {
+        "test_application_address": "C:/Users/mpaarmann/Projects/rdc_automat/test_applications/d_365/chapters",
+        "default_testcase_description": "<p>This testcase contains folgend functions:</p>"
+    },
+    "continuous_integration.screen_recorder.config.screen_recorder_config": {
+        "recorded_video_file_name": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/videos/recorded_video.mp4",
+        "control_file_address": "C:/Users/mpaarmann/Projects/rdc_automat/continuous_integration/screen_recorder/controller/control_file.json",
+        "recorded_video_directory": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/videos",
+        "temp_recorded_video_file_name": "/temp_recorded_video.avi",
+        "codec": "MJPG",
+        "fps_writer": 20.0,
+        "fps": 120
+    },
+    "drivers.web.selenium.config.selenium_config": {
+        "selenium_chrome_webdriver_path": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/resource/web_drivers/chrome/chromedriver.exe",
+        "wait_for_element_located_timeout": 10,
+        "wait_for_element_located_delay": 190,
+        "wait_for_visibility_timeout": 10,
+        "wait_for_visibility_delay": 190,
+        "wait_for_alert_delay": 190,
+        "wait_for_alert_timeout": 10,
+        "terminal_client_extention_path": "C:/Users/mpaarmann/Projects/rdc_automat/terminal/client/chrome_extention.crx"
+    },
+    "drivers.windows.pywin.config.pywin_config": {},
+    "test_applications.d_365.chapters.core.config.base_chapter_config": {
+        "is_use_excel_attributs": false,
+        "attributes_excel_file_address": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/temp/d_365_all_class_attributs.xlsx"
+    },
+    "test_applications.ax_2009.chapters.core.config.base_chapter_config": {
+        "is_use_excel_attributs": false,
+        "attributes_excel_file_address": "C:/Users/mpaarmann/Projects/rdc_automat/.external_files/temp/ax_2009_all_class_attributs.xlsx"
+    }
+}

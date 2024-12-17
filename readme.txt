@@ -92,10 +92,11 @@ Create venv
 
 Usefull Commands
 		pip3 freeze > requirements.txt
+		pip3 uninstall -r requirements.txt
 
 		pip install --force-reinstall  -r requirements.txt
 		pip3 install -r requirements.txt
-		
+
 		pip list	
 
 Execute file
@@ -106,8 +107,11 @@ install Package
 	appdirs==1.4.4
 	Appium-Python-Client==3.1.0
 	attrs==23.1.0
+	auto-py-to-exe==2.44.1
 	beautifulsoup4==4.12.3
 	blinker==1.7.0
+	bottle==0.13.1
+	bottle-websocket==0.2.9
 	bs4==0.0.2
 	certifi==2023.7.22
 	cffi==1.16.0
@@ -116,16 +120,22 @@ install Package
 	colorama==0.4.6
 	comtypes==1.2.0
 	cssselect==1.2.0
+	de==0.1
 	dict2xml==1.7.3
+	Eel==0.17.0
 	et-xmlfile==1.1.0
 	execnet==2.0.2
 	fake-useragent==1.5.1
 	ffmpeg-python==0.2.0
 	Flask==3.0.3
 	future==1.0.0
+	gevent==24.2.1
+	gevent-websocket==0.10.1
+	greenlet==3.1.1
 	h11==0.14.0
 	idna==3.4
 	importlib_metadata==7.1.0
+	importlib_resources==6.4.5
 	iniconfig==2.0.0
 	itsdangerous==2.1.2
 	Jinja2==3.1.2
@@ -137,6 +147,7 @@ install Package
 	MouseInfo==0.1.3
 	multithreading==0.2.0
 	numpy==1.26.4
+	onetimepass==1.0.1
 	opencv-python==4.9.0.80
 	openpyxl==3.1.2
 	outcome==1.3.0
@@ -154,6 +165,8 @@ install Package
 	pyinstaller-hooks-contrib==2024.8
 	PyMsgBox==1.0.9
 	pyodbc==5.0.1
+	pyotp==2.9.0
+	pyparsing==3.1.4
 	pyperclip==1.8.2
 	pyppeteer==2.0.0
 	pyproject-toml==0.0.10
@@ -166,8 +179,10 @@ install Package
 	PySocks==1.7.1
 	pytest==7.4.2
 	pytest-asyncio==0.23.6
+	pytest-azurepipelines==1.0.5
 	pytest-html==4.0.2
 	pytest-metadata==3.0.0
+	pytest-nunit==1.0.7
 	pytest-xdist==3.3.1
 	pytweening==1.2.0
 	pywin32==306
@@ -185,17 +200,22 @@ install Package
 	sortedcontainers==2.4.0
 	soupsieve==2.5
 	toml==0.10.2
+	totp==1.3.0
 	tqdm==4.66.2
 	trio==0.22.2
 	trio-websocket==0.11.1
 	typing_extensions==4.11.0
 	urllib3==1.26.18
+	utils==1.0.2
 	w3lib==2.1.2
 	websockets==10.4
 	Werkzeug==3.0.2
 	wheel==0.41.2
+	whichcraft==0.6.1
 	wsproto==1.2.0
 	XlsxWriter==3.2.0
 	xlwings==0.31.2
 	xmltodict==0.13.0
 	zipp==3.18.1
+	zope.event==5.0
+	zope.interface==7.0.3

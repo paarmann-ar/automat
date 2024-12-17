@@ -2,6 +2,7 @@ import importlib.util
 import glob
 import importlib
 import inspect
+import CONSTS
 
 # --
 # ...
@@ -30,7 +31,7 @@ class GetAllClassInTestApplication:
 
     def get_list_of_all_classes_in_unit_testcases(self):
         for file in glob.glob(
-            f"C:/Users/mpaarmann/Projects/rdc_automat/test_applications/d_365/chapters//**/*.py",
+            f"{CONSTS.ROOT_DIR}/test_applications/d_365/chapters//**/*.py",
             recursive=True,
         ):
             name = file.split("\\")[-1][:-3]

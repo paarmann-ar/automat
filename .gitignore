@@ -1,6 +1,4 @@
 *.pyc
 .venv
 __pycache__
-dist
-build
 temp.txt

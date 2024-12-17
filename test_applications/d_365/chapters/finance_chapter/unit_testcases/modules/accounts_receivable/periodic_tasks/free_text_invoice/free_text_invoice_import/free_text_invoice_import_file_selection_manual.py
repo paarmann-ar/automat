@@ -3,6 +3,7 @@ from test_applications.d_365.chapters.core.base_chapter import BaseChapter
 from typing import Any
 from test_applications.d_365.abstrct_classes.form.form import Form
 from test_applications.windows_components.open_file_dialog import OpenFileDialog
+import CONSTS
 
 # --
 # ...
@@ -83,7 +84,7 @@ class FreeTextInvoiceImportFileSelectionManual(BaseChapter, Form):
     def __prepare(
         self,
         file_address=(
-            f"C:/Users/mpaarmann/Projects/rdc_automat/.external_files/sample_files/FTI - IT.csv",
+            f"{CONSTS.ROOT_DIR}/.external_files/sample_files/free_text_invoice_import_file.csv",
             True,
         ),
         debitor_nummer=("D13900000049", True),
@@ -126,6 +127,7 @@ class FreeTextInvoiceImportFileSelectionManual(BaseChapter, Form):
                 self.click_button(self.elements.btn_ok)
                 self.delay(220)
 
+            self.blocking_message()
             return True
 
         except Exception as exp:

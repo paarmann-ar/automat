@@ -3,6 +3,8 @@ from test_applications.d_365.chapters.core.base_chapter import BaseChapter
 from typing import Any
 from test_applications.d_365.abstrct_classes.form.form import Form
 from test_applications.windows_components.open_file_dialog import OpenFileDialog
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.toolbars.toolbars import Toolbars
+
 
 # --
 # ...
@@ -60,6 +62,8 @@ class CreateFreeTextInvoices(BaseChapter, Form):
 
             super().setup()
 
+            self.toolbars = Toolbars()
+
             return True
 
         except Exception as exp:
@@ -116,6 +120,7 @@ class CreateFreeTextInvoices(BaseChapter, Form):
 
             self.click_button(self.elements.btn_ok)
 
+            self.blocking_message()
             self.delay(220)
 
         except Exception as exp:

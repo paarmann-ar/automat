@@ -1,7 +1,7 @@
 import cv2
 import numpy
 import pyautogui
-from continuous_integration.screen_recorder.core. base import (
+from continuous_integration.screen_recorder.core.base import (
     Base,
 )
 from continuous_integration.screen_recorder.config.screen_recorder_config import (
@@ -57,10 +57,18 @@ class ScreenRecoder(Base):
             (screen_size),
         )
 
+        print_counter = 0
         read_operation_counter = 0
         pre_frame = numpy.array([[0, 0, 0]])
 
         while self.get_is_record(read_operation_counter):
+            if (read_operation_counter % self.fps_writer) == 0:
+                print_counter += 1
+                if print_counter % 10 == 0:
+                    print(
+                        f"screen recording {read_operation_counter/self.fps_writer} sec..."
+                    )
+
             img = pyautogui.screenshot()
             frame = numpy.array(img)
 
@@ -70,6 +78,7 @@ class ScreenRecoder(Base):
                 output.write(frame)
 
             read_operation_counter += 1
+
         output.release()
         cv2.destroyAllWindows()
 

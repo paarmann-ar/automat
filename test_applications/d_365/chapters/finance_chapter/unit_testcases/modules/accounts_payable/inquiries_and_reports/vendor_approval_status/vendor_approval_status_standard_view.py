@@ -91,7 +91,7 @@ class VendorApprovalStatusStandardView(BaseChapter, StandardView):
                 return True
 
             self.search_item_text = "Created from"
-            self.search_item = created_from
+            self.search_item = self.state['current_user']
             return True
 
         except Exception as exp:

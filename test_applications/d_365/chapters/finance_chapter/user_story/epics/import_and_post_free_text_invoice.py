@@ -35,6 +35,9 @@ from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.sys
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.periodic_tasks.free_text_invoice.free_text_invoice_import.free_text_invoice_import_file_selection_manual import (
     FreeTextInvoiceImportFileSelectionManual,
 )
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.periodic_tasks.free_text_invoice.free_text_invoice_import.free_text_invoice_import_manager import (
+    FreeTextInvoiceImportManager,
+)
 
 # --
 # ...
@@ -79,7 +82,9 @@ class ImportAndPostFreeTextInvoice(BaseChapter, BaseUserStory):
     # --
 
     def get_elements(self) -> str:
-        return ObjectProvider()(__file__.replace(".py", ".json ", -1).replace("\\", "/").replace(" c", ""))
+        return ObjectProvider()(
+            __file__.replace(".py", ".json ", -1).replace("\\", "/").replace(" c", "")
+        )
 
     # --
     # ... setup, teardown and prepare
@@ -102,7 +107,7 @@ class ImportAndPostFreeTextInvoice(BaseChapter, BaseUserStory):
             self.all_free_text_invoices_standard_view = (
                 AllFreeTextInvoicesStandardView()
             )
-
+            self.free_text_invoice_import_manager = FreeTextInvoiceImportManager()
             self.all_customers_top_gadget = AllCustomersTopGadget()
             self.all_Customers_standard_view = AllCustomersStandardView()
 
@@ -148,49 +153,28 @@ class ImportAndPostFreeTextInvoice(BaseChapter, BaseUserStory):
 
         try:
 
-            self.toolbars.change_mandant(mandant=("139", True))
+            self.state["customer_account"] = "D13900000049", True
 
-            self.toolbars.search_for_a_page = ("Free text invoice import", True)
-            self.toolbars.set_text_in_search_for_a_page()
+            self.toolbars.change_mandant()
 
-            self.delay(220)
-
-            self.free_text_invoice_import_top_gadget.import_invoice_free_text_invoice_import()
-            self.delay(220)
-
-            self.free_text_invoice_import_file_selection_manual.debitor_nummer = (
-                "D13900000049",
-                True,
+            self.free_text_invoice_import_manager(
+                step_10="import",
+                step_20="free_text_invoice_import_file_selection_manual",
+                step_30="post",
+                step_40="create_free_text_invoices",
+                step_50="is_invoice_there",
             )
-            self.free_text_invoice_import_file_selection_manual.free_text_invoice_import_file_selection_manual()
-            self.delay(220)
-
-            self.toolbars.search_for_a_page = ("Free text invoice import", True)
-            self.toolbars.set_text_in_search_for_a_page()
-
-            self.free_text_invoice_import_top_gadget.import_invoice_free_text_invoice_post()
-            self.delay(220)
-
-            self.create_free_text_invoices.create_free_text_invoices()
-
-            self.toolbars.search_for_a_page = ("all free text invoice", True)
-            self.toolbars.search_for_a_page = ("Free text invoice", True)
-            self.toolbars.set_text_in_search_for_a_page()
-
-            self.all_free_text_invoices_standard_view.invoice_number = (
-                "D13900000049",
-                True,
-            )
-            self.all_free_text_invoices_standard_view.select()
 
             self.toolbars.search_for_a_page = ("all customers", True)
             self.toolbars.set_text_in_search_for_a_page()
 
-            self.all_Customers_standard_view.account_number = ("D13900000049", True)
+            self.all_Customers_standard_view.search_item = self.state[
+                "customer_account"
+            ]
             self.all_Customers_standard_view.select_customer_account_number()
+
             self.all_customers_top_gadget.all_customers_customer_email_history()
 
-            self.email_history_standard_view.reference_number = ("D13900000049", True)
             self.email_history_top_gadget.email_detail()
 
             return True

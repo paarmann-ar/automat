@@ -1,7 +1,7 @@
 from typing import Any
 from test_applications.d_365.core.object_provider import ObjectProvider
 from test_applications.d_365.chapters.core.base_chapter import BaseChapter
-
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.login.login import Login
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_payable.vendors.all_vendors.all_vendors_top_gadget import (
     AllVendorsTopGadget,
 )
@@ -77,6 +77,7 @@ class ApprovalVendor(BaseChapter, BaseUserStory):
             super().setup()
 
             self.toolbars = Toolbars()
+            self.login = Login()
             self.all_vendors_top_gadget = AllVendorsTopGadget()
             self.all_vendors_standard_view = AllVendorsStandardView()
             self.vendor_approval_status_top_gadget = VendorApprovalStatusTopGadget()
@@ -144,6 +145,7 @@ class ApprovalVendor(BaseChapter, BaseUserStory):
 
         try:
 
+            self.state["user_create_vendor"]=self.state["current_user"]
             self.goto_start_point()
 
             self.all_vendors_standard_view.search_item = (
@@ -157,19 +159,27 @@ class ApprovalVendor(BaseChapter, BaseUserStory):
 
             self.all_vendors_top_gadget.first_approval_vendor()
 
+            self.toolbars.logout()
+            self.login.username = 'Dummy365F2@redcare-pharmacy.com', True
+            self.login.password = 'pVrg2q5z7mAx', True
+            self.login.login(is_use_iifa=False, is_wait_for_stay_signed_in=False)
+
             self.toolbars.search_for_a_page = ("Vendor Approval Status", True)
             self.toolbars.set_text_in_search_for_a_page()
 
             self.delay(220)
 
-            self.all_vendors_standard_view.search_item = (
-                self.state["current_user"],
-                True,
-            )
-            self.all_vendors_standard_view.search_item_text = "Created from"
+            self.vendor_approval_status_standard_view.search_item = self.state["user_create_vendor"], True
+            self.vendor_approval_status_standard_view.search_item_text = "Created from"
             self.vendor_approval_status_standard_view.select_vendor(is_click_on_selected=False)
 
             self.vendor_approval_status_top_gadget.second_approval_vendor()
+
+            self.toolbars.logout()
+
+            self.login.username = 'Dummy365F1@redcare-pharmacy.com', True
+            self.login.password = 'TR5QWgRXqLOW', True
+            self.login.login(is_use_iifa=False, is_wait_for_stay_signed_in=False)
 
             return True
 

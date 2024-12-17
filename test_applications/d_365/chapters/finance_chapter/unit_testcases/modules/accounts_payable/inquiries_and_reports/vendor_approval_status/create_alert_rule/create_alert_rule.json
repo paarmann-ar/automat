@@ -11,8 +11,8 @@
     "txb_subject": {
         "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"Subject\")]"
     },
-    "txb_message": {
-        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"Message_textArea\")]"
+    "txa_message": {
+        "xpath": "//textarea[contains(@id,\"EventCreateRule\") and contains(@id,\"Message_textArea\")]"
     },
     "txb_email_recipients": {
         "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"EmailRecipients\")]"

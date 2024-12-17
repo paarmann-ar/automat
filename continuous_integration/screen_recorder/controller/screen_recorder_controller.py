@@ -1,6 +1,4 @@
 ﻿import os
-
-import ffmpeg
 from continuous_integration.screen_recorder.core.base import (
     Base,
 )
@@ -62,11 +60,13 @@ class ScreenRecoderController(Base):
 
     # --
     # ...
-    # --
+    # --pip install pyscreeze
 
     def stop_recording(self):
 
         try:
+
+            print("stop screen recording...")
 
             context = """{"screen_recorder":{"is_record": false}}"""
             self.json.operation(address=self.control_file_address, context=context)
@@ -106,6 +106,8 @@ class ScreenRecoderController(Base):
     # --
 
     def compress_video(self, video_full_path, output_file_name, target_size):
+
+        print("video compressing...")
 
         probe = ffmpeg.probe(video_full_path)
         duration = float(probe['format']['duration'])
