@@ -3,10 +3,10 @@
         "xpath": "//button[contains(@aria-controls,\"SysOperationTemplateForm\") and contains(@aria-controls,\"General_container\") and  1]"
     },
     "chk_exclude_future_settlements": {
-        "xpath": "//span[contains(@id, \"SysOperationTemplateForm\") and contains(@id, \"Fld1\") and 1]"
+        "xpath": "//span[contains(@id, \"SysOperationTemplateForm\") and contains(@id, \"Fld1\") and contains(@id, \"toggle\") and 1]"
     },
     "chk_only_positive": {
-        "xpath": "//span[contains(@id, \"SysOperationTemplateForm\") and contains(@id, \"Fld2\") and 1]"
+        "xpath": "//span[contains(@id, \"SysOperationTemplateForm\") and contains(@id, \"Fld2\") and contains(@id, \"toggle\") and 1]"
     },
     "txb_open_transactions_per": {
         "xpath": "//input[@name=\"Fld3_1\"]"

@@ -11,8 +11,12 @@ from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.acc
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.inquiries_and_reports.mq.customer_erp_to_d365.customer_erp_to_d365_top_gadget import (
     CustomerErpToD365TopGadget,
 )
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.customers.all_customers.all_customers_standard_view import AllCustomersStandardView
-from test_applications.d_365.chapters.finance_chapter.user_story.epics.customer_erp_to_d365.ax_2009_intergration import Ax2009Intergration
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.customers.all_customers.all_customers_standard_view import (
+    AllCustomersStandardView,
+)
+from test_applications.d_365.chapters.finance_chapter.user_story.epics.customer_erp_to_d365.ax_2009_intergration import (
+    Ax2009Intergration,
+)
 
 
 # --
@@ -118,6 +122,13 @@ class CustomerErpToD365(BaseChapter, BaseUserStory):
 
         try:
 
+            self.state["expected_result"] = {
+                "ax_d365_customer_id": {
+                    "customer_id": "DIC11000",
+                    "result": False,
+                }
+            }
+
             self.ax2009_intergration.ax_2009_intergration()
 
             self.state["ax_d365_customer_id"] = "DIC11000", True
@@ -129,14 +140,21 @@ class CustomerErpToD365(BaseChapter, BaseUserStory):
 
             self.delay(220)
 
-            self.customer_erp_to_d365_standard_view.search_item = self.state["ax_d365_customer_id"]
+            self.customer_erp_to_d365_standard_view.search_item = self.state[
+                "ax_d365_customer_id"
+            ]
             self.customer_erp_to_d365_standard_view.select_external_customer_account_id()
 
             self.toolbars.search_for_a_page = ("all customers", True)
             self.toolbars.set_text_in_search_for_a_page()
 
-            self.all_customers_standard_view.search_item = self.state["ax_d365_customer_id"]
-            self.all_customers_standard_view.select_customer_account_number()
+            self.all_customers_standard_view.search_item = self.state[
+                "expected_result"
+            ].get("ax_d365_customer_id")["customer_id"]
+
+            self.state["expected_result"].get("ax_d365_customer_id")[
+                "result"
+            ] = self.all_customers_standard_view.select_customer_account_number()
 
             return True
 

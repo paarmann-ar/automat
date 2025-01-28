@@ -1,4 +1,5 @@
 from multiprocessing import Process
+from toolboxs.toolbox import Toolbox
 from continuous_integration.continuous_integration_provider import (
     ContinuousIntegrationProvider,
 )
@@ -16,11 +17,13 @@ from test_applications.d_365.chapters.finance_chapter.user_story.epics.free_text
 # --
 # ...
 # --
+
 def userstory():
     Browser().open_browser()
     Login().login()
 
     free_text_invoice_for_intercompany = FreeTextInvoiceForIntercompany()
+    free_text_invoice_for_intercompany.state['dict_importet_moduls'] = Toolbox().get_import_moduls()
     free_text_invoice_for_intercompany.free_text_invoice_for_intercompany()
 
 # --

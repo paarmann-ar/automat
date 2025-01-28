@@ -75,6 +75,7 @@ class SqlserverExecute(BaseDB):
                     row = self.cursor.fetchone()
                     result = dict(zip(list(map(lambda x: x[0], row.cursor_description)), row))
 
+                # I have change this exp to bestimmt exception
                 except Exception as exp:
                     self.error(f"{__file__}--->{__name__}: {str(exp)}")
 

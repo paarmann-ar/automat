@@ -1,0 +1,1 @@
+start %userprofile%\desktop\ax.lnk

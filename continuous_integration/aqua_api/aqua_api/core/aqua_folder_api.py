@@ -11,7 +11,9 @@ class AquaFolderApi(BaseAquaApi):
         self.project_url = self.instance.config_dictionary.get("project_url")
         self.folder_url = self.instance.config_dictionary.get("folder_url")
 
-        self.access_token = kwargs.get("access_token", None)
+        self.aqua_token_api = kwargs.get('aqua_token_api', None)
+        self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
         self.current_project_id = kwargs.get("current_project_id", None)
         
         self.current_folder_id = "0"
@@ -44,12 +46,15 @@ class AquaFolderApi(BaseAquaApi):
             
         try:
 
+            self.aqua_token_api()
+            self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
             response = self.request(
                 method="get",
                 url=f"{self.base_url}{self.project_url}/{self.current_project_id}{self.folder_url}",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.access_token}",
+                    "Authorization": f"Bearer {self.aqua_access_token}",
                 },
             )
 
@@ -75,12 +80,15 @@ class AquaFolderApi(BaseAquaApi):
 
         try:
 
+            self.aqua_token_api()
+            self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
             response = self.request(
                 method="post",
                 url=f"{self.base_url}{self.project_url}/{self.current_project_id}{self.folder_url}/{self.folder.get("parent_id")}/Subfolder",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.access_token}",
+                    "Authorization": f"Bearer {self.aqua_access_token}",
                 },
                 json={
                     "projectId": self.current_project_id,
@@ -102,12 +110,15 @@ class AquaFolderApi(BaseAquaApi):
 
         try:
 
+            self.aqua_token_api()
+            self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
             response = self.request(
                 method="delete",
                 url=f"{self.base_url}{self.project_url}/{self.current_project_id}{self.folder_url}/{self.current_folder_id}",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.access_token}",
+                    "Authorization": f"Bearer {self.aqua_access_token}",
                 },
                 json={
                     "projectId": self.current_project_id,
@@ -116,6 +127,7 @@ class AquaFolderApi(BaseAquaApi):
                 },
             )
 
+            return response
 
         except Exception as exp:
             print(f"delete_folder: {exp}")

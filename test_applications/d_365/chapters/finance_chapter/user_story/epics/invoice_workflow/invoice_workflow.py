@@ -29,7 +29,6 @@ from test_applications.d_365.chapters.finance_chapter.user_story.epics.invoice_w
 from test_applications.d_365.chapters.finance_chapter.user_story.modules.account_payable.vendor_bank_account import VendorBankAccount
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.tax.setup.sales_tax.tax_exempt_numbers.tax_exempt_number_manager import TaxExemptNumberManager
 
-
 # --
 # ...
 # --

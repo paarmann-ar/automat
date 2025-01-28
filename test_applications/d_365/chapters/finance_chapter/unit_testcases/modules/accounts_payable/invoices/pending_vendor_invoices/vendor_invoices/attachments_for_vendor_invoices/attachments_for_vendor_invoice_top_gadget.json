@@ -3,7 +3,7 @@
         "text_to_search": "Attachments for Vendor invoices"
     },
     "btn_back": {
-        "xpath": "//button[contains(@id,\"vendtablelistpage\") and contains(@id,\"SystemDefinedCloseButton\")]"
+        "xpath": "//button[contains(@id,\"DocuView\") and contains(@id,\"SystemDefinedCloseButton\")]"
     },
     "btn_new": {
         "xpath": "//span[contains(@id,\"label\") and contains(@id,\"ctrlAdd\") and contains(@id,\"DocuView\") and  1]"

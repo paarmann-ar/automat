@@ -120,13 +120,14 @@ class TabParameters(BaseChapter, Tab):
 
             self.click_button(self.elements.btn_browse)
 
-            self.open_file(file_address=self.file_address)
+            self.open_file(file_address = self.file_address[0])
 
             self.delay(220)
 
-            while self.is_element_there(self.elements.btn_ok):
-                self.click_button(self.elements.btn_ok)
-                self.delay(220)
+            # there is no longer btn_ok 
+            # while self.is_element_there(self.elements.btn_ok):
+            #     self.click_button(self.elements.btn_ok)
+            #     self.delay(220)
                 
             self.delay(220)
 

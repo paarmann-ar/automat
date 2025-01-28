@@ -250,7 +250,9 @@ class GeneralJournalsTopGadget(BaseChapter, Page):
         try:
 
             self.click_button(self.elements.btn_validate)
+            self.delay(220)
 
+            self.wait_for_visibility(self.elements.ctm_validation)
             self.delay(220)
 
             return True

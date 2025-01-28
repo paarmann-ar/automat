@@ -1,4 +1,5 @@
 from multiprocessing import Process
+from toolboxs.toolbox import Toolbox
 from continuous_integration.continuous_integration_provider import (
     ContinuousIntegrationProvider,
 )
@@ -19,6 +20,7 @@ def userstory():
     Login().login()
 
     import_ledger_journal_and_validation = ImportLedgerJournalAndValidation()
+    import_ledger_journal_and_validation.state['dict_importet_moduls'] = Toolbox().get_import_moduls()
     import_ledger_journal_and_validation.import_journal_and_validate()
 
 # --

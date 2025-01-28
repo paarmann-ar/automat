@@ -1,0 +1,18 @@
+{
+    "aqua_folder": {
+        "id": 14435
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_43937": {
+            "id": 43937,
+            "name": "select_invoice_journal_number",
+            "automatisiert": "{'FieldId': 'CustomInt00', 'Value': 10465}",
+            "status": "{'FieldId': 'Status', 'Value': 10440}",
+            "test_level": "{'FieldId': 'TestLevel', 'Value': 10464}",
+            "teststeps:": {}
+        }
+    }
+}

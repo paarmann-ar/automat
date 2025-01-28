@@ -1,6 +1,5 @@
 from services.disk.service_disk_provider import ServiceDiskProvider
 from test_applications.d_365.chapters.core.base_method.base_method import BaseMethod
-import inspect
 
 # --
 # ...

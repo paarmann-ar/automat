@@ -1,6 +1,7 @@
 ﻿import math
 import random
 from pathlib import Path
+import sys
 
 # --
 # ...
@@ -66,3 +67,35 @@ class Toolbox:
 
         except Exception as exp:
             print(repr(exp))
+
+
+    # --
+    # ...
+    # --
+
+    @staticmethod
+    def get_import_moduls() -> str:
+
+        try:
+
+            modules=[]
+            sys_modules_keys = sys.modules.keys()
+            for module in sys_modules_keys:
+                if module[:48] == 'test_applications.d_365.chapters.finance_chapter':
+                    modules.append(module)
+
+            with open(f"{Toolbox().get_root_path().replace("\\", "/")}/.external_files/temp/temp_import_moluls.txt",'w') as temp_import_moluls:
+                moduls_text=""
+                for m in modules:
+                    moduls_text = f"{moduls_text} {m} \n"
+
+                print(moduls_text , file=temp_import_moluls)
+            
+            temp_import_moluls.close()
+
+            return modules
+
+        except Exception as exp:
+            print(repr(exp))
+
+    

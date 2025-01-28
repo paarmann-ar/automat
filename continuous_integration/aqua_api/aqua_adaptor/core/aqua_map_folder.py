@@ -100,6 +100,8 @@ class AquaMapFolder(BaseAquaAdapter):
                     "name": folder_name,
                     "adress": folder_adress,
                     "parent_id": test_application_folder_id[folder_parent],
+                    "contains_files": files,
+                    "contains_sub_folders": sub_folders,
                 }
 
         except Exception as exp:
@@ -116,6 +118,7 @@ class AquaMapFolder(BaseAquaAdapter):
             for id, name in self.aqua_api.subfolder_api.subfolder_dictionary.items():
                 self.aqua_api.folder_api.current_folder_id = id
                 self.aqua_api.folder_api.delete_folder()
+
                 print(f"delete {id}, {name}")
 
             self.aqua_parent_folder_id = 0
@@ -153,6 +156,7 @@ class AquaMapFolder(BaseAquaAdapter):
                 }
 
                 self.aqua_api.folder_api.folder["name"] = folder["name"]
+                self.aqua_api.folder_api.folder["adress_in_framework"] = folder["adress"]
                 self.aqua_api.folder_api.folder["parent_id"] = folder["parent_id"]
 
                 if id in created_folder:
@@ -165,6 +169,8 @@ class AquaMapFolder(BaseAquaAdapter):
 
                 print(f"create {new_folder_id}: {aqua_folder_object}")
 
+                self.update_testcase_elements_repository_json(folder, new_folder_id)
+
                 created_folder[new_folder_id] = aqua_folder_object
 
                 for id_, folder_data_ in self.test_application_folder_tree.items():
@@ -172,6 +178,11 @@ class AquaMapFolder(BaseAquaAdapter):
                         self.test_application_folder_tree[id_] = {
                             "name": folder_data_["name"],
                             "parent_id": new_folder_id,
+                            "adress": folder_data_["adress"],
+                            "contains_files": folder_data_["contains_files"],
+                            "contains_sub_folders": folder_data_[
+                                "contains_sub_folders"
+                            ],
                         }
 
                 self.test_application_folder_tree[new_folder_id] = (
@@ -198,3 +209,42 @@ class AquaMapFolder(BaseAquaAdapter):
 
         except Exception as exp:
             print(f"map_reset_folder_from_framework_to_aqua: {exp}")
+
+        # --
+        # ...
+        # --
+
+    def update_testcase_elements_repository_json(
+        self, test_application_folder_object, aqua_folder_id
+    ):
+
+        try:
+
+            aqua_json_files = []
+
+            for file in test_application_folder_object["contains_files"]:
+
+                if file[-5:] == ".json":
+
+                    if file[-10:] == "_aqua.json":
+                        aqua_repository = file
+
+                    else:
+                        aqua_repository = f"{file[:-5]}_aqua.json"
+
+                    if aqua_repository in aqua_json_files:
+                        continue
+
+                    self.json.operation(
+                        address=f"{test_application_folder_object["adress"]}/{aqua_repository}",
+                        context=f"""{{"aqua_folder": {{"id": {aqua_folder_id}}}}}""",
+                        mode="append_or_replace",
+                    )
+
+                    aqua_json_files.append(aqua_repository)
+
+            return True
+
+        except Exception as exp:
+            print(f"map_reset_folder_from_framework_to_aqua: {exp}")
+            return False

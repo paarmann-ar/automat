@@ -2,10 +2,18 @@ from test_applications.d_365.core.object_provider import ObjectProvider
 from test_applications.d_365.chapters.core.base_chapter import BaseChapter
 from typing import Any
 from test_applications.d_365.abstrct_classes.page.page import Page
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.credit_and_collections.collection_letter.create_collection_letters.tab_parameters import TabParameters
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.credit_and_collections.collection_letter.create_collection_letters.tab_run_in_the_background import TabRunInTheBackground
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.credit_and_collections.collection_letter.create_collection_letters.tab_records_to_include import TabRecordsToInclude
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.toolbars.toolbars import Toolbars
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.credit_and_collections.collection_letter.create_collection_letters.tab_parameters import (
+    TabParameters,
+)
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.credit_and_collections.collection_letter.create_collection_letters.tab_run_in_the_background import (
+    TabRunInTheBackground,
+)
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.credit_and_collections.collection_letter.create_collection_letters.tab_records_to_include import (
+    TabRecordsToInclude,
+)
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.toolbars.toolbars import (
+    Toolbars,
+)
 
 # --
 # ...
@@ -37,7 +45,7 @@ class CreateCollectionLettersManager(BaseChapter, Page):
                 case "":
                     self.goto_start_point()
                     self.create_collection_letters_manager(**kwargs)
-                    
+
                 case _:
                     raise Exception(
                         f"class {__class__.__name__} have no method {action}."
@@ -54,7 +62,9 @@ class CreateCollectionLettersManager(BaseChapter, Page):
     # --
 
     def get_elements(self) -> str:
-        return ObjectProvider()(__file__.replace(".py", ".json ", -1).replace("\\", "/").replace(" c", ""))
+        return ObjectProvider()(
+            __file__.replace(".py", ".json ", -1).replace("\\", "/").replace(" c", "")
+        )
 
     # --
     # ... setup, teardown and prepare
@@ -114,7 +124,7 @@ class CreateCollectionLettersManager(BaseChapter, Page):
             self.toolbars.search_for_a_page_text = "Creation of collection letter"
             self.toolbars.search_for_a_page = ("create collection letters", True)
             self.toolbars.set_text_in_search_for_a_page()
-            
+
             self.delay(220)
 
             return True
@@ -126,14 +136,14 @@ class CreateCollectionLettersManager(BaseChapter, Page):
     # --
     # ... rollback
     # --
-    
+
     @BaseChapter.log
     def create_free_text_invoice_rollback(self) -> bool:
 
         try:
 
             self.goto_start_point()
-            
+
             return True
 
         except Exception as exp:
@@ -155,7 +165,7 @@ class CreateCollectionLettersManager(BaseChapter, Page):
 
             for _, tab in kwargs.items():
                 match tab:
-                      
+
                     case "tab_parameters":
                         self.tab_parameters()
 
@@ -163,8 +173,11 @@ class CreateCollectionLettersManager(BaseChapter, Page):
                         self.tab_records_to_include()
 
                     case "tab_run_in_the_background":
+                        self.tab_run_in_the_background.task_description = self.state[
+                            "find_collection_letter_by_email_description"
+                        ]
                         self.tab_run_in_the_background()
-                        
+
                     case "save":
                         self.click_button(self.elements.btn_ok)
                         self.delay(1000)
@@ -173,7 +186,7 @@ class CreateCollectionLettersManager(BaseChapter, Page):
                             "wait_until_lightbox_disapear",
                             action="",
                         )
-                        
+
                     case _:
                         pass
 

@@ -98,6 +98,11 @@ Usefull Commands
 		pip3 install -r requirements.txt
 
 		pip list	
+		if get error with no module then 
+			1. ctrl+shift+p
+			2. venv
+			3. add venv
+
 
 Execute file
 		pyinstaller -d all --clean  C:\Users\mpaarmann\Projects\rdc_automat\test_applications\md_365\controler\userstory_pytest.py

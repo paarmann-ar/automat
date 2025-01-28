@@ -47,7 +47,9 @@ class Browser(BaseChapter):
     # --
 
     def get_elements(self) -> str:
-        return ObjectProvider()(__file__.replace(".py", ".json ", -1).replace("\\", "/").replace(" c", ""))
+        return ObjectProvider()(
+            __file__.replace(".py", ".json ", -1).replace("\\", "/").replace(" c", "")
+        )
 
     # --
     # ... setup and teardown and prepare
@@ -92,6 +94,8 @@ class Browser(BaseChapter):
             if super().prepare():
                 return True
 
+            self.is_aqua=True
+
             return True
 
         except Exception as exp:
@@ -102,7 +106,7 @@ class Browser(BaseChapter):
     # ... methods
     # --
 
-    @BaseChapter.aqua
+    # @BaseChapter.aqua
     @BaseChapter.log
     def open_browser(self, is_delete_all_cookies=True) -> bool:
 
@@ -121,7 +125,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    @BaseChapter.aqua
+    # @BaseChapter.aqua
     @BaseChapter.log
     def close_browser(self) -> bool:
 
@@ -137,7 +141,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    @BaseChapter.aqua
+    # @BaseChapter.aqua
     @BaseChapter.log
     def forward_browser(self) -> bool:
 
@@ -153,7 +157,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    @BaseChapter.aqua
+    # @BaseChapter.aqua
     @BaseChapter.log
     def backward_browser(self) -> bool:
 
@@ -169,7 +173,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    @BaseChapter.aqua
+    # @BaseChapter.aqua
     @BaseChapter.log
     def alle_cookies_loschen(self) -> bool:
 
@@ -185,7 +189,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    @BaseChapter.aqua
+    # @BaseChapter.aqua
     @BaseChapter.log
     def get_alle_cookies(self) -> tuple:
 

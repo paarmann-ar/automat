@@ -51,7 +51,7 @@ class FileManager(BaseDisk):
                 case _:
                     with open(address, mode) as file:
                         file.write(context)
-
+# I have change this exp to bestimmt exception
         except Exception as exp:
             print(repr(exp))
             context = "Error"

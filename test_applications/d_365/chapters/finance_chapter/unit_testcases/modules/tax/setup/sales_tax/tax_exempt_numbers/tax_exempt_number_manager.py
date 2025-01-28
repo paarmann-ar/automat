@@ -155,7 +155,7 @@ class TaxExemptNumberManager(BaseChapter):
             return False
         
     # --
-    # ... methode
+    # ... method
     # --
 
     @BaseChapter.handel_tipbox

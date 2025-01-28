@@ -165,7 +165,7 @@ class Login(BaseChapter):
             )
             print(f"authentication_nummer: {authentication_nummer}")
 
-            self.click(self.elements.hl_i_canot_use_ma)
+            self.click(self.elements.lbl_hl_i_canot_use_ma)
             self.delay(500)
 
             self.click(self.elements.lbl_use_a_verification_code)

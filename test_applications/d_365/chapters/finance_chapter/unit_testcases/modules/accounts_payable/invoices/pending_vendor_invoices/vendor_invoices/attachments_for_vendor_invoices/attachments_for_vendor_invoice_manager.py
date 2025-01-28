@@ -69,9 +69,7 @@ class AttachmentsForVendorInvoiceManager(BaseChapter, Form):
             )
             self.tab_attachment = TabAttachment()
             self.attachments_for_vendor_invoice_description = AttachmentsForVendorInvoiceDescription()
-            self.Attachments_for_vendor_invoice_top_gadget = (
-                AttachmentsForVendorInvoiceTopGadget()
-            )
+
             return True
 
         except Exception as exp:

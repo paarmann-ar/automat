@@ -15,10 +15,10 @@
         "xpath": "//button[contains(@id,\"ledgerjournaltable\") and contains(@id,\"SystemDefinedDeleteButton\") and  1]"
     },
     "btn_import_journal": {
-        "xpath": "//span[contains(@id,\"Manual\") and contains(@id,\"SaeJournalImport\") and  1]"
+        "xpath": "//button[contains(@id,\"ledgerjournaltable\") and contains(@id,\"SaeJournalImport_Manual\") and  1]"
     },
     "btn_import_excel": {
-        "xpath": "//span[@id=\"ledgerjournaltable3_1_SaeDMFRunImport_LedgerJournal_label\"]"
+        "xpath": "//button[contains(@id,\"ledgerjournaltable\") and contains(@id,\"SaeDMFRunImport_LedgerJournal\") and  1]"
     },
     "ctm_validation":{
         "xpath": "//*[contains(@id, \"Validation_list\") and contains(@id, \"ledgerjournaltable\") and 1 ]"
@@ -27,6 +27,6 @@
         "xpath": "//span[contains(@id,\"ledgerjournaltable\") and contains(@id, \"Validation_label\") and 1]"
     },
     "btn_validate_validate": {
-        "xpath": "//button[contains(@id,\"ledgerjournaltable\") and contains(@id, \"CheckJournal_label\") and 1]"
+        "xpath": "//button[contains(@id,\"ledgerjournaltable\") and contains(@id, \"CheckJournal\") and 1]"
     }
 }

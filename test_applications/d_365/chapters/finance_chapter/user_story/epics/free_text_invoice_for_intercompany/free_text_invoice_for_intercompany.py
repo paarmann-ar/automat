@@ -14,9 +14,6 @@ from test_applications.d_365.chapters.finance_chapter.user_story.modules.account
 from test_applications.d_365.chapters.finance_chapter.user_story.epics.free_text_invoice_for_intercompany.free_text_invoice_for_intercompany_rollback import (
     FreeTextInvoiceForIntercompanyRollback,
 )
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.invoices.batch_invoicing.free_text_invoice import (
-    PostFreeTextInvoice,
-)
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_payable.invoices.invoice_journal.invoice_journal_manager import (
     InvoiceJournalManager,
 )
@@ -87,7 +84,6 @@ class FreeTextInvoiceForIntercompany(BaseChapter, BaseUserStory):
             self.free_text_invoice_for_intercompany_rollback = (
                 FreeTextInvoiceForIntercompanyRollback()
             )
-            self.post_free_text_invoice = PostFreeTextInvoice()
             self.invoice_journal_manager = InvoiceJournalManager()
             self.ledger_calendars_manager = LedgerCalendarsManager()
 
@@ -149,6 +145,8 @@ class FreeTextInvoiceForIntercompany(BaseChapter, BaseUserStory):
             self.delay(220)
 
             self.create_free_text_invoice.new_free_text_invoices()
+
+            self.delay(2000)
 
             self.toolbars.mandant = ("110", True)
             self.toolbars.change_mandant()

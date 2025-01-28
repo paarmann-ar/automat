@@ -17,7 +17,7 @@
     "lbl_authentication_nummer": {
         "xpath": "//*[@id=\"idRichContext_DisplaySign\"]"
     },
-    "hl_i_canot_use_ma": {
+    "lbl_hl_i_canot_use_ma": {
         "xpath": "//*[contains(text(),\"use my Microsoft Authenticator app right now\")]"
     },
     "lbl_use_a_verification_code": {

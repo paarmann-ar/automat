@@ -109,7 +109,7 @@ class PendingVendorInvoices(BaseChapter, BaseUserStory):
 
             self.toolbars.change_mandant()
 
-            self.toolbars.search_for_a_page = ("pending vendor invoice", True)
+            self.toolbars.search_for_a_page = ("Pending vendor invoices", True)
             self.toolbars.set_text_in_search_for_a_page()
 
             self.delay(220)

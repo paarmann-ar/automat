@@ -3,7 +3,7 @@ from continuous_integration.aqua_api.aqua_api.config.aqua_api_config import (
     AquaApiConfig,
 )
 import itertools
-
+from continuous_integration.aqua_api.aqua_api.core.aqua_token_api import AquaTokenApi
 
 # --
 # ...
@@ -15,7 +15,9 @@ class AquaTestcaseApi(BaseAquaApi):
         self.base_url = self.instance.config_dictionary.get("base_url")
         self.testcase_url = self.instance.config_dictionary.get("testcase_url")
 
-        self.access_token = None
+        self.aqua_token_api = kwargs.get("aqua_token_api", None)
+        self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
         self.testcase_id = 0
         self.testcase_object = {}
         self.testcases_dictionary = {}
@@ -46,7 +48,7 @@ class AquaTestcaseApi(BaseAquaApi):
             "Value": 10464,
         }
 
-        self.description = "Testcase description"
+        self.description = "<h1>Testcase description</h1>"
 
         self.test_data = {}
         self.test_step_index = itertools.count(1)
@@ -76,18 +78,23 @@ class AquaTestcaseApi(BaseAquaApi):
     # --
 
     def create_test_steps_object(self):
-        test_step_object = self.test_step_object()
-        self.test_steps_object.append(test_step_object)
-
-    def test_step_object(self):
         test_step_index = next(self.test_step_index)
-        return {
-            "Index": test_step_index,
-            "Name": self.test_step_name,
-            "Description": self.test_step_description,
-            "ExpectedResult": self.test_step_expexted_result,
-            "StepType": "Step",
-        }
+        self.test_steps_object.insert(
+            test_step_index,
+            {
+                "Index": test_step_index,
+                "Name": self.test_step_name,
+                "Description": self.test_step_description,
+                "ExpectedResult": {
+                    "Html": self.test_step_expexted_result,
+                },
+                "StepType": "Step",
+            },
+        )
+
+    def clear_test_steps_object(self):
+        self.test_steps_object.clear()
+        self.test_step_index = itertools.count(1)
 
     # --
     # ...
@@ -140,12 +147,15 @@ class AquaTestcaseApi(BaseAquaApi):
 
         try:
 
+            self.aqua_token_api()
+            self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
             response = self.request(
                 method="get",
                 url=f"{self.base_url}{self.testcase_url}/ItemList",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.access_token}",
+                    "Authorization": f"Bearer {self.aqua_access_token}",
                 },
                 params={
                     "projectId": self.current_project_id,
@@ -179,12 +189,15 @@ class AquaTestcaseApi(BaseAquaApi):
 
         try:
 
+            self.aqua_token_api()
+            self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
             response = self.request(
                 method="post",
                 url=f"{self.base_url}{self.testcase_url}",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.access_token}",
+                    "Authorization": f"Bearer {self.aqua_access_token}",
                 },
                 json=self.testcase_object,
             )
@@ -192,6 +205,8 @@ class AquaTestcaseApi(BaseAquaApi):
             self.testcases_dictionary[response.get("Id")] = response
 
             print("created testcase id: ", response.get("Id"), response.get("Location"))
+
+            return response.get("Id")
 
         except Exception as exp:
             print(f"create_testcases: {str(exp)}")
@@ -204,14 +219,19 @@ class AquaTestcaseApi(BaseAquaApi):
 
         try:
 
+            self.aqua_token_api()
+            self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
             response = self.request(
                 method="delete",
                 url=f"{self.base_url}{self.testcase_url}/{self.testcase_id}",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.access_token}",
+                    "Authorization": f"Bearer {self.aqua_access_token}",
                 },
             )
+
+            return response
 
         except Exception as exp:
             print(f"delete_testcase: {str(exp)}")

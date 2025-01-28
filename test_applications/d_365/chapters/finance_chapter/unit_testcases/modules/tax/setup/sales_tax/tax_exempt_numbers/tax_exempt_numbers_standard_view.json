@@ -3,15 +3,15 @@
         "text_to_search": "Tax exempt numbers"
     },
     "txb_search": {
-        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Input\") and contains(@id,\"QuickFilterControl\") and contains(@id,\"TaxVATNumTable\") and  1]"
+        "xpath": "//input[contains(@id,\"QuickFilterControl\") and contains(@id,\"taxvatnumtable\") and  1]"
     },
     "cmb_lv_country": {
-        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"CountryRegionId\") and contains(@id,\"TaxVATNumTable\") and  1]"
+        "xpath": "//input[contains(@id,\"TaxVATNumTable_CountryRegionId\") and  1]"
     },
     "txb_lv_tax_exempt_number": {
-        "xpath": "//input[@aria-label=\"Tax exempt number\"]"
+        "xpath": "//input[contains(@id,\"TaxVATNumTable_VATNum\")]"
     },
     "txb_lv_company_name": {
-        "xpath": "//input[contains(@id,\"input\") and contains(@id,\"Name\") and contains(@id,\"TaxVATNumTable\") and  1]"
+        "xpath": "//input[contains(@id,\"TaxVATNumTable_Name\") and  1]"
     }
 }

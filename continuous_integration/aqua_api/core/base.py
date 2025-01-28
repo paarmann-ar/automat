@@ -1,6 +1,7 @@
 from typing import Any
 from abc import ABC, abstractmethod
 import time
+from services.disk.service_disk_provider import ServiceDiskProvider
 
 # --
 # ...
@@ -31,6 +32,9 @@ class Base(ABC):
             cls.error = kwargs.get("log_error_class", "log_error_class")
             cls.instance.config_dictionary = cls.get_config_dictionary()
             cls.instance.delay = cls.delay
+
+            # working with file
+            cls.json = ServiceDiskProvider().json
 
         return cls.instance
 

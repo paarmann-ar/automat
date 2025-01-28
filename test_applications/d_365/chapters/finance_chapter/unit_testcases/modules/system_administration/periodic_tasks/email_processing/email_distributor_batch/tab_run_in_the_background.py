@@ -2,7 +2,6 @@ from typing import Any
 from test_applications.d_365.core.object_provider import ObjectProvider
 from test_applications.d_365.chapters.core.base_chapter import BaseChapter
 from test_applications.d_365.abstrct_classes.tab.tab import Tab
-from datetime import date
 
 # --
 # ...
@@ -37,6 +36,7 @@ class TabRunInTheBackground(BaseChapter, Tab):
             match action:
                 case "":
                     self.tab_run_in_the_background()
+                    
                 case _:
                     raise Exception(
                         f"class {__class__.__name__} have no method {action}."

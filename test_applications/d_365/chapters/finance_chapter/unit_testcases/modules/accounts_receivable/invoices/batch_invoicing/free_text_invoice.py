@@ -8,7 +8,7 @@ from test_applications.d_365.abstrct_classes.page.page import Page
 # --
 
 
-class PostFreeTextInvoice(BaseChapter, Page):
+class FreeTextInvoice(BaseChapter, Page):
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
 

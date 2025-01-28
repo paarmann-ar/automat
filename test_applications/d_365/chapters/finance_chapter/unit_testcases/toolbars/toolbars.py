@@ -120,6 +120,9 @@ class Toolbars(BaseChapter):
 
         try:
 
+            self.click(self.elements.btn_home)
+            self.delay(1000)
+
             self.click(self.elements.btn_company_mandant)
             self.textbox(
                 self.elements.cmb_mandant_change, self.mandant, is_press_enter=True
@@ -165,6 +168,8 @@ class Toolbars(BaseChapter):
 
                 if self.search_for_a_page_text == "":
                     self.search_for_a_page_text, _ = self.search_for_a_page
+
+                self.delay(500)
 
                 if self.search_text_on_current_page_text(
                     ("text_to_search", self.search_for_a_page_text)
@@ -249,6 +254,8 @@ class Toolbars(BaseChapter):
                 if self.search_for_a_page_text == "":
                     self.search_for_a_page_text, _ = self.search_for_a_page
 
+                self.delay(500)
+
                 if self.search_text_on_current_page_text(
                     ("text_to_search", self.search_for_a_page_text)
                 ):
@@ -311,7 +318,10 @@ class Toolbars(BaseChapter):
         try:
 
             self.click(self.elements.btn_user)
+            self.delay(1000)
+
             self.click(self.elements.lbl_signout)
+            self.delay(1000)
 
             self.wait_for_visibility(self.elements.frm_change_user)
             self.click(self.elements.lbl_use_another_account)

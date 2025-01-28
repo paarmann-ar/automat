@@ -68,7 +68,7 @@ class Pywin(BaseDriver):
             application_window_handle = application_window.handle
 
             self.application = Application(allow_magic_lookup=False).connect(
-                handle=application_window_handle
+                handle=application_window_handle, timeout=30000
             )
             self.delay(220)
 
@@ -90,7 +90,7 @@ class Pywin(BaseDriver):
 
             self.application_dialog = self.application.top_window()
 
-            self.application_dialog.wait("ready")
+            self.application_dialog.wait("ready", timeout=30000)
 
             self.application_dialog.print_control_identifiers( filename=f"{CONSTS.ROOT_DIR}/temp_print_control_identifiers.txt")
 
@@ -155,7 +155,7 @@ class Pywin(BaseDriver):
     # --
 
     def windriver_textbox(
-        self, element, text, is_press_enter=False, is_back_space=False
+        self, element, text, is_press_enter=False, is_back_space=False, is_set_focus=True
     ) -> bool:
 
         try:
@@ -169,7 +169,8 @@ class Pywin(BaseDriver):
 
             self.delay(220)
 
-            textbox.set_focus()
+            if is_set_focus: 
+                textbox.set_focus()
 
             if is_back_space:
                 for i in range(len(textbox.texts()[0])):

@@ -107,6 +107,7 @@ class ExcelManager(BaseDisk):
                                             worksheet.write(
                                                 item[0], item[1], value, row_format
                                             )
+                                        # I have change this exp to bestimmt exception
                                         except Exception as exp:
                                             print(repr(exp))
 

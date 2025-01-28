@@ -1,4 +1,5 @@
 from multiprocessing import Process
+from toolboxs.toolbox import Toolbox
 from continuous_integration.continuous_integration_provider import (
     ContinuousIntegrationProvider,
 )
@@ -19,6 +20,7 @@ def userstory():
     Login().login()
 
     collection_letter = CollectionLetter()
+    collection_letter.state['dict_importet_moduls'] = Toolbox().get_import_moduls()
     collection_letter.collection_letter()
 
 # --

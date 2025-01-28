@@ -1,4 +1,6 @@
+
 from multiprocessing import Process
+from toolboxs.toolbox import Toolbox
 from continuous_integration.continuous_integration_provider import (
     ContinuousIntegrationProvider,
 )
@@ -22,6 +24,7 @@ def userstory():
     Login().login()
 
     vendor_approval_email_sending = VendorApprovalEmailSending()
+    vendor_approval_email_sending.state['dict_importet_moduls'] = Toolbox().get_import_moduls()
     vendor_approval_email_sending.vendor_approval_email_sending()
 
 # --

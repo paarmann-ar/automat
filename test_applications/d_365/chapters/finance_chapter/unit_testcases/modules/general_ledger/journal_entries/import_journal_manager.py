@@ -171,6 +171,9 @@ class ImportJournalManager(BaseChapter, Form):
                     case "select_show":
                         self.general_journals_page.select_show()
 
+                    case "select_show_user_created_only":
+                        self.general_journals_page.select_show_user_created_only()
+
                     case "new":
                         self.general_journals_top_gadget.new()
 
@@ -189,8 +192,6 @@ class ImportJournalManager(BaseChapter, Form):
 
                     case "validate":
                         self.general_journals_top_gadget.validate()
-                        self.wait_for_visibility(self.elements.ctm_validation)
-
                         self.delay(500)
 
                     case "validate_validate":

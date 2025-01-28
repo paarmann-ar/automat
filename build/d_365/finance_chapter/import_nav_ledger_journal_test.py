@@ -1,4 +1,5 @@
 from multiprocessing import Process
+from toolboxs.toolbox import Toolbox
 from continuous_integration.continuous_integration_provider import (
     ContinuousIntegrationProvider,
 )
@@ -16,6 +17,8 @@ from test_applications.d_365.chapters.finance_chapter.unit_testcases.login.login
 def userstory():
     Browser().open_browser()
     Login().login()
+
+    Login().state['dict_importet_moduls'] = Toolbox().get_import_moduls()
 
 # --
 # ...

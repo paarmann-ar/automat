@@ -3,6 +3,6 @@
         "text_to_search": "Email distributor batch"
     },
     "btn_ok": {
-        "xpath": "//button[contains(@id,\"OkButton\") and contains(@id,\"Dialog\") and  1]"
+        "xpath": "//button[contains(@id,\"SysOperationTemplateForm\") and contains(@id,\"CommandButton\") and not(contains(@id,\"Cancel\"))]"
     }
 }

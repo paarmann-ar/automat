@@ -1,4 +1,4 @@
-Postennr;Kontenart;Konto;Rechnung;MWSt Gruppe;Artikel MWSt Gr.;KST;Soll;Haben;Buchungstext;Gegenkontenart;Gegenkonto;Zahlungsmethode;Zahlungsbedingung;Belegnummer in NAV;Datum des Belegs;Datum der Buchung
+Postennr;Kontenart;Konto;Rechnung;MWSt Gruppe;Artikel MWSt Gr.;KST;Soll;Haben;Buchungstext;Gegenkontenart;Gegenkonto;Zahlungsmethod;Zahlungsbedingung;Belegnummer in NAV;Datum des Belegs;Datum der Buchung
 EK-2404310;Sachkonto;6600120;RE2410-0123;;;300035;2150;0;10.2024 T. LAMPRECHT DSCHUNGEL PaidSocial DE FR CH;Sachkonto;;;;EK-2404310;01.10.2024;01.10.2024
 EK-2404310;Sachkonto;1409990;RE2410-0123;;;300035;408,5;0;10.2024 T. LAMPRECHT DSCHUNGEL PaidSocial DE FR CH;Sachkonto;;;;EK-2404310;01.10.2024;01.10.2024
 EK-2404310;Sachkonto;6600120;RE2410-0123;;;300040;2150;0;10.2024 T. LAMPRECHT DSCHUNGEL PaidSocial DE FR CH;Sachkonto;;;;EK-2404310;01.10.2024;01.10.2024

@@ -1,6 +1,6 @@
 from continuous_integration.aqua_api.aqua_api.core.base_aqua_api import BaseAquaApi
 from continuous_integration.aqua_api.aqua_api.config.aqua_api_config import AquaApiConfig
-
+from continuous_integration.aqua_api.aqua_api.core.aqua_token_api import AquaTokenApi
 # --
 # ...
 # --
@@ -14,7 +14,8 @@ class AquaProjectApi(BaseAquaApi):
             "default_project_name"
         )
 
-        self.access_token = kwargs.get("access_token", None)
+        self.aqua_token_api = kwargs.get('aqua_token_api', None)
+        self.aqua_access_token = self.aqua_token_api.aqua_access_token
 
         self.current_project_id = "?"
         self.current_project_name = None
@@ -42,13 +43,16 @@ class AquaProjectApi(BaseAquaApi):
     def update_projects(self):
 
         try:
-
+            
+            self.aqua_token_api()
+            self.aqua_access_token = self.aqua_token_api.aqua_access_token
+            
             response = self.request(
                 method="get",
                 url=f"{self.base_url}{self.project_url}",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.access_token}",
+                    "Authorization": f"Bearer {self.aqua_access_token}",
                 },
             )
 
@@ -71,12 +75,15 @@ class AquaProjectApi(BaseAquaApi):
             if not project_name:
                 project_name = self.current_project_name
 
+            self.aqua_token_api()
+            self.aqua_access_token = self.aqua_token_api.aqua_access_token
+
             response = self.request(
                 method="patch",
                 url=f"{self.base_url}{self.project_url}/{self.current_project_id}",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {self.access_token}",
+                    "Authorization": f"Bearer {self.aqua_access_token}",
                 },
                 json={
                     "PatchOperation": "Rename",

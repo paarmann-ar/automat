@@ -175,6 +175,8 @@ class ApprovalVendor(BaseChapter, BaseUserStory):
 
             self.vendor_approval_status_top_gadget.second_approval_vendor()
 
+            self.delay(1000)
+
             self.toolbars.logout()
 
             self.login.username = 'Dummy365F1@redcare-pharmacy.com', True

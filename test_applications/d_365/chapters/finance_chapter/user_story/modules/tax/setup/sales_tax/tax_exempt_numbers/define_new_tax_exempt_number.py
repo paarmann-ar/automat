@@ -127,7 +127,7 @@ class DefineNewTaxExemptNumber(BaseChapter, BaseUserStory):
             return False
         
     # --
-    # ... methode
+    # ... method
     # --
     @BaseChapter.handel_tipbox
     @BaseChapter.log

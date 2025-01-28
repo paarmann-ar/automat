@@ -1,0 +1,24 @@
+{
+    "frm_ax2009": {
+        "class_name": "AxMainFrame"
+    },
+    "frm_address_bar": {
+        "title": "AddressBarFrame"
+    },
+    "txb_address_bar": {
+        "class_name": "WindowsForms10.EDIT.app.0.33c0d9d"
+    },
+
+    "btn_debitoren": {
+        "title": "Debitoren"
+    },
+    "btn_debitoren_ubersicht": {
+        "Value.Value": "Debitorenübersicht"
+    },
+    "txb_file_name": {
+        "title": "FileNameEdit"
+    },
+    "btn_open": {
+        "title": "&OpenButton"
+    }
+}

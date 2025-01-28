@@ -24,10 +24,10 @@ class BaseComponent(ABC):
 
             temp_selenium_driver = WebDriverProvider().selenium_driver
 
-            for methode in dir(temp_selenium_driver):
-                if (methode[0:1] != '_') and (methode[0:2] != '__'):
-                    setattr(cls.instance, methode, getattr(
-                        temp_selenium_driver, methode))
+            for method in dir(temp_selenium_driver):
+                if (method[0:1] != '_') and (method[0:2] != '__'):
+                    setattr(cls.instance, method, getattr(
+                        temp_selenium_driver, method))
 
         print(__class__.__name__, id(__class__))
         return cls.instance

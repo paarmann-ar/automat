@@ -30,6 +30,6 @@
         "xpath": "//button[contains(@id,\"saevendreleasestatustable\") and contains(@id,\"SystemDefinedOptions_button\") and  1]"
     },
     "btn_create_a_custom_alert":{
-        "xpath": "//span[contains(@id,\"saevendreleasestatustable\") and contains(@id,\"EventAlertRuleCreate_label\") and  1]"
+        "xpath": "//button[contains(@id,\"saevendreleasestatustable\") and contains(@id,\"EventAlertRuleCreate\") and  1]"
     }
 }

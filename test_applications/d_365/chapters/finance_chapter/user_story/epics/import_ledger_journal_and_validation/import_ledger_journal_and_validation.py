@@ -117,6 +117,7 @@ class ImportLedgerJournalAndValidation(BaseChapter, BaseUserStory):
 
             self.import_journal_manager.import_journal_manager(
                 step_10="select_show",
+                step_15="select_show_user_created_only",
                 step_20="new",
                 step_30="enter_name_description",
                 step_40="import_journal",

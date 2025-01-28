@@ -7,9 +7,7 @@ from continuous_integration.screen_recorder.core.base import (
 from continuous_integration.screen_recorder.config.screen_recorder_config import (
     ScreenRecorderConfig,
 )
-import asyncio
 from services.disk.json.json_manager import JSONManager
-
 # --
 # ...
 # --

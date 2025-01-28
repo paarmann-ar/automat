@@ -7,6 +7,7 @@ from collections import namedtuple
 from services.mail.email_provider import EMailProvider
 from services.log_.log_provider import LogProvider
 from drivers.ranorex.ranorex_driver_provider import RanorexDriverProvider
+
 # --
 # ...
 # --
@@ -40,18 +41,18 @@ class Base(ABC):
 
             temp_selenium_driver = WebDriverProvider().selenium_driver
 
-            for methode in dir(temp_selenium_driver):
-                if (methode[0:1] != "_") and (methode[0:2] != "__"):
+            for method in dir(temp_selenium_driver):
+                if (method[0:1] != "_") and (method[0:2] != "__"):
                     setattr(
-                        cls.instance, methode, getattr(temp_selenium_driver, methode)
+                        cls.instance, method, getattr(temp_selenium_driver, method)
                     )
 
             temp_pywin = WinDriverProvider().pywin_driver
             
-            for methode in dir(temp_pywin):
-                if (methode[0:1] != "_") and (methode[0:2] != "__"):
+            for method in dir(temp_pywin):
+                if (method[0:1] != "_") and (method[0:2] != "__"):
                     setattr(
-                        cls.instance, methode, getattr(temp_pywin, methode)
+                        cls.instance, method, getattr(temp_pywin, method)
                     )
 
             cls.instance.ranorex_driver = RanorexDriverProvider().ranorex_driver

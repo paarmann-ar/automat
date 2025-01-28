@@ -126,6 +126,7 @@ class FreeTextInvoiceTopGadget(BaseChapter, Page):
 
             self.click_button(self.elements.btn_save)
             self.delay(220)
+            self.lightbox(lightbox= "wait_until_lightbox_disapear")
 
             return True
 

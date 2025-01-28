@@ -7,7 +7,7 @@ from test_applications.d_365.chapters.finance_chapter.unit_testcases.toolbars.to
 )
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.invoices.all_free_text_invoices.all_free_text_invoices_top_gadget import AllFreeTextInvoicesTopGadget
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.invoices.all_free_text_invoices.free_text_invoice.free_text_invoice_manager import FreeTextInvoiceManager
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.invoices.batch_invoicing.free_text_invoice import PostFreeTextInvoice
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_receivable.invoices.batch_invoicing.free_text_invoice import FreeTextInvoice
 
 # --
 # ...
@@ -66,7 +66,7 @@ class CreateFreeTextInvoice(BaseChapter, BaseUserStory):
             self.toolbars = Toolbars()
             self.all_free_text_invoices_top_gadget = AllFreeTextInvoicesTopGadget()
             self.free_text_invoice_manager = FreeTextInvoiceManager()
-            self.post_free_text_invoice = PostFreeTextInvoice()
+            self.free_text_invoice = FreeTextInvoice()
             return True
 
         except Exception as exp:
@@ -158,7 +158,7 @@ class CreateFreeTextInvoice(BaseChapter, BaseUserStory):
                 step_40="post",
             )
 
-            self.post_free_text_invoice.post_free_text_invoice()
+            self.free_text_invoice.post_free_text_invoice()
 
             self.free_text_invoice_manager(
                 step_10="save",

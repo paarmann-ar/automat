@@ -39,3 +39,16 @@ stages:
             PYTHON_HOME: ""
             VIRTUAL_ENV: $(venv)
           displayName: 'build tests'
+
+        - task: PublishBuildArtifacts@1
+          displayName: 'Create and Publish Build Artifacts'
+          inputs:
+            ${{ if eq(variables['Build.SourceBranchName'], 'main') }}:
+                PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+                ArtifactName: 'production'
+                publishLocation: 'Container'
+
+            ${{ else }}:
+                PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+                ArtifactName: 'development'
+                publishLocation: 'Container'

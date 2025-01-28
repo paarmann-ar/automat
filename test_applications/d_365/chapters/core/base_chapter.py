@@ -19,6 +19,7 @@ from test_applications.d_365.chapters.core.base_method.import_attribute_in_excel
 from test_applications.d_365.chapters.core.config.base_chapter_config import (
     BaseChapterConfig,
 )
+from continuous_integration.continuous_integration_provider import ContinuousIntegrationProvider
 
 # --
 # ...
@@ -228,17 +229,39 @@ class BaseChapter(Base):
                     map(lambda x: x.strip(), inspect.getsource(closures[0]).split("\n"))
                 )
 
+                args[0].elements = args[0].get_elements()
+                _, testcase_folder_id = args[0].elements.aqua_folder_id
+
+                testcase_name = closures[0].__name__
+
+
+
+
+
+
+
+
+
+
+
                 target_source_code = source_code
 
                 for item in args[0].aqua_source_code_filter:
                     target_source_code = list(filter(lambda x: x.find(item), target_source_code))
 
                 for i in range(len(target_source_code)):
-                    target_source_code.remove("")
+
+                    try:
+
+                        target_source_code.remove("")
+                        
+                    except ValueError:
+                        continue
 
                 print(target_source_code)
 
                 setattr(args[0], "aqua_source", target_source_code)
+
                 return
 
             return inner_function

@@ -88,7 +88,7 @@ class TabParameters(BaseChapter, Tab):
         self,
         exclude_future_settlements=(True, True),
         only_positive=(True, True),
-        open_transactions_per=("8/22/2024", True),
+        open_transactions_per=("09/01/2025", True),
     ) -> bool:
 
         try:

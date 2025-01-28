@@ -1,4 +1,5 @@
 from multiprocessing import Process
+from toolboxs.toolbox import Toolbox
 from continuous_integration.continuous_integration_provider import (
     ContinuousIntegrationProvider,
 )
@@ -19,6 +20,7 @@ def userstory():
     Login().login()
 
     customer_erp_to_d365 = CustomerErpToD365()
+    customer_erp_to_d365.state['dict_importet_moduls'] = Toolbox().get_import_moduls()
     customer_erp_to_d365.customer_erp_to_d365()
 
 # --

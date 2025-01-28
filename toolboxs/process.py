@@ -1,4 +1,3 @@
-from Toolboxs.mDelay import cDelay
 import subprocess
 
 # --
@@ -25,7 +24,6 @@ class cProcess():
     def terminat(Appexecute):
         while cProcess.IsRunnigProcesByName(Appexecute):
             subprocess.call("TASKKILL /F /IM " + Appexecute, shell=True)
-            cDelay(5)
 # --
 # ...
 # --

@@ -60,7 +60,7 @@ class Request(BaseConnection):
             "timeout": (10, 10),
         }
 
-        self.delay = kwargs.get("delay", 1)
+        self.delay = kwargs.get("delay", 0.5)
         return self.get_response()
 
     # --
@@ -88,12 +88,16 @@ class Request(BaseConnection):
 
             time.sleep(self.delay)
 
+            if response.status_code == 401:
+                print('The current user is not correctly authenticated or the session or authentication token has expired.')
+                return 'expired token'
+
             response = (
                 response if response.status_code in [204, 200] else print(response.text)
             )
 
             if response.status_code == 204:
-                return
+                return True
             
             elif self.is_response_json and response:
                 response = response.json()
@@ -102,5 +106,6 @@ class Request(BaseConnection):
 
         except ValueError as v_exp:
             print(f"{v_exp}")
+            
         except Exception as exp:
             print(f"{exp}")

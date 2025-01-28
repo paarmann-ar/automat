@@ -281,6 +281,7 @@ class DomElementAndAction(BaseSelenium):
 
                         self.delay(220)
 
+                    # I have change this exp to bestimmt exception
                     except Exception as exp:
                         self.error(
                             f"faild on: {__class__}.{repr(exp)}\n{__class__}.{str(exp)}\n{self.stack()} => {element}"

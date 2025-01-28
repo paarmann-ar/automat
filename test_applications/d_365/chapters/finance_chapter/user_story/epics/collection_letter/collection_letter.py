@@ -161,6 +161,7 @@ class CollectionLetter(BaseChapter, BaseUserStory):
                 step_20="tab_records_to_include",
                 step_30="tab_run_in_the_background",
                 step_40="save",
+                find_collection_letter_by_email_description = self.state["find_collection_letter_by_email_description"]
             )
 
             self.review_and_process_collection_letters_manager(

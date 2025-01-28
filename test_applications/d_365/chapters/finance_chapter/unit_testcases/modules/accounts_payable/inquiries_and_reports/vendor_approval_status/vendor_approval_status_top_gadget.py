@@ -212,6 +212,7 @@ class VendorApprovalStatusTopGadget(BaseChapter, Page):
         try:
 
             self.click_button(self.elements.btn_second_approval)
+            self.blocking_message()
 
             return True
 

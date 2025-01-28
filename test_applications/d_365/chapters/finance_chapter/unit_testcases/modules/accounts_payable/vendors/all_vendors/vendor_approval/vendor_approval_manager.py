@@ -3,9 +3,7 @@ from test_applications.d_365.chapters.core.base_chapter import BaseChapter
 from test_applications.d_365.core.object_provider import ObjectProvider
 from test_applications.d_365.abstrct_classes.page.page import Page
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.toolbars.toolbars import Toolbars
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_payable.vendors.all_vendors.vendor_approval.first_approval import FirstApproval
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_payable.vendors.all_vendors.vendor_approval.secound_approval import SecoundApproval
-
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.accounts_payable.vendors.all_vendors.all_vendors_top_gadget import AllVendorsTopGadget
 
 # --
 # ...
@@ -65,8 +63,7 @@ class VendorApprovalManager(BaseChapter, Page):
             super().setup()
 
             self.toolbars = Toolbars()
-            self.first_approval = FirstApproval()
-            self.secound_approval = SecoundApproval()
+            self.all_vendors_top_gadget = AllVendorsTopGadget()
 
             return True
 
@@ -137,10 +134,10 @@ class VendorApprovalManager(BaseChapter, Page):
             for _, tab in kwargs.items():
                 match tab:
                     case "first_approval":
-                        self.first_approval()
+                        self.all_vendors_top_gadget.first_approval_vendor()
 
-                    case "secound_approval":
-                        self.secound_approval()
+                    case "second_approval":
+                        self.all_vendors_top_gadget.second_approval_vendor()
 
             return True
 

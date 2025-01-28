@@ -30,7 +30,7 @@
         "xpath": "//input[@type=\"text\" and contains(@aria-describedby, \"Org_NameAlias_helptext\")]"
     },
     "txb_groupe": {
-        "xpath": "//*[@class=\"textbox field displayoption viewMarker alignmentLeft\" and @role=\"combobox\" and contains(@aria-labelledby,\"Posting_VendGroup_label\")]"
+        "xpath": "//input[contains(@id,\"Posting_VendGroup_input\") and contains(@id, \"vendtablelistpage\")]"
     },
     "txb_DUNS_number": {
         "xpath": "//input[@name=\"OrgDetailGroup_DunsNumber\"]"

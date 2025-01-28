@@ -48,6 +48,24 @@ class AquaAdaptor(BaseAquaAdapter):
     # ... methods
     # --
 
+    def complate_maping_from_framework_to_aqua(self):
+
+        try:
+
+            self.aqua_api.update_api()
+            self.aqua_map_folder.get_test_application_folder_tree()
+            self.aqua_map_folder.delete_all_folders_in_aqua()
+            self.aqua_map_folder.map_folder_from_framework_to_aqua()
+            self.aqua_map_testcase.update_intersect_framework_aqua_folder_file_tree()
+            self.aqua_map_testcase.map_tastcase_from_framework_to_aqua()
+
+        except Exception as exp:
+            print(f"complate_maping_folder_from_framework_to_aqua: {exp}")
+
+    # --
+    # ... methods
+    # --
+
     def complate_maping_folder_from_framework_to_aqua(self):
 
         try:
@@ -77,8 +95,5 @@ class AquaAdaptor(BaseAquaAdapter):
             print(f"complate_maping_testcase_from_framework_to_aqua: {exp}")
 
 
-aqua_adaptor = AquaAdaptor()
-aqua_adaptor.complate_maping_testcase_from_framework_to_aqua()
-
-# from test_applications.d_365.chapters.finance_chapter.unit_testcases.browser.browser import Browser
-# browser = Browser().open_browser()
+# aqua_adaptor = AquaAdaptor()
+# aqua_adaptor.complate_maping_testcase_from_framework_to_aqua()

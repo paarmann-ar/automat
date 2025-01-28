@@ -163,9 +163,14 @@ class VendorApprovalEmailSending(BaseChapter, BaseUserStory):
 
             self.approval_vendor.approval_vendor()
 
+            self.toolbars.search_for_a_page = ("Vendor Approval Status", True)
+            self.toolbars.set_text_in_search_for_a_page()
+
             self.vendor_approval_status_top_gadget.options()
-            self.delay(500)
+            self.delay(1000)
+            
             self.vendor_approval_status_top_gadget.create_a_custom_alert()
+            self.delay(1000)
 
             self.create_aler_rule()
 

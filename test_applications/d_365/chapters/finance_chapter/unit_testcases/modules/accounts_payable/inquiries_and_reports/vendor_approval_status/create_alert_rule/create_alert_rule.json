@@ -6,10 +6,10 @@
         "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"alertTable\")]"
     },
     "cmb_event": {
-        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"X_string_input\")]"
+        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"eventType_input\")]"
     },
     "txb_subject": {
-        "xpath": "//input[contains(@id,\"EventCreateRule\") and contains(@id,\"Subject\")]"
+        "xpath": "//input[contains(@id,\"EventRule\") and contains(@id,\"Subject_input\")]"
     },
     "txa_message": {
         "xpath": "//textarea[contains(@id,\"EventCreateRule\") and contains(@id,\"Message_textArea\")]"

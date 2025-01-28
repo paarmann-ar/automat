@@ -85,7 +85,7 @@ class GeneralJournalsPage(BaseChapter, Page):
     def __prepare(
         self,
         show=("All", True),
-        show_user_created_only=(True, True),
+        show_user_created_only=(False, True),
         name=("139_J_GENE", True),
         description=("Test F24 VAT", True),
     ) -> bool:
@@ -147,6 +147,8 @@ class GeneralJournalsPage(BaseChapter, Page):
     def select_show_user_created_only(self) -> bool:
 
         try:
+
+            self.delay(1000)
 
             self.checkbox(
                 self.elements.chk_show_user_created_only,

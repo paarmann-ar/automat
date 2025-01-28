@@ -24,7 +24,7 @@ class AquaMapTestcaseDescription(BaseAquaAdapter):
 
         self.get_all_class_in_test_application = get_all_class_in_test_application
 
-        self.no_go_methode = [
+        self.no_go_method = [
             "log",
             "info",
             "error",
@@ -158,11 +158,11 @@ class AquaMapTestcaseDescription(BaseAquaAdapter):
 
                 description = self.default_testcase_description
 
-                for methode in dir(class_):
-                    if methode.count("__") > 0 or methode in self.no_go_methode:
+                for method in dir(class_):
+                    if method.count("__") > 0 or method in self.no_go_method:
                         continue
 
-                    description = f"{description} <p>{methode}</p>\n\n"
+                    description = f"{description} <p>{method}</p>\n\n"
 
                 self.aqua_api.testcase_api.description = f"{description}<p>&nbsp;</p>\n"
                 break

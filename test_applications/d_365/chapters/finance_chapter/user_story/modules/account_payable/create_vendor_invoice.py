@@ -175,7 +175,7 @@ class CreateVendorInvoice(BaseChapter, BaseUserStory):
 
         try:
 
-            self.toolbars.search_for_a_page = ("pending vendor invoice", True)
+            self.toolbars.search_for_a_page = ("Pending vendor invoices", True)
             self.toolbars.set_text_in_search_for_a_page()
 
             self.delay(220)
@@ -300,7 +300,7 @@ class CreateVendorInvoice(BaseChapter, BaseUserStory):
 
             self.delay(220)
 
-            self.toolbars.search_for_a_page = ("pending vendor invoice", True)
+            self.toolbars.search_for_a_page = ("Pending vendor invoices", True)
             self.toolbars.set_text_in_search_for_a_page()
 
             self.pending_vendor_invoices_standard_view.search_item = (
@@ -313,6 +313,7 @@ class CreateVendorInvoice(BaseChapter, BaseUserStory):
             self.delay(220)
 
             self.pending_vendor_invoices_top_gadget.post_pending_vendor_invoices()
+            self.lightbox(lightbox="wait_until_lightbox_disapear")
 
             self.delay(220)
 
@@ -328,7 +329,7 @@ class CreateVendorInvoice(BaseChapter, BaseUserStory):
                 self.state["vendor_invoice_nummer"],
                 True,
             )
-            self.invoice_journal_standard_view.search_item_text = "Invoice"
+            self.invoice_journal_standard_view.search_item_text = "Invoice account"
             self.invoice_journal_standard_view.select_invoice_journal_number(
                 is_select_search_field=False
             )
