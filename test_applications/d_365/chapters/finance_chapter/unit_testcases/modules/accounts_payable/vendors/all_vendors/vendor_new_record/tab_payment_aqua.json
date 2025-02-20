@@ -1,5 +1,81 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50009": {
+            "id": 50009,
+            "name": {
+                "method_name": "tab_payment",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  term of payment",
+                        "expected_result": "N0"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  method of payment",
+                        "expected_result": "MP05_WireT"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  payment type",
+                        "expected_result": "Electronic payment"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  cash discount",
+                        "expected_result": "IT0D_0%"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  payment id",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  bank account number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  use cash discount",
+                        "expected_result": "Never"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  purpose text",
+                        "expected_result": "purpose_text"
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  secondars languge",
+                        "expected_result": "ko"
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  min num of invoices covering letter",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

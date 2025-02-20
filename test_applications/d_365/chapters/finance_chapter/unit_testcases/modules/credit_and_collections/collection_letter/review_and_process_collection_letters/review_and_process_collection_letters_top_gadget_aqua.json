@@ -1,5 +1,62 @@
 {
     "aqua_folder": {
-        "id": 14474
+        "id": 25640
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50073": {
+            "id": 50073,
+            "name": {
+                "method_name": "back",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  back",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50074": {
+            "id": 50074,
+            "name": {
+                "method_name": "click_sidebar",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  back",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

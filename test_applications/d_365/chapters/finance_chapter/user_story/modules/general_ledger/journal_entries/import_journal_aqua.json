@@ -1,0 +1,56 @@
+{
+    "aqua_folder": {
+        "id": 25687
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50177": {
+            "id": 50177,
+            "name": {
+                "method_name": "import_journal",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "run testcase  (General journals",
+                        "expected_result": "n/a"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "Write text on search for a page ",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "run testcase tab parameters",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "run testcase tab run in the background",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "run testcase save",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
+    }
+}

@@ -1,5 +1,108 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50000": {
+            "id": 50000,
+            "name": {
+                "method_name": "add_contact_information",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  add",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field lv add contact info description",
+                        "expected_result": "description"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field lv add contact info type",
+                        "expected_result": "Phone"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field lv add contact info contact number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field lv add contact info extention",
+                        "expected_result": "extention"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50001": {
+            "id": 50001,
+            "name": {
+                "method_name": "edit_contact_information",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  edit",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50002": {
+            "id": 50002,
+            "name": {
+                "method_name": "remove_contact_information",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  remove",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

@@ -1,5 +1,149 @@
 {
     "aqua_folder": {
-        "id": 14449
+        "id": 25615
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49993": {
+            "id": 49993,
+            "name": {
+                "method_name": "add_new_bank_account",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  new",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  bank account",
+                        "expected_result": "01"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  name",
+                        "expected_result": "vendor test112"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "click on button  save",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "click on button  back",
+                        "expected_result": "n/a"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49994": {
+            "id": 49994,
+            "name": {
+                "method_name": "back",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  back",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "click on button  back",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49995": {
+            "id": 49995,
+            "name": {
+                "method_name": "click_sidebar",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  back",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "click on button  back",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49996": {
+            "id": 49996,
+            "name": {
+                "method_name": "delete",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  delete",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "click on button  back",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

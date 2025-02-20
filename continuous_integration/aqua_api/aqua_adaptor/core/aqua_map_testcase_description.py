@@ -6,7 +6,7 @@ from continuous_integration.aqua_api.aqua_adaptor.config.aqua_adapter_config imp
 )
 import os
 from toolboxs.decorators import singleton
-from test_applications.d_365_dev.get_all_class_in_test_application import (
+from continuous_integration.aqua_api.aqua_adaptor.core.get_all_class_in_test_application import (
     GetAllClassInTestApplication,
 )
 

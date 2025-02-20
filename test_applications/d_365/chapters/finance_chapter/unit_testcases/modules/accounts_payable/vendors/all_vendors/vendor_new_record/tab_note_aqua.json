@@ -1,5 +1,36 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50006": {
+            "id": 50006,
+            "name": {
+                "method_name": "tab_note",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  note",
+                        "expected_result": "note"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

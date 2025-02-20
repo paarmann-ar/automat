@@ -1,0 +1,124 @@
+{
+    "aqua_folder": {
+        "id": 25642
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50075": {
+            "id": 50075,
+            "name": {
+                "method_name": "click_sidebar",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  name",
+                        "expected_result": "139_J_GENE"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  description",
+                        "expected_result": "Test F24 VAT"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50076": {
+            "id": 50076,
+            "name": {
+                "method_name": "enter_name_description",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  name",
+                        "expected_result": "139_J_GENE"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  description",
+                        "expected_result": "Test F24 VAT"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50077": {
+            "id": 50077,
+            "name": {
+                "method_name": "select_show",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  show",
+                        "expected_result": "All"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50078": {
+            "id": 50078,
+            "name": {
+                "method_name": "select_show_user_created_only",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "tick checkbox  show user created only",
+                        "expected_result": "False"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
+    }
+}

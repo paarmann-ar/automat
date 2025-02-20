@@ -106,7 +106,7 @@ class Browser(BaseChapter):
     # ... methods
     # --
 
-    # @BaseChapter.aqua
+    @BaseChapter.aqua
     @BaseChapter.log
     def open_browser(self, is_delete_all_cookies=True) -> bool:
 
@@ -125,7 +125,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    # @BaseChapter.aqua
+    @BaseChapter.aqua
     @BaseChapter.log
     def close_browser(self) -> bool:
 
@@ -141,7 +141,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    # @BaseChapter.aqua
+    @BaseChapter.aqua
     @BaseChapter.log
     def forward_browser(self) -> bool:
 
@@ -157,7 +157,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    # @BaseChapter.aqua
+    @BaseChapter.aqua
     @BaseChapter.log
     def backward_browser(self) -> bool:
 
@@ -173,7 +173,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    # @BaseChapter.aqua
+    @BaseChapter.aqua
     @BaseChapter.log
     def alle_cookies_loschen(self) -> bool:
 
@@ -189,7 +189,7 @@ class Browser(BaseChapter):
     # ...
     # --
 
-    # @BaseChapter.aqua
+    @BaseChapter.aqua
     @BaseChapter.log
     def get_alle_cookies(self) -> tuple:
 

@@ -1,5 +1,140 @@
 {
     "aqua_folder": {
-        "id": 14488
+        "id": 25654
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50107": {
+            "id": 50107,
+            "name": {
+                "method_name": "click_sidebar",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  test email",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50108": {
+            "id": 50108,
+            "name": {
+                "method_name": "email_parameters_configuration",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  configuration",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50109": {
+            "id": 50109,
+            "name": {
+                "method_name": "email_parameters_microsoft_graph_settings",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  microsoft graph settings",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50110": {
+            "id": 50110,
+            "name": {
+                "method_name": "email_parameters_smtp_setting",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  smtp setting",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50111": {
+            "id": 50111,
+            "name": {
+                "method_name": "email_parameters_test_email",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  test email",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

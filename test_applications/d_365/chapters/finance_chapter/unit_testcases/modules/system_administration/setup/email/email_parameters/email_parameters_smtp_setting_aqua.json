@@ -1,5 +1,61 @@
 {
     "aqua_folder": {
-        "id": 14488
+        "id": 25654
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50112": {
+            "id": 50112,
+            "name": {
+                "method_name": "email_parameters_smtp_setting",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  outgoing mail server",
+                        "expected_result": "smtp-qs.redteclab.de"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  smtp port number",
+                        "expected_result": "44587"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  environment email recipient",
+                        "expected_result": "viktoriia.shvydenko@redcare-pharmacy.com"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  environment email subject",
+                        "expected_result": "UAT"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  username",
+                        "expected_result": "D365"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  password",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

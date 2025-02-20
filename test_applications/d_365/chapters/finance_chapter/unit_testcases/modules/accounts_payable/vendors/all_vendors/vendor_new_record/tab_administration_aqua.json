@@ -1,5 +1,61 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49999": {
+            "id": 49999,
+            "name": {
+                "method_name": "tab_administration",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  vendor hold",
+                        "expected_result": "Invoice"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  reason code",
+                        "expected_result": "ChargeB"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field dt vendor hold realeas date",
+                        "expected_result": "4/9/2024 12:00 AM"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "tick checkbox  deactivated",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  status",
+                        "expected_result": "None"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  vendor interface group",
+                        "expected_result": "DeActVend"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

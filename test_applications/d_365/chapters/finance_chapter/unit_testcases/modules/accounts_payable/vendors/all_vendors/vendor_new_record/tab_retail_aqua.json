@@ -1,5 +1,86 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50012": {
+            "id": 50012,
+            "name": {
+                "method_name": "tab_retail",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  sales price rounding",
+                        "expected_result": "Rounding"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "tick checkbox  Fixed rate",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  fixed exchange rate",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  vendor type",
+                        "expected_result": "3rd party"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  hierarchy",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "tick checkbox  create bar code if needed",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  bar code number sequence",
+                        "expected_result": "100_BANKAU"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  service category",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  style prefix",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  size prefix",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "write text on field  color prefix",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

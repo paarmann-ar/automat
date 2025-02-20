@@ -117,18 +117,20 @@ class Login(BaseChapter):
     # --
     # ...
     # --
-
+    @BaseChapter.aqua
     @BaseChapter.wait_for(element_for_waiting_until_visible="frm_login")
     @BaseChapter.log
-    def login(self, is_use_iifa=True, is_wait_for_stay_signed_in =True) -> bool:
+    def login(self, is_use_iifa=True, is_wait_for_stay_signed_in=True) -> bool:
 
         try:
 
             self.state["current_username"], _ = self.username
             current_user, _ = self.username
-            self.state["current_user"]= current_user.split("@")[0]
+            self.state["current_user"] = current_user.split("@")[0]
 
-            self.textbox(self.elements.txb_username, self.username)
+            self.textbox(
+                self.elements.txb_username, self.username
+            )
             self.click(self.elements.btn_submit)
 
             self.textbox(self.elements.txb_password, self.password)
@@ -138,7 +140,9 @@ class Login(BaseChapter):
                 self.authentication_iifa()
 
             if is_wait_for_stay_signed_in:
-                self.wait_for_element_visibility_by_text(self.elements.txt_stay_signed_in)
+                self.wait_for_element_visibility_by_text(
+                    self.elements.txt_stay_signed_in
+                )
 
                 self.click(self.elements.btn_submit)
 
@@ -151,7 +155,7 @@ class Login(BaseChapter):
     # --
     # ...
     # --
-
+    @BaseChapter.aqua
     @BaseChapter.log
     def authentication_iifa(self) -> bool:
 

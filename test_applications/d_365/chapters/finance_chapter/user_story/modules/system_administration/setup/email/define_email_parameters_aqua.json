@@ -1,0 +1,66 @@
+{
+    "aqua_folder": {
+        "id": 25690
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50178": {
+            "id": 50178,
+            "name": {
+                "method_name": "define_email_parameters",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "change mandant <Company>",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "run testcase  (Email parameters",
+                        "expected_result": "n/a"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "Write text on search for a page ",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "run testcase  tab general",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "run testcase  tab enabled interactive email providers",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "run testcase  tab email history",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "run testcase  tab throttling",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
+    }
+}

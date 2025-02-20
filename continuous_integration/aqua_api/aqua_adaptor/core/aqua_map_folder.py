@@ -71,7 +71,7 @@ class AquaMapFolder(BaseAquaAdapter):
             for folder_adress, sub_folders, files in os.walk(
                 self.test_application_address
             ):
-
+                
                 folder_adress = folder_adress.replace("\\", "/")
 
                 folder_name = folder_adress.split("/")[-1]
@@ -242,6 +242,34 @@ class AquaMapFolder(BaseAquaAdapter):
                     )
 
                     aqua_json_files.append(aqua_repository)
+                    continue
+
+                elif file[-3:] == ".py":
+
+                    if file[-10:] == "_aqua.json":
+                        aqua_repository = file
+
+                    else:
+                        aqua_repository = f"{file[:-3]}_aqua.json"
+
+                    if aqua_repository in aqua_json_files:
+                        continue
+
+                    self.json.operation(
+                        address=f"{test_application_folder_object["adress"]}/{aqua_repository}",
+                        context=f"""{{"aqua_folder": {{"id": {aqua_folder_id}}}}}""",
+                        mode="append_or_replace",
+                    )
+
+                    aqua_json_files.append(aqua_repository)
+
+
+
+
+
+
+
+
 
             return True
 

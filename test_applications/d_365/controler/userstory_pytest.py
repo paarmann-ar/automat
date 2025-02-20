@@ -36,8 +36,8 @@ from test_applications.d_365.chapters.finance_chapter.user_story.epics.vendor_ap
 # ...
 # --
 
-Browser().open_browser()
-Login().login()
+# Browser().open_browser()
+# Login().login()
 
 # invoice_workflow = InvoiceWorkflow()
 # assert invoice_workflow.invoice_workflow()
@@ -57,22 +57,13 @@ Login().login()
 # sae_vendor_open_transactions_report = SaeVendorOpenTransactionsReport()
 # sae_vendor_open_transactions_report.sae_vendor_open_transactions_report()
 
-import_free_text_invoice = ImportAndPostFreeTextInvoice()
-import_free_text_invoice.import_and_post_free_text_invoice()
+# import_free_text_invoice = ImportAndPostFreeTextInvoice()
+# import_free_text_invoice.import_and_post_free_text_invoice()
 
 # customer_erp_to_d365 = CustomerErpToD365()
 # customer_erp_to_d365.customer_erp_to_d365()
 
-
-
-
-
-
-
-
-
-
-
+# --------------------------------------------------------------------------
 
 
 # define_email_parameters = DefineEmailParameters()

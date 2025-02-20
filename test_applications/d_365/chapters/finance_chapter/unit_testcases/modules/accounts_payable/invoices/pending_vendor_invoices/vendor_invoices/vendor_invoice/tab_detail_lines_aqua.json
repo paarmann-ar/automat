@@ -1,5 +1,101 @@
 {
     "aqua_folder": {
-        "id": 14444
+        "id": 25610
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49964": {
+            "id": 49964,
+            "name": {
+                "method_name": "tab_detail_lines",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  item number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  item name",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  procurement category",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  text",
+                        "expected_result": "Desciption field is mandatory for Vendor Invoice Lines for Italy legal entities"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  quantity",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  unit",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  unit price",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  adjusted unit price",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  price unit",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  line net amount",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "write text on field  purchase order",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "tick checkbox  close for receipt",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 12",
+                        "description": "click on button  setup",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 13",
+                        "description": "write text on field  item sales tax group",
+                        "expected_result": "exemptN4"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

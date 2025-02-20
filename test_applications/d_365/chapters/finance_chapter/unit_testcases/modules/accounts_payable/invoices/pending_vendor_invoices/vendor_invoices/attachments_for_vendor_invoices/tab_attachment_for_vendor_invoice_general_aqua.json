@@ -1,5 +1,56 @@
 {
     "aqua_folder": {
-        "id": 14443
+        "id": 25609
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49963": {
+            "id": 49963,
+            "name": {
+                "method_name": "tab_general",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  notes",
+                        "expected_result": "notes"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  is default attachment",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  created by",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  restriction",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  created date and time",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

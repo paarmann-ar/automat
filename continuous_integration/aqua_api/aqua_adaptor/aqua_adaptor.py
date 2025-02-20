@@ -93,7 +93,3 @@ class AquaAdaptor(BaseAquaAdapter):
 
         except Exception as exp:
             print(f"complate_maping_testcase_from_framework_to_aqua: {exp}")
-
-
-# aqua_adaptor = AquaAdaptor()
-# aqua_adaptor.complate_maping_testcase_from_framework_to_aqua()

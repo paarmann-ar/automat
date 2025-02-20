@@ -4,12 +4,16 @@ import time
 from drivers.windows.action_simulator.action_simulator import ActionSimulator
 from toolboxs.toolbox import Toolbox
 from services.log_.log_provider import LogProvider
+from cryptography.fernet import Fernet
+from cryptography.fernet import InvalidToken
 
 # --
 # ...
 # --
 
 class BaseDriver(ABC):
+    base_driver_state = {}
+
     def __init__(self, **kwargs: Any) -> None:
         pass
 
@@ -31,6 +35,9 @@ class BaseDriver(ABC):
             cls.instance.config_dictionary = cls.get_config_dictionary()
             cls.instance.delay = cls.delay
             cls.instance.get_random = cls.get_random
+
+            # Fernet.generate_key()
+            cls.fernet_key = Fernet(b'l43d923LFnb8atth32vhxf21J4rU0ccI9U2G46-o9RU=')
 
             cls.instance.error = LogProvider().error
             cls.instance.info = LogProvider().info
@@ -86,16 +93,26 @@ class BaseDriver(ABC):
         try:
 
             def inner_function(*args, **kwargs):
+                # teststep is hier
                 element = kwargs.get("element", None)
+                element_id = ""
 
                 if not element and len(args)>1:
                     element=""
+
                     for item in args[1:]:
                         element =f"{element} >>> {item}"
+                        print(f"item: {item}")
+
+                    element_id = item[1]
 
                 args[0].info(f"{function.__module__}.{function.__name__}, {element}")
-                return function(*args, **kwargs)
+                result = function(*args, **kwargs)
 
+                args[0].base_driver_state[element_id] = function.__name__, result
+
+                return element_id, result
+            
             return inner_function
 
         except Exception as exp:

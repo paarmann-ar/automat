@@ -14,7 +14,6 @@ from drivers.ranorex.ranorex_driver_provider import RanorexDriverProvider
 
 
 class Base(ABC):
-    # hire must store staate zwichen module or test or arttribute. this dictionaray is shared data between test
     state = {}
 
     def __new__(cls, *args, **kwargs: Any):
@@ -27,6 +26,7 @@ class Base(ABC):
             cls.instance = super().__new__(cls)
             cls.state['base_id'] = id(cls)
             cls.state['root_address'] = CONSTS.ROOT_DIR
+            cls.state["aqua"]={}
 
             cls.instance_args = kwargs
 

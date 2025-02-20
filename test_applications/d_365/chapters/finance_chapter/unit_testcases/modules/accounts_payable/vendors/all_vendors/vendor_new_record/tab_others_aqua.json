@@ -1,5 +1,56 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50007": {
+            "id": 50007,
+            "name": {
+                "method_name": "tab_others",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  leadtime",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  delivery time external",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  external processing time",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  transit time",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  processing time internal",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

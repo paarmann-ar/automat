@@ -1,5 +1,81 @@
 {
     "aqua_folder": {
-        "id": 14460
+        "id": 25626
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50045": {
+            "id": 50045,
+            "name": {
+                "method_name": "tab_lines",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on  remove line",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "click on  add line",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  description",
+                        "expected_result": "110 SA Europe B.V."
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  main account",
+                        "expected_result": "0861010"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  sales tax group",
+                        "expected_result": "NL-C-IC"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  item sales tax group",
+                        "expected_result": "S-High"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  deferred",
+                        "expected_result": "NO"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  quantity",
+                        "expected_result": "1"
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  unit price",
+                        "expected_result": "2000"
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  amount",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

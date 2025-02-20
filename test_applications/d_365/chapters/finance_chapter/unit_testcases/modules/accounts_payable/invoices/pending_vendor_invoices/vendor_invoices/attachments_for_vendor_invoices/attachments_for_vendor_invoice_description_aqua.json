@@ -1,5 +1,46 @@
 {
     "aqua_folder": {
-        "id": 14443
+        "id": 25609
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49956": {
+            "id": 49956,
+            "name": {
+                "method_name": "attachments_for_vendor_invoice_description",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  description",
+                        "expected_result": "description"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  type",
+                        "expected_result": "Note"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "tick checkbox  attached",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

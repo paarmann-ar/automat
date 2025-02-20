@@ -1,5 +1,76 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50005": {
+            "id": 50005,
+            "name": {
+                "method_name": "tab_miscellaneous_detail",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  Credit rating",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  creadit limit",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  vendor hold",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  reason code",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "tick checkbox  intercompany active",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  company",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  customer account",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "tick checkbox  public sector",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  Procurement category",
+                        "expected_result": "1370600"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

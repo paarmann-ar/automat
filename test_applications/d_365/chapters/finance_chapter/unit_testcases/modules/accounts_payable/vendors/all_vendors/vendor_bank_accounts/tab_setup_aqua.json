@@ -1,5 +1,61 @@
 {
     "aqua_folder": {
-        "id": 14449
+        "id": 25615
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49992": {
+            "id": 49992,
+            "name": {
+                "method_name": "tab_setup",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  text code",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  message to bank",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  exchange reference",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  cross rate",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  payment specification parameter",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field cmd currency",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

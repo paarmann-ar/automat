@@ -1,5 +1,71 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50014": {
+            "id": 50014,
+            "name": {
+                "method_name": "tab_vendor_profile",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "tick checkbox  bid only",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "tick checkbox  one time supplier",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "tick checkbox  locally owned",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "tick checkbox  small business",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "tick checkbox  owner is a service veteran",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "tick checkbox  owner is disabled",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "tick checkbox  original vendor in reporting",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "tick checkbox self invoice vendor",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

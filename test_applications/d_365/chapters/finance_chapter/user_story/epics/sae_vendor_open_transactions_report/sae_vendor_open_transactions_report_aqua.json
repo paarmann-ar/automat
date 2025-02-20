@@ -1,0 +1,56 @@
+{
+    "aqua_folder": {
+        "id": 25679
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50161": {
+            "id": 50161,
+            "name": {
+                "method_name": "sae_vendor_open_transactions_report",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "change mandant <Company>",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "run testcase tab parameters",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "run testcase tab destination",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "run testcase tab run in the background",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "run testcase ok",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
+    }
+}

@@ -1,5 +1,251 @@
 {
     "aqua_folder": {
-        "id": 14502
+        "id": 25668
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50148": {
+            "id": 50148,
+            "name": {
+                "method_name": "change_mandant",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on  home",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "click on  company mandant",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  mandant change",
+                        "expected_result": "139"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "click on button  home",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50149": {
+            "id": 50149,
+            "name": {
+                "method_name": "confirm_full_address",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  search for a page",
+                        "expected_result": "all vendors"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "click on item",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50150": {
+            "id": 50150,
+            "name": {
+                "method_name": "confirm_search_txt_entered",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  search for a page",
+                        "expected_result": "all vendors"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  search for a page",
+                        "expected_result": "n/a"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50151": {
+            "id": 50151,
+            "name": {
+                "method_name": "logout",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on  user",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "click on lable signout",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "click on lable use another account",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50152": {
+            "id": 50152,
+            "name": {
+                "method_name": "set_full_address_in_search_for_a_page",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  search for a page",
+                        "expected_result": "all vendors"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50153": {
+            "id": 50153,
+            "name": {
+                "method_name": "set_text_in_search_for_a_page",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  search for a page",
+                        "expected_result": "all vendors"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "click on  search for a page",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

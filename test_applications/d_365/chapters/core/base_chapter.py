@@ -1,14 +1,17 @@
 from typing import Any
 from abc import ABC, abstractmethod
 from collections import namedtuple
-import inspect
 from test_applications.d_365.core.base import Base
 from test_applications.d_365.components.components_provider import ComponentsProvider
 from services.log_.log_provider import LogProvider
 from test_applications.d_365.abstrct_classes.lightbox.lightbox import Lightbox
 from test_applications.d_365.abstrct_classes.tipbox.tipbox import Tipbox
-from test_applications.d_365.abstrct_classes.blocking_message.blocking_message import BlockingMessage
-from test_applications.d_365.abstrct_classes.context_menu.context_menu import ContextMenu
+from test_applications.d_365.abstrct_classes.blocking_message.blocking_message import (
+    BlockingMessage,
+)
+from test_applications.d_365.abstrct_classes.context_menu.context_menu import (
+    ContextMenu,
+)
 from test_applications.d_365.abstrct_classes.alert.alert import Alert
 from test_applications.d_365.chapters.core.base_method.export_attribute_in_excel_format import (
     ExportAttributeInExcelFormat,
@@ -19,11 +22,14 @@ from test_applications.d_365.chapters.core.base_method.import_attribute_in_excel
 from test_applications.d_365.chapters.core.config.base_chapter_config import (
     BaseChapterConfig,
 )
-from continuous_integration.continuous_integration_provider import ContinuousIntegrationProvider
+from continuous_integration.continuous_integration_provider import (
+    ContinuousIntegrationProvider,
+)
 
 # --
 # ...
 # --
+
 
 class BaseChapter(Base):
     def __init__(self, *args, **kwargs: Any) -> None:
@@ -36,19 +42,19 @@ class BaseChapter(Base):
 
         self.components = self.get_components()
 
-        self.aqua_description = f"this testcase is about: {self.__class__.__name__}"
+        # self.aqua_description = f"this testcase is about: {self.__class__.__name__}"
 
-        self.aqua_source_code_filter = [
-            "@BaseChapter.aqua",
-            "@BaseChapter.log",
-            "@BaseChapter.wait_for",
-            "def",
-            "try",
-            "except",
-            "return",
-            "self.error",
-            "return",
-        ]
+        # self.aqua_source_code_filter = [
+        #     "@BaseChapter.aqua",
+        #     "@BaseChapter.log",
+        #     "@BaseChapter.wait_for",
+        #     "def",
+        #     "try",
+        #     "except",
+        #     "return",
+        #     "self.error",
+        #     "return",
+        # ]
 
     # --
     # ...
@@ -135,7 +141,7 @@ class BaseChapter(Base):
 
     def prepare(self, *args, **kwargs: Any) -> None:
 
-        try: 
+        try:
 
             if self.is_use_excel_attributs:
                 ImportAttributeInExcelFormat(
@@ -144,10 +150,11 @@ class BaseChapter(Base):
                 ).start()
 
                 return True
-            
+
         except Exception as exp:
             self.error(f"{repr(exp)},{str(exp)}\n{self.stack()}")
             return False
+
     # --
     # ... decorators
     # --
@@ -219,50 +226,35 @@ class BaseChapter(Base):
         try:
 
             def inner_function(*args, **kwargs):
+                # testcase is hier
+                element = ""
+                class_name = args[0].__class__.__name__
+                closure_name = [
+                    closure.cell_contents for closure in function.__closure__
+                ][0]
 
-                if "is_aqua" not in dir(args[0]):
-                    return function(*args, **kwargs)
+                if isinstance(closure_name, str):
+                    closure_name = function.__qualname__
 
-                closures = [closure.cell_contents for closure in function.__closure__]
+                else:
+                    closure_name = closure_name.__name__
 
-                source_code = list(
-                    map(lambda x: x.strip(), inspect.getsource(closures[0]).split("\n"))
+                result = function(*args, **kwargs)
+
+                if isinstance(result, tuple):
+                    element, result = result
+
+                args[0].state["aqua"].update(
+                    {f"{class_name}.{closure_name}": args[0].base_driver_state.copy()}
                 )
 
-                args[0].elements = args[0].get_elements()
-                _, testcase_folder_id = args[0].elements.aqua_folder_id
+                args[0].base_driver_state.clear()
 
-                testcase_name = closures[0].__name__
+                print(
+                    f"!!!!!!!!!!!!!!!\n\ntestcase: {class_name}.{closure_name}\nelement: {element}\nresult: {result}\n\n!!!!!!!!!!!!!!!"
+                )
 
-
-
-
-
-
-
-
-
-
-
-                target_source_code = source_code
-
-                for item in args[0].aqua_source_code_filter:
-                    target_source_code = list(filter(lambda x: x.find(item), target_source_code))
-
-                for i in range(len(target_source_code)):
-
-                    try:
-
-                        target_source_code.remove("")
-                        
-                    except ValueError:
-                        continue
-
-                print(target_source_code)
-
-                setattr(args[0], "aqua_source", target_source_code)
-
-                return
+                return result
 
             return inner_function
 
@@ -279,7 +271,7 @@ class BaseChapter(Base):
         try:
 
             def inner_function(*args, **kwargs):
-                
+
                 Tipbox()()
                 return function(*args, **kwargs)
 

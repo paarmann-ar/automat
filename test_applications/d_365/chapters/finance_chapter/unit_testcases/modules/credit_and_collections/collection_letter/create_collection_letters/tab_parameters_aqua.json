@@ -1,5 +1,71 @@
 {
     "aqua_folder": {
-        "id": 14471
+        "id": 25637
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50070": {
+            "id": 50070,
+            "name": {
+                "method_name": "tab_parameters",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "tick checkbox  invoice",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "tick checkbox  credit note",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "tick checkbox  payment",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "tick checkbox  interest",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  collectionc letter",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field dt collection letter date",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  use posting profile from",
+                        "expected_result": "Account"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  posting profile",
+                        "expected_result": "STD"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

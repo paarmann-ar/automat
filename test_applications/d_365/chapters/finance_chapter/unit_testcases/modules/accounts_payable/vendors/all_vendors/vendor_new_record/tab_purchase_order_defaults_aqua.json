@@ -1,5 +1,71 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50010": {
+            "id": 50010,
+            "name": {
+                "method_name": "tab_purchase_order_defaults",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  our account number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  amount in transaction currency",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "tick checkbox  purchase order prices amount",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  purchase calendar",
+                        "expected_result": "WFC"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "tick checkbox  send purchase order via cXML",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "tick checkbox  override settings",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "tick checkbox  activate change management",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "tick checkbox  allow override of settings per purchase",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

@@ -1,5 +1,101 @@
 {
     "aqua_folder": {
-        "id": 14460
+        "id": 25626
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50044": {
+            "id": 50044,
+            "name": {
+                "method_name": "tab_free_text_invoice_header",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  customer account",
+                        "expected_result": "DIC11000"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  name",
+                        "expected_result": "110 SA Europe B.V."
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  invoice account",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "tick checkbox  one time customer",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  address",
+                        "expected_result": "Erik de rodeweg 11-13 5975WD Sevenum Nederland"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  invoice date",
+                        "expected_result": "01/08/2025"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  invoice Due",
+                        "expected_result": "01/08/2025"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  currency",
+                        "expected_result": "EUR"
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  terms of payment",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  method of payment",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "write text on field  payment specification",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "write text on field  bank account",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 12",
+                        "description": "write text on field  payment schedule",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 13",
+                        "description": "write text on field  cash discount",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

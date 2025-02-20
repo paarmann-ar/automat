@@ -1,5 +1,91 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50004": {
+            "id": 50004,
+            "name": {
+                "method_name": "tab_invoice_and_delivery",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  invoice account",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  Number sequence group",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  vendor price tolerance group",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  offset account account type",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  offset account",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  UPS zone",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  sales tax group",
+                        "expected_result": "IT-V-DOM"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "tick checkbox  prices include sales tax",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  tax exempt number",
+                        "expected_result": "00272430635"
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  fiscal code",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "tick checkbox  calculate withholding tax",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "tick checkbox  e invoice",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

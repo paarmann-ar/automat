@@ -1,5 +1,106 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50013": {
+            "id": 50013,
+            "name": {
+                "method_name": "tab_general",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  vendor account",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  external vendor",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  workday account number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  type",
+                        "expected_result": "Organization"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  vendor invoice type",
+                        "expected_result": "None"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  vendor type",
+                        "expected_result": "Standard"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  payment priority",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "# write text on field #      name",
+                        "expected_result": "n/a"
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "click on  search name",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "# write text on field #      search name",
+                        "expected_result": "vendor test112"
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "write text on field  groupe",
+                        "expected_result": "GOODS-IT"
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "write text on field  DUNS number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 12",
+                        "description": "write text on field  phonetic name",
+                        "expected_result": "phonetic_name"
+                    },
+                    {
+                        "name": "step 13",
+                        "description": "write text on field  languges",
+                        "expected_result": "it"
+                    },
+                    {
+                        "name": "step 14",
+                        "description": "write text on field  collaboration activation",
+                        "expected_result": "Active PO is auto-confirmed)"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

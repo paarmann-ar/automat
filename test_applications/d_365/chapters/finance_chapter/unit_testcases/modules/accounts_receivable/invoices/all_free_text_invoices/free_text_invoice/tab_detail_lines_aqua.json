@@ -1,5 +1,81 @@
 {
     "aqua_folder": {
-        "id": 14460
+        "id": 25626
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50043": {
+            "id": 50043,
+            "name": {
+                "method_name": "tab_detail_lines",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  intercompany",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  intercompany main account",
+                        "expected_result": "0144101"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  intercompany sales tax group",
+                        "expected_result": "NL-V-IC"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  intercompany item sales tax group",
+                        "expected_result": "S-High"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  intercompany invoice text",
+                        "expected_result": "vendor invoice text"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "click on button  general",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  invoice text",
+                        "expected_result": "invoice_text"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  fixed asset number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  book",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  customer reference",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

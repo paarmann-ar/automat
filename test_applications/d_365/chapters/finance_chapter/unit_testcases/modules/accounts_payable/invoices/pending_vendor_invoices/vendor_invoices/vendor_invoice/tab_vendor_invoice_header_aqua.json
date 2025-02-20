@@ -1,5 +1,156 @@
 {
     "aqua_folder": {
-        "id": 14444
+        "id": 25610
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49966": {
+            "id": 49966,
+            "name": {
+                "method_name": "tab_vendor_invoice_header",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  company",
+                        "expected_result": "139"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  invoice account",
+                        "expected_result": "V139100004"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  purchese number",
+                        "expected_result": "LEGNAZZI & PARTNERS STPRL"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  invoice description",
+                        "expected_result": "Text1"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  purchase order",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  purchase receipt",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  purchase agreement",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  invoice received date",
+                        "expected_result": "04.07.2024"
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  invoice date",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "write text on field  date of vendor VAT register",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "write text on field  posting date",
+                        "expected_result": "04.07.2024"
+                    },
+                    {
+                        "name": "step 12",
+                        "description": "write text on field  due date",
+                        "expected_result": "04.07.2024"
+                    },
+                    {
+                        "name": "step 13",
+                        "description": "tick checkbox  on hold",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 14",
+                        "description": "tick checkbox  credit correction",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 15",
+                        "description": "tick checkbox  recharge",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 16",
+                        "description": "write text on field  archiva protokol",
+                        "expected_result": "45698745"
+                    },
+                    {
+                        "name": "step 17",
+                        "description": "tick checkbox  confidential",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 18",
+                        "description": "write text on field  header budget check results",
+                        "expected_result": "Budget check not performed"
+                    },
+                    {
+                        "name": "step 19",
+                        "description": "write text on field  plafond date",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 20",
+                        "description": "tick checkbox  imported",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 21",
+                        "description": "write text on field  imported gross amount",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 22",
+                        "description": "write text on field  imported net amount",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 23",
+                        "description": "write text on field  imported tax amount",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 24",
+                        "description": "write text on field  rest",
+                        "expected_result": ""
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

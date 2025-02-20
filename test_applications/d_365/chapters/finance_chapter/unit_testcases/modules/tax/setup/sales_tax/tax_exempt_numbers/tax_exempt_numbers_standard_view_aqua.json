@@ -1,5 +1,72 @@
 {
     "aqua_folder": {
-        "id": 14498
+        "id": 25664
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50126": {
+            "id": 50126,
+            "name": {
+                "method_name": "add_new_tax_exempt_number",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  lv country",
+                        "expected_result": "ITA"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  lv tax exempt number",
+                        "expected_result": "00272430635"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  lv company name",
+                        "expected_result": "vendor test112"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50127": {
+            "id": 50127,
+            "name": {
+                "method_name": "select_tax_exempt_number",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "return select item on listview ",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

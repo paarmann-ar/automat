@@ -3,7 +3,7 @@ import os
 import glob
 import importlib
 from services.disk.service_disk_provider import ServiceDiskProvider
-from test_applications.d_365_dev.get_all_class_in_test_application import GetAllClassInTestApplication
+from continuous_integration.aqua_api.aqua_adaptor.core.get_all_class_in_test_application import GetAllClassInTestApplication
 
 # --
 # ...

@@ -17,7 +17,6 @@ from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.cre
 # ...
 # --
 
-
 class ReviewAndProcessCollectionLettersManager(BaseChapter, BaseUserStory):
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
@@ -126,16 +125,7 @@ class ReviewAndProcessCollectionLettersManager(BaseChapter, BaseUserStory):
 
             self.delay(220)
 
-
-
-
-
-
-
-
-
-            
-
+#----
             self.review_and_process_collection_letters_standard_view.select_customer_account()
             self.review_and_process_collection_letters_top_gadget.back()
 

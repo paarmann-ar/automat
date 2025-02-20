@@ -1,5 +1,218 @@
 {
     "aqua_folder": {
-        "id": 14460
+        "id": 25626
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50035": {
+            "id": 50035,
+            "name": {
+                "method_name": "attachments_free_text_invoice",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  attachments",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50036": {
+            "id": 50036,
+            "name": {
+                "method_name": "click_sidebar",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  workflow",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50037": {
+            "id": 50037,
+            "name": {
+                "method_name": "delete",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  delete",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50038": {
+            "id": 50038,
+            "name": {
+                "method_name": "edit",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  edit",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50039": {
+            "id": 50039,
+            "name": {
+                "method_name": "new",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  new",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50040": {
+            "id": 50040,
+            "name": {
+                "method_name": "post",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  post",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50041": {
+            "id": 50041,
+            "name": {
+                "method_name": "save",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  save",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50042": {
+            "id": 50042,
+            "name": {
+                "method_name": "workflow_vendor_invoice",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  workflow",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

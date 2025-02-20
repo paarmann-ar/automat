@@ -1,5 +1,81 @@
 {
     "aqua_folder": {
-        "id": 14449
+        "id": 25615
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49990": {
+            "id": 49990,
+            "name": {
+                "method_name": "tab_contact_information",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  telephone.self.telephone",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  extension.self.extension",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  mobile phone.self.mobile phone",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  pager.self.pager",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  fax.self.fax",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  email.self.email",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  sms.self.sms",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  internet address.self.internet address",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  telex number.self.telex number",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  name of person.self.name of person",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

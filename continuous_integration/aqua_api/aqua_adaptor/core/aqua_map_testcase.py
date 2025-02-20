@@ -6,7 +6,7 @@ from continuous_integration.aqua_api.aqua_adaptor.config.aqua_adapter_config imp
 )
 import os
 from toolboxs.decorators import singleton
-from test_applications.d_365_dev.get_all_class_in_test_application import (
+from continuous_integration.aqua_api.aqua_adaptor.core.get_all_class_in_test_application import (
     GetAllClassInTestApplication,
 )
 from continuous_integration.aqua_api.aqua_adaptor.core.aqua_map_testcase_description import (
@@ -224,37 +224,42 @@ class AquaMapTestcase(BaseAquaAdapter):
 
                 for member in class_data["class_member"]:
                     self.aqua_api.testcase_api.testcase_name["Value"] = (
-                        f"{member} in {class_data["class_name"]}"
+                        f"{member["method_name"]} in {class_data["class_name"]}"
                     )
+
                     self.aqua_api.testcase_api.description = f"""
                         This testcase about smoke test on: <b>
                         
                         <h3>{class_data["class_json_adress"]
                              .replace("C:/Users/mpaarmann/Projects/rdc_automat/test_applications/d_365/chapters/", "")
-                             .replace("_aqua.json", "").replace("/", "..")}  >>>  {member} 
+                             .replace("_aqua.json", "").replace("/", "..")}  >>>  {member["method_name"]}
                         </h3>
                         """
 
                     # must all fild from member trasferen fo tc_object
-                    for index, step in enumerate(class_data["class_member_step"], 0):
+                    for step in member["method_steps"]:
                         if len(step) == 0:
                             continue
 
-                        self.aqua_api.testcase_api.test_step_name = step[index]["name"]
+                        self.aqua_api.testcase_api.test_step_name = step.get(
+                            "name", "Has no name"
+                        )
                         self.aqua_api.testcase_api.test_step_description = {
-                            "Html": step[index]["description"],
+                            "Html": step.get("description", "Has no description"),
                         }
-                        self.aqua_api.testcase_api.test_step_expexted_result = step[
-                            index
-                        ]["expected_result"]
+                        self.aqua_api.testcase_api.test_step_expexted_result = (
+                            step.get("expected_result", "Has no expected result")
+                        )
+
                         self.aqua_api.testcase_api.create_test_steps_object()
 
                     self.aqua_api.testcase_api.create_testcase_object()
 
                     testcase_id = self.aqua_api.testcase_api.create_testcases()
                     self.aqua_api.testcase_api.clear_test_steps_object()
-                    
+
                     test_steps_object_dict = {}
+
                     for teststep in self.aqua_api.testcase_api.test_steps_object:
                         test_steps_object_dict.update(teststep)
 
@@ -262,10 +267,10 @@ class AquaMapTestcase(BaseAquaAdapter):
                         {
                             f"aqua_testcases_{testcase_id}": {
                                 "id": testcase_id,
-                                "name": f"{member}",
-                                "automatisiert": f"{self.aqua_api.testcase_api.automatisiert}",
-                                "status": f"{self.aqua_api.testcase_api.status}",
-                                "test_level": f"{self.aqua_api.testcase_api.test_level}",
+                                "name": member,
+                                "automatisiert": self.aqua_api.testcase_api.automatisiert,
+                                "status": self.aqua_api.testcase_api.status,
+                                "test_level": self.aqua_api.testcase_api.test_level,
                                 "teststeps:": test_steps_object_dict,
                             }
                         }

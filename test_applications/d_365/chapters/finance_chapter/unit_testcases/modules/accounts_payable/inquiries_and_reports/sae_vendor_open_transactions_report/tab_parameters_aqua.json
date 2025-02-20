@@ -1,5 +1,46 @@
 {
     "aqua_folder": {
-        "id": 14436
+        "id": 25602
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49933": {
+            "id": 49933,
+            "name": {
+                "method_name": "tab_parameters",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "tick checkbox  exclude future settlements",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "tick checkbox  only positive",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  open transactions per",
+                        "expected_result": "09/01/2025"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

@@ -34,7 +34,7 @@ class DomElementAndAction(BaseSelenium):
         is_press_tab=False,
         is_char_by_char=False,
         is_press_esc=False,
-        is_check_readonly=True,
+        is_check_readonly=False,
     ):
 
         try:

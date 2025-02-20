@@ -5,7 +5,7 @@ from test_applications.d_365.chapters.core.base_user_story import BaseUserStory
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.toolbars.toolbars import (
     Toolbars,
 )
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.general_ledger.journal_entries.general_journals_page import (
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.general_ledger.journal_entries.general_journals_standard_view import (
     GeneralJournalsStandardView,
 )
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.general_ledger.journal_entries.general_journals_top_gadget import (

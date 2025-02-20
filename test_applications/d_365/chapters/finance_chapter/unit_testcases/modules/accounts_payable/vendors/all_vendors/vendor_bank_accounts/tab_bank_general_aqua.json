@@ -1,5 +1,96 @@
 {
     "aqua_folder": {
-        "id": 14449
+        "id": 25615
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49989": {
+            "id": 49989,
+            "name": {
+                "method_name": "tab_general",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  bank groups",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  vendor account",
+                        "expected_result": "V139000270"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  routing number type",
+                        "expected_result": "None"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  DUNS",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  DUNS segment",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  routing number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  bank account number",
+                        "expected_result": "0532013000"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  CIN",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  SWIFT code",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  IBAN",
+                        "expected_result": "DE89370400440532013000"
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "write text on field  Active date",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "write text on field  expiration date",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 12",
+                        "description": "write text on field  status",
+                        "expected_result": "Active"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

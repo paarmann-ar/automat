@@ -1,17 +1,35 @@
 {
     "aqua_folder": {
-        "id": 14435
+        "id": 25601
     },
     "aqua_project": {
         "id": 45
     },
     "aqua_testcases": {
-        "aqua_testcases_43937": {
-            "id": 43937,
-            "name": "select_invoice_journal_number",
-            "automatisiert": "{'FieldId': 'CustomInt00', 'Value': 10465}",
-            "status": "{'FieldId': 'Status', 'Value': 10440}",
-            "test_level": "{'FieldId': 'TestLevel', 'Value': 10464}",
+        "aqua_testcases_49927": {
+            "id": 49927,
+            "name": {
+                "method_name": "select_invoice_journal_number",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "return select item on listview ",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
             "teststeps:": {}
         }
     }

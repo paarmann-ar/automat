@@ -1,5 +1,46 @@
 {
     "aqua_folder": {
-        "id": 14489
+        "id": 25655
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50119": {
+            "id": 50119,
+            "name": {
+                "method_name": "tab_general",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  batch email provider",
+                        "expected_result": "SMTP"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  attachment size limit",
+                        "expected_result": "10"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  email expiration in days",
+                        "expected_result": "0"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

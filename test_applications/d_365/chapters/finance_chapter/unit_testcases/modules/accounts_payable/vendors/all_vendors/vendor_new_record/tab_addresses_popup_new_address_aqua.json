@@ -1,5 +1,91 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49998": {
+            "id": 49998,
+            "name": {
+                "method_name": "new_address",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  location id",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  name or description",
+                        "expected_result": "vendor test112"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  country",
+                        "expected_result": "ITA"
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  zip",
+                        "expected_result": "12345"
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  street",
+                        "expected_result": "Milano str. 5"
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  city",
+                        "expected_result": "Rome"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  district",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  address addition",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "tick checkbox  primary",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "tick checkbox  private",
+                        "expected_result": "False"
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "tick checkbox  primary for country",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "click on button  ok",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

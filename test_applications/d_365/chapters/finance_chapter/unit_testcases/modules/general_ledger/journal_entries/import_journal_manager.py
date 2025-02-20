@@ -6,8 +6,8 @@ from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.gen
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.toolbars.toolbars import (
     Toolbars,
 )
-from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.general_ledger.journal_entries.general_journals_page import (
-    GeneralJournalsPage,
+from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.general_ledger.journal_entries.general_journals_standard_view import (
+    GeneralJournalsStandardView,
 )
 from test_applications.d_365.chapters.finance_chapter.unit_testcases.modules.general_ledger.journal_entries.general_journals_top_gadget import (
     GeneralJournalsTopGadget,
@@ -72,7 +72,7 @@ class ImportJournalManager(BaseChapter, Form):
 
             self.toolbars = Toolbars()
             self.import_journal_page_manager = ImportJournalPageManager()
-            self.general_journals_page = GeneralJournalsPage()
+            self.general_journals_standard_view = GeneralJournalsStandardView()
             self.general_journals_top_gadget = GeneralJournalsTopGadget()
 
             return True
@@ -137,8 +137,8 @@ class ImportJournalManager(BaseChapter, Form):
         try:
 
             self.goto_start_point()
-            self.general_journals_page.select_show()
-            self.general_journals_page.select_show_user_created_only()
+            self.general_journals_standard_view.select_show()
+            self.general_journals_standard_view.select_show_user_created_only()
 
             self.elements.txb_GeneralJournalsPage_description = "xpath", f"//input[@title='{self.state['GeneralJournalsPage_description']}']"
            
@@ -169,16 +169,16 @@ class ImportJournalManager(BaseChapter, Form):
                 match tab:
 
                     case "select_show":
-                        self.general_journals_page.select_show()
+                        self.general_journals_standard_view.select_show()
 
                     case "select_show_user_created_only":
-                        self.general_journals_page.select_show_user_created_only()
+                        self.general_journals_standard_view.select_show_user_created_only()
 
                     case "new":
                         self.general_journals_top_gadget.new()
 
                     case "enter_name_description":
-                        self.general_journals_page.enter_name_description()
+                        self.general_journals_standard_view.enter_name_description()
 
                     case "import_journal":
                         self.general_journals_top_gadget.import_journal()

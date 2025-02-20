@@ -1,5 +1,96 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50003": {
+            "id": 50003,
+            "name": {
+                "method_name": "edit_contact_information",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  description",
+                        "expected_result": "description"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  type",
+                        "expected_result": "Phone"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  international calling code",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  phone",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  extention",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "write text on field  purpose type",
+                        "expected_result": "Private"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  reachabilirty",
+                        "expected_result": "reachabilirty"
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "tick checkbox  valid",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "tick checkbox  mobile",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "tick checkbox  primary",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "tick checkbox  private",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "tick checkbox  marketing opt in",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 12",
+                        "description": "click on button  ok",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

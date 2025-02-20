@@ -1,5 +1,244 @@
 {
     "aqua_folder": {
-        "id": 14437
+        "id": 25603
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_49935": {
+            "id": 49935,
+            "name": {
+                "method_name": "click_sidebar",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  create a custom alert",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49936": {
+            "id": 49936,
+            "name": {
+                "method_name": "create_a_custom_alert",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  create a custom alert",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49937": {
+            "id": 49937,
+            "name": {
+                "method_name": "delete_vendor_approval_status",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  delete",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49938": {
+            "id": 49938,
+            "name": {
+                "method_name": "edit_vendor_approval_status",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  edit",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49939": {
+            "id": 49939,
+            "name": {
+                "method_name": "first_approval_vendor",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  first approval",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49940": {
+            "id": 49940,
+            "name": {
+                "method_name": "new_vendor_approval_status",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  new",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49941": {
+            "id": 49941,
+            "name": {
+                "method_name": "options",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  options",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49942": {
+            "id": 49942,
+            "name": {
+                "method_name": "save_vendor_approval_status",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  save",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_49943": {
+            "id": 49943,
+            "name": {
+                "method_name": "second_approval_vendor",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  second approval",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

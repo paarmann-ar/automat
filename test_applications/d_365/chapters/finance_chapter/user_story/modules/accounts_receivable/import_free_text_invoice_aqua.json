@@ -1,0 +1,41 @@
+{
+    "aqua_folder": {
+        "id": 25682
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50165": {
+            "id": 50165,
+            "name": {
+                "method_name": "import_free_text_invoice",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "run testcase  (Free text invoice import",
+                        "expected_result": "n/a"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "Write text on search for a page ",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
+    }
+}

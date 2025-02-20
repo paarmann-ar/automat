@@ -1,5 +1,121 @@
 {
     "aqua_folder": {
-        "id": 14450
+        "id": 25616
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50008": {
+            "id": 50008,
+            "name": {
+                "method_name": "tab_parameters",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "write text on field  vendor interface group",
+                        "expected_result": "DeActVend"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "write text on field  secondary language",
+                        "expected_result": "de-DE"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "write text on field  min num of invoice covering letter",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 3",
+                        "description": "write text on field  datev vendor number",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 4",
+                        "description": "write text on field  tax authority interface id",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 5",
+                        "description": "tick checkbox  deactivated",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 6",
+                        "description": "write text on field  lead time",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 7",
+                        "description": "write text on field  delivery time external",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 8",
+                        "description": "write text on field  external processing time",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 9",
+                        "description": "write text on field  transit time",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 10",
+                        "description": "write text on field  processing time internal",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 11",
+                        "description": "tick checkbox  senden an rechnungskonto",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 12",
+                        "description": "tick checkbox  bestellpositionen ubertragen",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 13",
+                        "description": "write text on field  note",
+                        "expected_result": "note"
+                    },
+                    {
+                        "name": "step 14",
+                        "description": "write text on field  vendor type",
+                        "expected_result": "Hospital"
+                    },
+                    {
+                        "name": "step 15",
+                        "description": "write text on field  invoice type",
+                        "expected_result": ""
+                    },
+                    {
+                        "name": "step 16",
+                        "description": "write text on field  external vendor",
+                        "expected_result": "external_vendor"
+                    },
+                    {
+                        "name": "step 17",
+                        "description": "write text on field  customer account",
+                        "expected_result": "customer_account"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

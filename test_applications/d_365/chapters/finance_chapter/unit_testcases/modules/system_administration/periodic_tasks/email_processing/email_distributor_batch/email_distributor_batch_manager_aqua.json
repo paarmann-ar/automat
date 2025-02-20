@@ -1,5 +1,62 @@
 {
     "aqua_folder": {
-        "id": 14485
+        "id": 25651
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50103": {
+            "id": 50103,
+            "name": {
+                "method_name": "email_distributor_batch_manager",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  ok",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50104": {
+            "id": 50104,
+            "name": {
+                "method_name": "goto_start_point",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "run testcase  (Email distributor batch",
+                        "expected_result": "n/a"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

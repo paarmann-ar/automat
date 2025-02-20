@@ -1,5 +1,98 @@
 {
     "aqua_folder": {
-        "id": 14471
+        "id": 25637
+    },
+    "aqua_project": {
+        "id": 45
+    },
+    "aqua_testcases": {
+        "aqua_testcases_50067": {
+            "id": 50067,
+            "name": {
+                "method_name": "click_sidebar",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  ok",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50068": {
+            "id": 50068,
+            "name": {
+                "method_name": "create_collection_letters_manager",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "click on button  ok",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        },
+        "aqua_testcases_50069": {
+            "id": 50069,
+            "name": {
+                "method_name": "goto_start_point",
+                "method_steps": [
+                    {
+                        "name": "step 0",
+                        "description": "run testcase  Creation of collection letter",
+                        "expected_result": "True"
+                    },
+                    {
+                        "name": "step 1",
+                        "description": "run testcase  (create collection letters",
+                        "expected_result": "n/a"
+                    },
+                    {
+                        "name": "step 2",
+                        "description": "Write text on search for a page ",
+                        "expected_result": "True"
+                    }
+                ]
+            },
+            "automatisiert": {
+                "FieldId": "CustomInt00",
+                "Value": 10465
+            },
+            "status": {
+                "FieldId": "Status",
+                "Value": 10440
+            },
+            "test_level": {
+                "FieldId": "TestLevel",
+                "Value": 10464
+            },
+            "teststeps:": {}
+        }
     }
 }

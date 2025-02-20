@@ -8,7 +8,7 @@ from test_applications.d_365.abstrct_classes.page.page import Page
 # --
 
 
-class GeneralJournalsPage(BaseChapter, Page):
+class GeneralJournalsStandardView(BaseChapter, Page):
     def __init__(
         self,
         *args,
